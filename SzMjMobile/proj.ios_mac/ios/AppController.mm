@@ -89,6 +89,19 @@ static AppDelegate s_sharedApplication;
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    //收到启动消息
+    NSLog(@"%@", url);
+    NSLog(@"%@", [url host]);
+    
+    if ([[url host] isEqualToString:@"com.16youxi.SzMjMobile"])
+    {
+        NSString *viewId = [[url query] substringFromIndex:[[url query] rangeOfString:@"a="].location + 2];
+        NSLog(@"a=%@", viewId);
+    }
+    return YES;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*

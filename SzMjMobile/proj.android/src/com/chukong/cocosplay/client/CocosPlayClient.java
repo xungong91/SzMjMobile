@@ -1,9 +1,6 @@
 /****************************************************************************
-Copyright (c) 2008-2010 Ricardo Quesada
-Copyright (c) 2010-2012 cocos2d-x.org
-Copyright (c) 2011      Zynga Inc.
-Copyright (c) 2013-2014 Chukong Technologies Inc.
- 
+Copyright (c) 2015 Chukong Technologies Inc.
+
 http://www.cocos2d-x.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,30 +20,40 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-****************************************************************************/
-package org.cocos2dx.cpp;
+ ****************************************************************************/
+package com.chukong.cocosplay.client;
 
-import org.cocos2dx.lib.Cocos2dxActivity;
+import android.app.Activity;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-
-public class AppActivity extends Cocos2dxActivity 
-{
-	 protected void onCreate(Bundle savedState)
-	 {
-		 super.onCreate(savedState);
-		 
-		 Intent intent = getIntent();
-		 Bundle bundle = intent.getExtras();
-		 if (bundle != null) 
-		 {
-			 String canshu1 = bundle.getString("canshu1");
-			 if (canshu1 != null) 
-			 {
-				 Log.d("test_jni", canshu1);
-			 }
-		 }
-	 }
+public class CocosPlayClient {
+    
+    public static boolean init(Activity activity, boolean isDemo) {
+        return false;
+    }
+    
+    public static boolean isEnabled() {
+        return false;
+    }
+    
+    public static boolean isDemo() {
+        return false;
+    }
+    
+    public static boolean isNotifyFileLoadedEnabled() {
+        return false;
+    }
+    
+    public static void notifyFileLoaded(String filePath) {
+        
+    }
+    
+    public static void updateAssets(String filePath) {
+        
+    }
+    
+    public static String getGameRoot() {
+        return "";
+    }
+    
+    public static native String[] getSearchPaths();
 }
