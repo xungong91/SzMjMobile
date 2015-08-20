@@ -1,8 +1,11 @@
 #include "HelloWorldScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
-#include "CoinsTo.h"
-#include "CTestDrawLayer.h"
+#include "ShareHelper.h"
+#include "MetroMainLayer.h"
+#include "UIMainLayer.h"
+#include "CrashHelper.h"
+#include "UIMediaSelectLayer.h"
 
 USING_NS_CC;
 using namespace cocostudio::timeline;
@@ -35,37 +38,86 @@ bool HelloWorld::init()
     {
         return false;
     }
+    auto winSize = Director::getInstance()->getWinSize();
     
-    Menu *menu = Menu::create();
+    auto bg = Sprite::create("HelloWorld.png");
+    bg->setPosition(Point(winSize.width / 2, winSize.height / 2));
+    
+    this->addChild(bg);
+    
+    Label *text = Label::create();
+    text->setPosition(Point(winSize.width / 2, winSize.height * 9 / 10));
+    this->addChild(text);
+    
+    auto itme1 = MenuItemFont::create("微信登录", [text](Ref *sender)
+                          {
+                              CCLOG("touchItem1");
+                              ShareHelper::singleton()->sendAuth(ShareType::weixin, [text](bool b, const string &id)
+                                                                 {
+                                                                     if (b)
+                                                                     {
+                                                                         text->setString(id);
+                                                                     }
+                                                                     else
+                                                                     {
+                                                                         text->setString("登录失败");
+                                                                     }
+                                                                 });
+                          });
+    itme1->setPosition(Point(100, 50));
+    
+    auto item2 = MenuItemFont::create("发送微信", [](Ref* sender)
+                                      {
+                                          string fileName;
+                                          stringstream ss;
+                                          ss<<"screenshot_share.png";
+                                          ss>>fileName;
+                                          
+                                          utils::captureScreen
+                                          (
+                                           [](bool succeed, const std::string& outputFile)
+                                           {
+                                               if (succeed)
+                                               {
+                                                   ShareHelper::singleton()->onShareLink(ShareType::weixin, outputFile);
+                                               }
+                                           }, fileName);
+                                          
+                                          CCLOG("touchItem2");
+                                      });
+    item2->setPosition(Point(100, 100));
+    
+    auto item3 = MenuItemFont::create("metro风格", [this](Ref *sender)
+                                      {
+                                          Director::getInstance()->getRunningScene()->removeChild(this);
+                                          Director::getInstance()->getRunningScene()->addChild(MetroMainLayer::create());
+                                      });
+    item3->setPosition(Point(100, 150));
+    
+    auto item4 = MenuItemFont::create("UI界面", [this](Ref *sender)
+                                      {
+                                          Director::getInstance()->getRunningScene()->removeChild(this);
+                                          Director::getInstance()->getRunningScene()->addChild(UIMainLayer::create());
+                                      });
+    item4->setPosition(Point(100, 200));
+    
+    auto item5 = MenuItemFont::create("崩溃按钮", [this](Ref *sender)
+                                      {
+                                          CrashHelper::singleton()->throwError();
+                                      });
+    item5->setPosition(Point(100, 250));
+    
+    auto item6 = MenuItemFont::create("选择多媒体界面", [this](Ref *sender)
+                                      {
+                                          this->addChild(UIMediaSelectLayer::create());
+                                      });
+    item6->setPosition(Point(100, 300));
+    
+    
+    auto menu = Menu::create(itme1, item2, item3, item4, item5, item6, NULL);
     menu->setPosition(Point(0, 0));
     this->addChild(menu);
     
-    Text *text = Text::create();
-    text->setFontSize(40);
-    text->setPosition(Point(Director::getInstance()->getWinSize().width/2, Director::getInstance()->getWinSize().height/2));
-    text->setString("100");
-    this->addChild(text);
-    
-    addTestSprite();
-    MenuItem *item1 = MenuItemFont::create("点我啊", [text](Ref *sender)
-                                           {
-                                               text->stopAllActions();
-                                               CoinsTo *coinsTo = CoinsTo::create(3.0f, "1000", text);
-                                               text->runAction(Sequence::create(coinsTo, NULL));
-                                           });
-    item1->setPosition(Point(480, 500));
-    
-    
-    MenuItem *item2 = MenuItemFont::create("创建", [this](Ref *sender)
-                                           {
-                                               this->addChild(CTestDrawLayer::create(), 1);
-                                           });
-    item2->setPosition(Point(480, 400));
-    
-    
-    
-    menu->addChild(item1);
-    menu->addChild(item2);
 
     return true;
 }
@@ -83,20 +135,4 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
 #endif
-}
-
-void HelloWorld::addTestSprite()
-{
-    mTestSprite = Sprite::create("CloseNormal.png");
-    mTestSprite->setPosition(Point(200, 200));
-    this->addChild(mTestSprite);
-}
-
-void HelloWorld::removeTestSprite()
-{
-    if (mTestSprite)
-    {
-        this->removeChild(mTestSprite);
-        mTestSprite = nullptr;
-    }
 }

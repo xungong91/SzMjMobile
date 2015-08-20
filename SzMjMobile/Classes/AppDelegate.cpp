@@ -1,5 +1,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "CocosHelper.h"
+#include "CrashHelper.h"
 
 USING_NS_CC;
 
@@ -27,18 +29,23 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::createWithRect("My Game", Rect(0, 0, 960, 640));
+        glview = GLViewImpl::createWithRect("My Game", Rect(0, 0, 1080, 1920));
         director->setOpenGLView(glview);
     }
-
+    CocosHelper::singleton()->setDesignResolution(glview);
+    
     // turn on display FPS
     director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
+    
+    FileUtils::getInstance()->addSearchPath("res");
 
     // create a scene. it's an autorelease object
     auto scene = HelloWorld::createScene();
+    
+    CrashHelper::singleton()->InitCrashReport();
 
     // run
     director->runWithScene(scene);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.youxi16.SzMjMobile"
+      package="com.youxi16.GameHall"
       android:versionCode="1"
       android:versionName="1.0"
       android:installLocation="auto">
@@ -17,7 +17,7 @@
 
         <activity android:name="org.cocos2dx.cpp.AppActivity"
                   android:label="@string/app_name"
-                  android:screenOrientation="landscape"
+                  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
                   android:configChanges="orientation">
 
@@ -26,6 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity android:name="org.cocos2dx.cpp.wxapi.WXEntryActivity"
+                  android:label="@string/app_name"
+                  android:exported="true" />
     </application>
 
     <supports-screens android:anyDensity="true"
@@ -35,4 +39,8 @@
                       android:xlargeScreens="true"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
 </manifest> 

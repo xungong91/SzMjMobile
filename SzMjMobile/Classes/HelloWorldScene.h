@@ -19,10 +19,7 @@ public:
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
-    
-    Sprite *mTestSprite;
-    void addTestSprite();
-    void removeTestSprite();
+
 };
 
 #endif // __HELLOWORLD_SCENE_H__

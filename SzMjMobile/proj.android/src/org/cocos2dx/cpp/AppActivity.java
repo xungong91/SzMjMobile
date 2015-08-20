@@ -28,25 +28,72 @@ package org.cocos2dx.cpp;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
 
+import com.tencent.mm.sdk.modelmsg.SendMessageToWX;
+import com.tencent.mm.sdk.modelmsg.WXMediaMessage;
+import com.tencent.mm.sdk.modelmsg.WXTextObject;
+import com.tencent.mm.sdk.openapi.IWXAPI;
+import com.tencent.mm.sdk.openapi.WXAPIFactory;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
 public class AppActivity extends Cocos2dxActivity 
 {
+	private static final String WeichatId = "wx323c2e438860301b";
+	private IWXAPI api;
+	
 	 protected void onCreate(Bundle savedState)
 	 {
 		 super.onCreate(savedState);
 		 
-		 Intent intent = getIntent();
-		 Bundle bundle = intent.getExtras();
-		 if (bundle != null) 
-		 {
-			 String canshu1 = bundle.getString("canshu1");
-			 if (canshu1 != null) 
-			 {
-				 Log.d("test_jni", canshu1);
-			 }
-		 }
+		 MjmJni.mMainContext = this;
+		 
+		 //注册微信
+		 regToWX();
+		 
+		 //其他应用打开
+//		 Intent intent = getIntent();
+//		 Bundle bundle = intent.getExtras();
+//		 if (bundle != null) 
+//		 {
+//			 String canshu1 = bundle.getString("canshu1");
+//			 if (canshu1 != null) 
+//			 {
+//				 Log.d("test_jni", canshu1);
+//			 }
+//		 }
 	 }
+	 
+	 private void regToWX()
+	 {
+		 api = WXAPIFactory.createWXAPI(this, WeichatId, true);
+		 api.registerApp(WeichatId);
+	 }
+	 
+	 public void sendTest()
+	 {
+			Log.d("test", "准备发送");
+			
+			WXTextObject textObj = new WXTextObject();
+			textObj.text = "武汉麻将 好玩的麻将🀄️";
+
+			WXMediaMessage msg = new WXMediaMessage();
+			msg.mediaObject = textObj;
+			
+			msg.description = "武汉麻将 好玩的麻将🀄";
+
+			SendMessageToWX.Req req = new SendMessageToWX.Req();
+			req.transaction = buildTransaction("text"); 
+			req.message = msg;
+			req.scene = SendMessageToWX.Req.WXSceneSession;
+			
+			api.sendReq(req);
+//			finish();
+	 }
+	 
+	 private String buildTransaction(final String type) 
+	 {
+			return (type == null) ? String.valueOf(System.currentTimeMillis()) : type + System.currentTimeMillis();
+		}
 }

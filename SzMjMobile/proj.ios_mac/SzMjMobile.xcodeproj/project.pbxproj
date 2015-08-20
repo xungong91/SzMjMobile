@@ -66,7 +66,45 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		EA17FFBA1B7DF13B0011179D /* MetroSpriteManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA17FFB81B7DF13B0011179D /* MetroSpriteManage.cpp */; };
+		EA1F705E1B84782900669B9D /* UIMediaLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA1F705C1B84782900669B9D /* UIMediaLayer.cpp */; };
+		EA1F70611B84811A00669B9D /* UIMediaSelectLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA1F705F1B84811A00669B9D /* UIMediaSelectLayer.cpp */; };
+		EA1F70641B84814900669B9D /* UIMediaSelectItemLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA1F70621B84814900669B9D /* UIMediaSelectItemLayer.cpp */; };
+		EA1F70661B84891A00669B9D /* card in Resources */ = {isa = PBXBuildFile; fileRef = EA1F70651B84891A00669B9D /* card */; };
+		EA2C159B1B85BC5E001D9ADF /* UIMediaVideoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA2C15991B85BC5E001D9ADF /* UIMediaVideoLayer.cpp */; };
+		EA2C15A81B85C858001D9ADF /* CrashHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA2C15A11B85C858001D9ADF /* CrashHelper.cpp */; };
+		EA2C15A91B85C858001D9ADF /* CatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2C15A51B85C858001D9ADF /* CatchCrash.m */; };
+		EA2C15AA1B85C858001D9ADF /* CrashHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2C15A61B85C858001D9ADF /* CrashHelper.mm */; };
+		EA44C31E1B83105200B94A5A /* UIInfoManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA44C31C1B83105200B94A5A /* UIInfoManage.cpp */; };
+		EA6805131B80C655008034EE /* MetroTouchManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA6805111B80C655008034EE /* MetroTouchManage.cpp */; };
 		EA8AD1041AEF25C3001B8E39 /* CoinsTo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8AD1021AEF25C3001B8E39 /* CoinsTo.cpp */; };
+		EAA48DE31B7DBED50081DC45 /* MetroImageSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */; };
+		EAA48DE71B7DC5420081DC45 /* Metro in Resources */ = {isa = PBXBuildFile; fileRef = EAA48DE61B7DC5420081DC45 /* Metro */; };
+		EAAA544C1B8174A200CDB595 /* MetroNullSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAA544A1B8174A200CDB595 /* MetroNullSprite.cpp */; };
+		EAAA54511B81B18200CDB595 /* MetroVideoSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAA544F1B81B18200CDB595 /* MetroVideoSprite.cpp */; };
+		EAAA54531B81B7DF00CDB595 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAA54521B81B7DF00CDB595 /* MediaPlayer.framework */; };
+		EAAA54591B81CBF500CDB595 /* UIMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAA54571B81CBF500CDB595 /* UIMainLayer.cpp */; };
+		EAAA545D1B81D90900CDB595 /* UILogin1Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAA545B1B81D90900CDB595 /* UILogin1Layer.cpp */; };
+		EAAA54601B81D91800CDB595 /* UIBaseLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAA545E1B81D91800CDB595 /* UIBaseLayer.cpp */; };
+		EAAA54631B81DAFE00CDB595 /* UILogin2Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAA54611B81DAFE00CDB595 /* UILogin2Layer.cpp */; };
+		EAAA54661B81DB0700CDB595 /* UILogin3Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAA54641B81DB0700CDB595 /* UILogin3Layer.cpp */; };
+		EAAA54691B81DB1100CDB595 /* UILogin4Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAA54671B81DB1100CDB595 /* UILogin4Layer.cpp */; };
+		EAACAE441B7B418C0047CA77 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAE411B7B418C0047CA77 /* libWeChatSDK.a */; };
+		EAACAE461B7B41BB0047CA77 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAE451B7B41BB0047CA77 /* SystemConfiguration.framework */; };
+		EAACAE481B7B41C60047CA77 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAE471B7B41C60047CA77 /* libz.dylib */; };
+		EAACAE4A1B7B41CE0047CA77 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAE491B7B41CE0047CA77 /* libsqlite3.0.dylib */; };
+		EAACAE4C1B7B41D60047CA77 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAE4B1B7B41D60047CA77 /* libc++.dylib */; };
+		EAACAE541B7B45050047CA77 /* ShareHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAACAE521B7B45050047CA77 /* ShareHelper.cpp */; };
+		EAB4D8501B7C404E00C1B093 /* JsonHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB4D84E1B7C404E00C1B093 /* JsonHelper.cpp */; };
+		EAB4D8531B7C77DC00C1B093 /* logo_sinaweibo.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB4D8511B7C77DC00C1B093 /* logo_sinaweibo.png */; };
+		EAB4D8541B7C77DC00C1B093 /* logo_wechat.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB4D8521B7C77DC00C1B093 /* logo_wechat.png */; };
+		EAB4D8571B7C898100C1B093 /* ShareHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = EAB4D8561B7C898100C1B093 /* ShareHelper.mm */; };
+		EAB9E2841B7CDC3C005370B7 /* CocosHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E2821B7CDC3C005370B7 /* CocosHelper.cpp */; };
+		EAB9E2871B7CDD26005370B7 /* MetroMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E2851B7CDD26005370B7 /* MetroMainLayer.cpp */; };
+		EAB9E28B1B7CE65E005370B7 /* XHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E2891B7CE65E005370B7 /* XHelper.cpp */; };
+		EAB9E28E1B7CE898005370B7 /* BaseLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E28C1B7CE898005370B7 /* BaseLayer.cpp */; };
+		EAB9E2911B7CE921005370B7 /* BaseMetroSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E28F1B7CE921005370B7 /* BaseMetroSprite.cpp */; };
+		EAB9E2961B7CF74F005370B7 /* MetroTextSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E2941B7CF74F005370B7 /* MetroTextSprite.cpp */; };
 		EADA70991B496B5E002878AA /* CTestDrawLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADA70971B496B5E002878AA /* CTestDrawLayer.cpp */; };
 /* End PBXBuildFile section */
 
@@ -159,8 +197,74 @@
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		EA17FFB81B7DF13B0011179D /* MetroSpriteManage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroSpriteManage.cpp; sourceTree = "<group>"; };
+		EA17FFB91B7DF13B0011179D /* MetroSpriteManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroSpriteManage.h; sourceTree = "<group>"; };
+		EA1F705C1B84782900669B9D /* UIMediaLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIMediaLayer.cpp; sourceTree = "<group>"; };
+		EA1F705D1B84782900669B9D /* UIMediaLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMediaLayer.h; sourceTree = "<group>"; };
+		EA1F705F1B84811A00669B9D /* UIMediaSelectLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIMediaSelectLayer.cpp; sourceTree = "<group>"; };
+		EA1F70601B84811A00669B9D /* UIMediaSelectLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMediaSelectLayer.h; sourceTree = "<group>"; };
+		EA1F70621B84814900669B9D /* UIMediaSelectItemLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIMediaSelectItemLayer.cpp; sourceTree = "<group>"; };
+		EA1F70631B84814900669B9D /* UIMediaSelectItemLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMediaSelectItemLayer.h; sourceTree = "<group>"; };
+		EA1F70651B84891A00669B9D /* card */ = {isa = PBXFileReference; lastKnownFileType = folder; path = card; sourceTree = "<group>"; };
+		EA2C15991B85BC5E001D9ADF /* UIMediaVideoLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIMediaVideoLayer.cpp; sourceTree = "<group>"; };
+		EA2C159A1B85BC5E001D9ADF /* UIMediaVideoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMediaVideoLayer.h; sourceTree = "<group>"; };
+		EA2C15A11B85C858001D9ADF /* CrashHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrashHelper.cpp; sourceTree = "<group>"; };
+		EA2C15A21B85C858001D9ADF /* CrashHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashHelper.h; sourceTree = "<group>"; };
+		EA2C15A41B85C858001D9ADF /* CatchCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatchCrash.h; sourceTree = "<group>"; };
+		EA2C15A51B85C858001D9ADF /* CatchCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatchCrash.m; sourceTree = "<group>"; };
+		EA2C15A61B85C858001D9ADF /* CrashHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CrashHelper.mm; sourceTree = "<group>"; };
+		EA44C31C1B83105200B94A5A /* UIInfoManage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIInfoManage.cpp; sourceTree = "<group>"; };
+		EA44C31D1B83105200B94A5A /* UIInfoManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInfoManage.h; sourceTree = "<group>"; };
+		EA6805111B80C655008034EE /* MetroTouchManage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroTouchManage.cpp; sourceTree = "<group>"; };
+		EA6805121B80C655008034EE /* MetroTouchManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroTouchManage.h; sourceTree = "<group>"; };
 		EA8AD1021AEF25C3001B8E39 /* CoinsTo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinsTo.cpp; sourceTree = "<group>"; };
 		EA8AD1031AEF25C3001B8E39 /* CoinsTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinsTo.h; sourceTree = "<group>"; };
+		EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroImageSprite.cpp; sourceTree = "<group>"; };
+		EAA48DE21B7DBED50081DC45 /* MetroImageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroImageSprite.h; sourceTree = "<group>"; };
+		EAA48DE61B7DC5420081DC45 /* Metro */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Metro; sourceTree = "<group>"; };
+		EAAA544A1B8174A200CDB595 /* MetroNullSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroNullSprite.cpp; sourceTree = "<group>"; };
+		EAAA544B1B8174A200CDB595 /* MetroNullSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroNullSprite.h; sourceTree = "<group>"; };
+		EAAA544F1B81B18200CDB595 /* MetroVideoSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroVideoSprite.cpp; sourceTree = "<group>"; };
+		EAAA54501B81B18200CDB595 /* MetroVideoSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroVideoSprite.h; sourceTree = "<group>"; };
+		EAAA54521B81B7DF00CDB595 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		EAAA54571B81CBF500CDB595 /* UIMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIMainLayer.cpp; sourceTree = "<group>"; };
+		EAAA54581B81CBF500CDB595 /* UIMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMainLayer.h; sourceTree = "<group>"; };
+		EAAA545B1B81D90900CDB595 /* UILogin1Layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UILogin1Layer.cpp; sourceTree = "<group>"; };
+		EAAA545C1B81D90900CDB595 /* UILogin1Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILogin1Layer.h; sourceTree = "<group>"; };
+		EAAA545E1B81D91800CDB595 /* UIBaseLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseLayer.cpp; sourceTree = "<group>"; };
+		EAAA545F1B81D91800CDB595 /* UIBaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseLayer.h; sourceTree = "<group>"; };
+		EAAA54611B81DAFE00CDB595 /* UILogin2Layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UILogin2Layer.cpp; sourceTree = "<group>"; };
+		EAAA54621B81DAFE00CDB595 /* UILogin2Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILogin2Layer.h; sourceTree = "<group>"; };
+		EAAA54641B81DB0700CDB595 /* UILogin3Layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UILogin3Layer.cpp; sourceTree = "<group>"; };
+		EAAA54651B81DB0700CDB595 /* UILogin3Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILogin3Layer.h; sourceTree = "<group>"; };
+		EAAA54671B81DB1100CDB595 /* UILogin4Layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UILogin4Layer.cpp; sourceTree = "<group>"; };
+		EAAA54681B81DB1100CDB595 /* UILogin4Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILogin4Layer.h; sourceTree = "<group>"; };
+		EAACAE411B7B418C0047CA77 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		EAACAE421B7B418C0047CA77 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		EAACAE431B7B418C0047CA77 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		EAACAE451B7B41BB0047CA77 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		EAACAE471B7B41C60047CA77 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		EAACAE491B7B41CE0047CA77 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libsqlite3.0.dylib; sourceTree = DEVELOPER_DIR; };
+		EAACAE4B1B7B41D60047CA77 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libc++.dylib"; sourceTree = DEVELOPER_DIR; };
+		EAACAE521B7B45050047CA77 /* ShareHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShareHelper.cpp; sourceTree = "<group>"; };
+		EAACAE531B7B45050047CA77 /* ShareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareHelper.h; sourceTree = "<group>"; };
+		EAB4D84E1B7C404E00C1B093 /* JsonHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonHelper.cpp; sourceTree = "<group>"; };
+		EAB4D84F1B7C404E00C1B093 /* JsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonHelper.h; sourceTree = "<group>"; };
+		EAB4D8511B7C77DC00C1B093 /* logo_sinaweibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_sinaweibo.png; sourceTree = "<group>"; };
+		EAB4D8521B7C77DC00C1B093 /* logo_wechat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_wechat.png; sourceTree = "<group>"; };
+		EAB4D8561B7C898100C1B093 /* ShareHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShareHelper.mm; sourceTree = "<group>"; };
+		EAB9E2821B7CDC3C005370B7 /* CocosHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CocosHelper.cpp; sourceTree = "<group>"; };
+		EAB9E2831B7CDC3C005370B7 /* CocosHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosHelper.h; sourceTree = "<group>"; };
+		EAB9E2851B7CDD26005370B7 /* MetroMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroMainLayer.cpp; sourceTree = "<group>"; };
+		EAB9E2861B7CDD26005370B7 /* MetroMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroMainLayer.h; sourceTree = "<group>"; };
+		EAB9E2891B7CE65E005370B7 /* XHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XHelper.cpp; sourceTree = "<group>"; };
+		EAB9E28A1B7CE65E005370B7 /* XHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHelper.h; sourceTree = "<group>"; };
+		EAB9E28C1B7CE898005370B7 /* BaseLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseLayer.cpp; sourceTree = "<group>"; };
+		EAB9E28D1B7CE898005370B7 /* BaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLayer.h; sourceTree = "<group>"; };
+		EAB9E28F1B7CE921005370B7 /* BaseMetroSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseMetroSprite.cpp; sourceTree = "<group>"; };
+		EAB9E2901B7CE921005370B7 /* BaseMetroSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMetroSprite.h; sourceTree = "<group>"; };
+		EAB9E2941B7CF74F005370B7 /* MetroTextSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroTextSprite.cpp; sourceTree = "<group>"; };
+		EAB9E2951B7CF74F005370B7 /* MetroTextSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroTextSprite.h; sourceTree = "<group>"; };
 		EADA70971B496B5E002878AA /* CTestDrawLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTestDrawLayer.cpp; sourceTree = "<group>"; };
 		EADA70981B496B5E002878AA /* CTestDrawLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTestDrawLayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,10 +274,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAAA54531B81B7DF00CDB595 /* MediaPlayer.framework in Frameworks */,
+				EAACAE4C1B7B41D60047CA77 /* libc++.dylib in Frameworks */,
+				EAACAE4A1B7B41CE0047CA77 /* libsqlite3.0.dylib in Frameworks */,
+				EAACAE481B7B41C60047CA77 /* libz.dylib in Frameworks */,
+				EAACAE461B7B41BB0047CA77 /* SystemConfiguration.framework in Frameworks */,
 				52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */,
 				1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */,
 				D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				EAACAE441B7B418C0047CA77 /* libWeChatSDK.a in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */,
@@ -208,6 +318,7 @@
 		080E96DDFE201D6D7F000001 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				EAACAE401B7B418C0047CA77 /* test */,
 				5087E77117EB970100C73F5D /* Icons */,
 				503AE0FA17EB989F00D1A890 /* AppController.h */,
 				503AE0FB17EB989F00D1A890 /* AppController.mm */,
@@ -255,6 +366,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAAA54521B81B7DF00CDB595 /* MediaPlayer.framework */,
+				EAACAE4B1B7B41D60047CA77 /* libc++.dylib */,
+				EAACAE491B7B41CE0047CA77 /* libsqlite3.0.dylib */,
+				EAACAE471B7B41C60047CA77 /* libz.dylib */,
+				EAACAE451B7B41BB0047CA77 /* SystemConfiguration.framework */,
 				52B47A461A53D09B004E4C60 /* Security.framework */,
 				D6B0611A1803AB670077942B /* CoreMotion.framework */,
 				503AE11A17EB9C5A00D1A890 /* IOKit.framework */,
@@ -278,8 +394,12 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				521A8EA819F11F5000D177D7 /* fonts */,
+				EA1F70651B84891A00669B9D /* card */,
+				EAA48DE61B7DC5420081DC45 /* Metro */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
+				521A8EA819F11F5000D177D7 /* fonts */,
+				EAB4D8511B7C77DC00C1B093 /* logo_sinaweibo.png */,
+				EAB4D8521B7C77DC00C1B093 /* logo_wechat.png */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
 				46880B7719C43A67006E1F66 /* CloseSelected.png */,
 				46880B7A19C43A67006E1F66 /* HelloWorld.png */,
@@ -291,6 +411,12 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EA2C159E1B85C858001D9ADF /* crash */,
+				EA1F70221B8425AB00669B9D /* demo */,
+				EAAA54561B81C7FE00CDB595 /* ui */,
+				EAB9E2811B7CDC3C005370B7 /* tools */,
+				EAB9E2801B7CDBC1005370B7 /* metro */,
+				EAACAE4D1B7B429A0047CA77 /* OC */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
@@ -350,6 +476,145 @@
 			name = Icons;
 			path = ios;
 			sourceTree = SOURCE_ROOT;
+		};
+		EA1F70221B8425AB00669B9D /* demo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		EA1F705B1B84781600669B9D /* media */ = {
+			isa = PBXGroup;
+			children = (
+				EA1F705C1B84782900669B9D /* UIMediaLayer.cpp */,
+				EA1F705D1B84782900669B9D /* UIMediaLayer.h */,
+				EA1F705F1B84811A00669B9D /* UIMediaSelectLayer.cpp */,
+				EA1F70601B84811A00669B9D /* UIMediaSelectLayer.h */,
+				EA1F70621B84814900669B9D /* UIMediaSelectItemLayer.cpp */,
+				EA1F70631B84814900669B9D /* UIMediaSelectItemLayer.h */,
+				EA2C15991B85BC5E001D9ADF /* UIMediaVideoLayer.cpp */,
+				EA2C159A1B85BC5E001D9ADF /* UIMediaVideoLayer.h */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		EA2C159E1B85C858001D9ADF /* crash */ = {
+			isa = PBXGroup;
+			children = (
+				EA2C15A11B85C858001D9ADF /* CrashHelper.cpp */,
+				EA2C15A21B85C858001D9ADF /* CrashHelper.h */,
+				EA2C15A31B85C858001D9ADF /* iOS */,
+			);
+			path = crash;
+			sourceTree = "<group>";
+		};
+		EA2C15A31B85C858001D9ADF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA2C15A41B85C858001D9ADF /* CatchCrash.h */,
+				EA2C15A51B85C858001D9ADF /* CatchCrash.m */,
+				EA2C15A61B85C858001D9ADF /* CrashHelper.mm */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		EAAA54561B81C7FE00CDB595 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				EA1F705B1B84781600669B9D /* media */,
+				EAAA545A1B81D8F700CDB595 /* login */,
+				EAAA54571B81CBF500CDB595 /* UIMainLayer.cpp */,
+				EAAA54581B81CBF500CDB595 /* UIMainLayer.h */,
+				EAAA545E1B81D91800CDB595 /* UIBaseLayer.cpp */,
+				EAAA545F1B81D91800CDB595 /* UIBaseLayer.h */,
+				EA44C31C1B83105200B94A5A /* UIInfoManage.cpp */,
+				EA44C31D1B83105200B94A5A /* UIInfoManage.h */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		EAAA545A1B81D8F700CDB595 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA545B1B81D90900CDB595 /* UILogin1Layer.cpp */,
+				EAAA545C1B81D90900CDB595 /* UILogin1Layer.h */,
+				EAAA54611B81DAFE00CDB595 /* UILogin2Layer.cpp */,
+				EAAA54621B81DAFE00CDB595 /* UILogin2Layer.h */,
+				EAAA54641B81DB0700CDB595 /* UILogin3Layer.cpp */,
+				EAAA54651B81DB0700CDB595 /* UILogin3Layer.h */,
+				EAAA54671B81DB1100CDB595 /* UILogin4Layer.cpp */,
+				EAAA54681B81DB1100CDB595 /* UILogin4Layer.h */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		EAACAE401B7B418C0047CA77 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				EAACAE411B7B418C0047CA77 /* libWeChatSDK.a */,
+				EAACAE421B7B418C0047CA77 /* WXApi.h */,
+				EAACAE431B7B418C0047CA77 /* WXApiObject.h */,
+			);
+			name = test;
+			path = ios/test;
+			sourceTree = SOURCE_ROOT;
+		};
+		EAACAE4D1B7B429A0047CA77 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				EAB4D8551B7C898100C1B093 /* iOS */,
+				EAB4D84E1B7C404E00C1B093 /* JsonHelper.cpp */,
+				EAB4D84F1B7C404E00C1B093 /* JsonHelper.h */,
+				EAACAE521B7B45050047CA77 /* ShareHelper.cpp */,
+				EAACAE531B7B45050047CA77 /* ShareHelper.h */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		EAB4D8551B7C898100C1B093 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB4D8561B7C898100C1B093 /* ShareHelper.mm */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		EAB9E2801B7CDBC1005370B7 /* metro */ = {
+			isa = PBXGroup;
+			children = (
+				EAB9E28F1B7CE921005370B7 /* BaseMetroSprite.cpp */,
+				EAB9E2901B7CE921005370B7 /* BaseMetroSprite.h */,
+				EAAA544A1B8174A200CDB595 /* MetroNullSprite.cpp */,
+				EAAA544B1B8174A200CDB595 /* MetroNullSprite.h */,
+				EAB9E2941B7CF74F005370B7 /* MetroTextSprite.cpp */,
+				EAB9E2951B7CF74F005370B7 /* MetroTextSprite.h */,
+				EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */,
+				EAA48DE21B7DBED50081DC45 /* MetroImageSprite.h */,
+				EAAA544F1B81B18200CDB595 /* MetroVideoSprite.cpp */,
+				EAAA54501B81B18200CDB595 /* MetroVideoSprite.h */,
+				EAB9E28C1B7CE898005370B7 /* BaseLayer.cpp */,
+				EAB9E28D1B7CE898005370B7 /* BaseLayer.h */,
+				EAB9E2851B7CDD26005370B7 /* MetroMainLayer.cpp */,
+				EAB9E2861B7CDD26005370B7 /* MetroMainLayer.h */,
+				EA6805111B80C655008034EE /* MetroTouchManage.cpp */,
+				EA6805121B80C655008034EE /* MetroTouchManage.h */,
+				EA17FFB81B7DF13B0011179D /* MetroSpriteManage.cpp */,
+				EA17FFB91B7DF13B0011179D /* MetroSpriteManage.h */,
+			);
+			path = metro;
+			sourceTree = "<group>";
+		};
+		EAB9E2811B7CDC3C005370B7 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				EAB9E2821B7CDC3C005370B7 /* CocosHelper.cpp */,
+				EAB9E2831B7CDC3C005370B7 /* CocosHelper.h */,
+				EAB9E2891B7CE65E005370B7 /* XHelper.cpp */,
+				EAB9E28A1B7CE65E005370B7 /* XHelper.h */,
+			);
+			path = tools;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -452,6 +717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
+				EA1F70661B84891A00669B9D /* card in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
@@ -459,6 +725,7 @@
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
+				EAB4D8541B7C77DC00C1B093 /* logo_wechat.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
@@ -466,6 +733,7 @@
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
+				EAA48DE71B7DC5420081DC45 /* Metro in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
@@ -473,6 +741,7 @@
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				EAB4D8531B7C77DC00C1B093 /* logo_sinaweibo.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,13 +766,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB9E28B1B7CE65E005370B7 /* XHelper.cpp in Sources */,
+				EA2C15A81B85C858001D9ADF /* CrashHelper.cpp in Sources */,
+				EAB9E2871B7CDD26005370B7 /* MetroMainLayer.cpp in Sources */,
+				EA2C15AA1B85C858001D9ADF /* CrashHelper.mm in Sources */,
+				EAAA54631B81DAFE00CDB595 /* UILogin2Layer.cpp in Sources */,
+				EAB4D8501B7C404E00C1B093 /* JsonHelper.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				EA44C31E1B83105200B94A5A /* UIInfoManage.cpp in Sources */,
+				EAA48DE31B7DBED50081DC45 /* MetroImageSprite.cpp in Sources */,
+				EA1F70641B84814900669B9D /* UIMediaSelectItemLayer.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				EA2C15A91B85C858001D9ADF /* CatchCrash.m in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				EAACAE541B7B45050047CA77 /* ShareHelper.cpp in Sources */,
+				EAB9E2961B7CF74F005370B7 /* MetroTextSprite.cpp in Sources */,
+				EAAA544C1B8174A200CDB595 /* MetroNullSprite.cpp in Sources */,
+				EAAA54691B81DB1100CDB595 /* UILogin4Layer.cpp in Sources */,
+				EAAA54591B81CBF500CDB595 /* UIMainLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				EAAA54511B81B18200CDB595 /* MetroVideoSprite.cpp in Sources */,
+				EA6805131B80C655008034EE /* MetroTouchManage.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				EA8AD1041AEF25C3001B8E39 /* CoinsTo.cpp in Sources */,
+				EA2C159B1B85BC5E001D9ADF /* UIMediaVideoLayer.cpp in Sources */,
+				EAAA54661B81DB0700CDB595 /* UILogin3Layer.cpp in Sources */,
+				EAB9E28E1B7CE898005370B7 /* BaseLayer.cpp in Sources */,
+				EAB9E2911B7CE921005370B7 /* BaseMetroSprite.cpp in Sources */,
+				EAB9E2841B7CDC3C005370B7 /* CocosHelper.cpp in Sources */,
 				EADA70991B496B5E002878AA /* CTestDrawLayer.cpp in Sources */,
+				EAAA545D1B81D90900CDB595 /* UILogin1Layer.cpp in Sources */,
+				EA1F705E1B84782900669B9D /* UIMediaLayer.cpp in Sources */,
+				EAB4D8571B7C898100C1B093 /* ShareHelper.mm in Sources */,
+				EAAA54601B81D91800CDB595 /* UIBaseLayer.cpp in Sources */,
+				EA17FFBA1B7DF13B0011179D /* MetroSpriteManage.cpp in Sources */,
+				EA1F70611B84811A00669B9D /* UIMediaSelectLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,14 +851,16 @@
 					"$(inherited)",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../Classes",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ios/test";
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
+				PROVISIONING_PROFILE = "ff1ef67c-f9a2-40d9-8992-ebc04e2cafd1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
@@ -588,14 +887,16 @@
 					"$(inherited)",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../Classes",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ios/test";
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
+				PROVISIONING_PROFILE = "ff1ef67c-f9a2-40d9-8992-ebc04e2cafd1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";

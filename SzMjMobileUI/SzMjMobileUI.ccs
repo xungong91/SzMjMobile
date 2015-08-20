@@ -1,0 +1,39 @@
+<Solution>
+  <PropertyGroup Name="SzMjMobileUI" Version="2.3.1.1" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="CCS_login1.csd" Type="Layer" />
+        <Folder Name="bg">
+          <Image Name="login_bg1.png" />
+          <Image Name="login_bg2.png" />
+          <Image Name="login_bg3.png" />
+          <Image Name="login_bg4.png" />
+        </Folder>
+        <Folder Name="ui">
+          <Image Name="buton_xiayibu.png" />
+          <Image Name="button_close.png" />
+          <Image Name="button_denglu.png" />
+          <Image Name="button_huoquyanzhengma.png" />
+          <Image Name="button_look0.png" />
+          <Image Name="button_look1.png" />
+          <Image Name="button_queding.png" />
+          <Image Name="buton_xiayibu1.png" />
+          <Image Name="button_denglu1.png" />
+          <Image Name="button_huoquyanzhengma1.png" />
+          <Image Name="button_queding1.png" />
+        </Folder>
+        <Project Name="CCS_login2.csd" Type="Layer" />
+        <Project Name="CCS_login3.csd" Type="Layer" />
+        <Project Name="CCS_login4.csd" Type="Layer" />
+        <Project Name="CCS_media.csd" Type="Layer" />
+        <Project Name="CCS_mediaSelect.csd" Type="Layer" />
+        <Project Name="CCS_main.csd" Type="Layer" />
+        <Image Name="CloseNormal.png" />
+        <Image Name="CloseSelected.png" />
+        <Image Name="logo_sinaweibo.png" />
+        <Image Name="logo_wechat.png" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
