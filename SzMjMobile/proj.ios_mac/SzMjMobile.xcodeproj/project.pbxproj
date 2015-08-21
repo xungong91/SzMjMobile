@@ -77,6 +77,10 @@
 		EA2C15AA1B85C858001D9ADF /* CrashHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2C15A61B85C858001D9ADF /* CrashHelper.mm */; };
 		EA44C31E1B83105200B94A5A /* UIInfoManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA44C31C1B83105200B94A5A /* UIInfoManage.cpp */; };
 		EA6805131B80C655008034EE /* MetroTouchManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA6805111B80C655008034EE /* MetroTouchManage.cpp */; };
+		EA89002C1B86BE440022C278 /* UIBaseTopLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */; };
+		EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */; };
+		EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */; };
+		EA8900391B86C44C0022C278 /* UIPublishMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900371B86C44C0022C278 /* UIPublishMainLayer.cpp */; };
 		EA8AD1041AEF25C3001B8E39 /* CoinsTo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8AD1021AEF25C3001B8E39 /* CoinsTo.cpp */; };
 		EAA48DE31B7DBED50081DC45 /* MetroImageSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */; };
 		EAA48DE71B7DC5420081DC45 /* Metro in Resources */ = {isa = PBXBuildFile; fileRef = EAA48DE61B7DC5420081DC45 /* Metro */; };
@@ -217,6 +221,14 @@
 		EA44C31D1B83105200B94A5A /* UIInfoManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInfoManage.h; sourceTree = "<group>"; };
 		EA6805111B80C655008034EE /* MetroTouchManage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroTouchManage.cpp; sourceTree = "<group>"; };
 		EA6805121B80C655008034EE /* MetroTouchManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroTouchManage.h; sourceTree = "<group>"; };
+		EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseTopLayer.cpp; sourceTree = "<group>"; };
+		EA89002B1B86BE440022C278 /* UIBaseTopLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseTopLayer.h; sourceTree = "<group>"; };
+		EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseCenterLayer.cpp; sourceTree = "<group>"; };
+		EA8900311B86C03A0022C278 /* UIBaseCenterLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseCenterLayer.h; sourceTree = "<group>"; };
+		EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIModelMainLayer.cpp; sourceTree = "<group>"; };
+		EA8900341B86C0850022C278 /* UIModelMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModelMainLayer.h; sourceTree = "<group>"; };
+		EA8900371B86C44C0022C278 /* UIPublishMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIPublishMainLayer.cpp; sourceTree = "<group>"; };
+		EA8900381B86C44C0022C278 /* UIPublishMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPublishMainLayer.h; sourceTree = "<group>"; };
 		EA8AD1021AEF25C3001B8E39 /* CoinsTo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinsTo.cpp; sourceTree = "<group>"; };
 		EA8AD1031AEF25C3001B8E39 /* CoinsTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinsTo.h; sourceTree = "<group>"; };
 		EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroImageSprite.cpp; sourceTree = "<group>"; };
@@ -519,17 +531,41 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		EA89002F1B86BFDD0022C278 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */,
+				EA8900341B86C0850022C278 /* UIModelMainLayer.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		EA8900361B86C4370022C278 /* publish */ = {
+			isa = PBXGroup;
+			children = (
+				EA8900371B86C44C0022C278 /* UIPublishMainLayer.cpp */,
+				EA8900381B86C44C0022C278 /* UIPublishMainLayer.h */,
+			);
+			path = publish;
+			sourceTree = "<group>";
+		};
 		EAAA54561B81C7FE00CDB595 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				EA8900361B86C4370022C278 /* publish */,
+				EA89002F1B86BFDD0022C278 /* model */,
 				EA1F705B1B84781600669B9D /* media */,
 				EAAA545A1B81D8F700CDB595 /* login */,
 				EAAA54571B81CBF500CDB595 /* UIMainLayer.cpp */,
 				EAAA54581B81CBF500CDB595 /* UIMainLayer.h */,
-				EAAA545E1B81D91800CDB595 /* UIBaseLayer.cpp */,
-				EAAA545F1B81D91800CDB595 /* UIBaseLayer.h */,
 				EA44C31C1B83105200B94A5A /* UIInfoManage.cpp */,
 				EA44C31D1B83105200B94A5A /* UIInfoManage.h */,
+				EAAA545E1B81D91800CDB595 /* UIBaseLayer.cpp */,
+				EAAA545F1B81D91800CDB595 /* UIBaseLayer.h */,
+				EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */,
+				EA89002B1B86BE440022C278 /* UIBaseTopLayer.h */,
+				EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */,
+				EA8900311B86C03A0022C278 /* UIBaseCenterLayer.h */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -778,10 +814,13 @@
 				EA1F70641B84814900669B9D /* UIMediaSelectItemLayer.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				EA2C15A91B85C858001D9ADF /* CatchCrash.m in Sources */,
+				EA89002C1B86BE440022C278 /* UIBaseTopLayer.cpp in Sources */,
+				EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				EAACAE541B7B45050047CA77 /* ShareHelper.cpp in Sources */,
 				EAB9E2961B7CF74F005370B7 /* MetroTextSprite.cpp in Sources */,
 				EAAA544C1B8174A200CDB595 /* MetroNullSprite.cpp in Sources */,
+				EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */,
 				EAAA54691B81DB1100CDB595 /* UILogin4Layer.cpp in Sources */,
 				EAAA54591B81CBF500CDB595 /* UIMainLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -792,6 +831,7 @@
 				EA2C159B1B85BC5E001D9ADF /* UIMediaVideoLayer.cpp in Sources */,
 				EAAA54661B81DB0700CDB595 /* UILogin3Layer.cpp in Sources */,
 				EAB9E28E1B7CE898005370B7 /* BaseLayer.cpp in Sources */,
+				EA8900391B86C44C0022C278 /* UIPublishMainLayer.cpp in Sources */,
 				EAB9E2911B7CE921005370B7 /* BaseMetroSprite.cpp in Sources */,
 				EAB9E2841B7CDC3C005370B7 /* CocosHelper.cpp in Sources */,
 				EADA70991B496B5E002878AA /* CTestDrawLayer.cpp in Sources */,

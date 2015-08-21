@@ -35,6 +35,7 @@
         <Image Name="logo_wechat.png" />
         <Project Name="CCS_model.csd" Type="Layer" />
         <Project Name="CCS_topWidget.csd" Type="Layer" />
+        <Project Name="CCS_publish.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

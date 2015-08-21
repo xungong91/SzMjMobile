@@ -30,7 +30,8 @@ bool UILogin3Layer::init()
      {
          if (type == Widget::TouchEventType::ENDED)
          {
-             MessageBox("登录成功", "tiitle");
+             UIMainLayer::gUIMainLayer->removeChild(this);
+             UIMainLayer::gUIMainLayer->intoMain();
          }
      });
     

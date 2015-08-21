@@ -28,5 +28,15 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="CCS_publish.csd" />
+          <FilePathData Path="CCS_model.csd" />
+          <FilePathData Path="CCS_main.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="CCS_main.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
