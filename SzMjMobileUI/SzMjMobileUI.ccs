@@ -33,6 +33,8 @@
         <Image Name="CloseSelected.png" />
         <Image Name="logo_sinaweibo.png" />
         <Image Name="logo_wechat.png" />
+        <Project Name="CCS_model.csd" Type="Layer" />
+        <Project Name="CCS_topWidget.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
