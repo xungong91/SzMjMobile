@@ -7,6 +7,8 @@
 //
 
 #include "UIModelMainLayer.h"
+#include "UIMainLayer.h"
+#include "UIModelListLayer.h"
 
 bool UIModelMainLayer::init()
 {
@@ -16,6 +18,15 @@ bool UIModelMainLayer::init()
     }
     
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_model.csb", this);
+    
+    CocosHelper::getWidgetByName(mLayout, "Image_1")->addTouchEventListener
+    ([](Ref *sender, Widget::TouchEventType type)
+     {
+         if (type == Widget::TouchEventType::ENDED)
+         {
+             UIMainLayer::gUIMainLayer->pushLayer(UIModelListLayer::create());
+         }
+     });
     
     return true;
 }

@@ -32,10 +32,13 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="CCS_publish.csd" />
-          <FilePathData Path="CCS_model.csd" />
           <FilePathData Path="CCS_main.csd" />
+          <FilePathData Path="CCS_model.csd" />
+          <FilePathData Path="CCS_model_list.csd" />
+          <FilePathData Path="CCS_model_info.csd" />
+          <FilePathData Path="CCS_topWidget.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="CCS_main.csd" />
+        <ActiveDocument Path="CCS_topWidget.csd" />
       </Value>
     </Item>
   </Properties>

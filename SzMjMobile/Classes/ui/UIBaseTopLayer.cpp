@@ -7,6 +7,7 @@
 //
 
 #include "UIBaseTopLayer.h"
+#include "UIMainLayer.h"
 
 UIBaseTopLayer::UIBaseTopLayer()
 {
@@ -26,7 +27,17 @@ bool UIBaseTopLayer::init()
     }
     
     mTopLayout = CSLoader::createNode("res/CCS_topWidget.csb");
-    this->addChild(mTopLayout);
+    mTopLayout->setPosition(Point(0, 1720));
+    this->addChild(mTopLayout, 1);
+    
+    CocosHelper::getWidgetByName(mTopLayout, "Text_exit")->addTouchEventListener
+    ([](Ref *sender, Widget::TouchEventType type)
+     {
+         if (type == Widget::TouchEventType::ENDED)
+         {
+             UIMainLayer::gUIMainLayer->popLayer();
+         }
+     });
     
     return true;
 }

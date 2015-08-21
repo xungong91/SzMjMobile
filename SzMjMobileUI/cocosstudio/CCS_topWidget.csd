@@ -9,7 +9,7 @@
           <AbstractNodeData Name="Panel_top" ActionTag="18842662" Tag="29" IconVisible="False" TouchEnable="True" ComboBoxIndex="2" ColorAngle="299.0000" ctype="PanelObjectData">
             <Size X="1080.0000" Y="200.0000" />
             <Children>
-              <AbstractNodeData Name="Text_exit" ActionTag="673622469" Tag="30" IconVisible="False" LeftMargin="80.0000" RightMargin="760.0000" TopMargin="55.0000" BottomMargin="55.0000" FontSize="80" LabelText="⬅️返回" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="Text_exit" ActionTag="673622469" Tag="30" IconVisible="False" LeftMargin="80.0000" RightMargin="760.0000" TopMargin="55.0000" BottomMargin="55.0000" TouchEnable="True" FontSize="80" LabelText="⬅️返回" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="240.0000" Y="90.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="200.0000" Y="100.0000" />

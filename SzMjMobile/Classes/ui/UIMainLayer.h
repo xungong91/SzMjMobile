@@ -15,6 +15,7 @@
 #include "ui/CocosGUI.h"
 #include "UIModelMainLayer.h"
 #include "UIPublishMainLayer.h"
+#include "UIBaseTopLayer.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -31,11 +32,21 @@ public:
     bool init();
 
     void intoMain();
+    
+    void pushLayer(Node *layer);
+    void popLayer();
 private:
+    //所有的layer
+    vector<Node*> mChildLayers;
+    Layer *mChildLayer;
+    //main的layer
+    Layer *mMainLayer;
     Node *mLayout;
+    //当前选择的layer
     Node *mCurrentLayer;
-    Node *mLastLayer;
+    
     Widget *Panel_tools;
+    
     UIModelMainLayer *mUIModelMainLayer;
     UIPublishMainLayer *mUIPublishMainLayer;
     vector<UIBaseCenterLayer*> mLayers;

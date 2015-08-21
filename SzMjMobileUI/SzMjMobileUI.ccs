@@ -36,6 +36,8 @@
         <Project Name="CCS_model.csd" Type="Layer" />
         <Project Name="CCS_topWidget.csd" Type="Layer" />
         <Project Name="CCS_publish.csd" Type="Layer" />
+        <Project Name="CCS_model_list.csd" Type="Layer" />
+        <Project Name="CCS_model_info.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

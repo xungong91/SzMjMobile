@@ -30,7 +30,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_1" ActionTag="-1091488174" Tag="32" IconVisible="False" LeftMargin="290.0000" RightMargin="290.0000" TopMargin="1270.0000" BottomMargin="150.0000" Scale9Width="116" Scale9Height="116" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_1" ActionTag="-1091488174" Tag="32" IconVisible="False" LeftMargin="290.0000" RightMargin="290.0000" TopMargin="1270.0000" BottomMargin="150.0000" TouchEnable="True" Scale9Width="116" Scale9Height="116" ctype="ImageViewObjectData">
             <Size X="500.0000" Y="500.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="540.0000" Y="400.0000" />

@@ -81,6 +81,8 @@
 		EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */; };
 		EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */; };
 		EA8900391B86C44C0022C278 /* UIPublishMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900371B86C44C0022C278 /* UIPublishMainLayer.cpp */; };
+		EA89003E1B86F9E80022C278 /* UIModelListLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89003C1B86F9E80022C278 /* UIModelListLayer.cpp */; };
+		EA8900411B86F9FA0022C278 /* UIModelInfoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89003F1B86F9FA0022C278 /* UIModelInfoLayer.cpp */; };
 		EA8AD1041AEF25C3001B8E39 /* CoinsTo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8AD1021AEF25C3001B8E39 /* CoinsTo.cpp */; };
 		EAA48DE31B7DBED50081DC45 /* MetroImageSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */; };
 		EAA48DE71B7DC5420081DC45 /* Metro in Resources */ = {isa = PBXBuildFile; fileRef = EAA48DE61B7DC5420081DC45 /* Metro */; };
@@ -229,6 +231,10 @@
 		EA8900341B86C0850022C278 /* UIModelMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModelMainLayer.h; sourceTree = "<group>"; };
 		EA8900371B86C44C0022C278 /* UIPublishMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIPublishMainLayer.cpp; sourceTree = "<group>"; };
 		EA8900381B86C44C0022C278 /* UIPublishMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPublishMainLayer.h; sourceTree = "<group>"; };
+		EA89003C1B86F9E80022C278 /* UIModelListLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIModelListLayer.cpp; sourceTree = "<group>"; };
+		EA89003D1B86F9E80022C278 /* UIModelListLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModelListLayer.h; sourceTree = "<group>"; };
+		EA89003F1B86F9FA0022C278 /* UIModelInfoLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIModelInfoLayer.cpp; sourceTree = "<group>"; };
+		EA8900401B86F9FA0022C278 /* UIModelInfoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModelInfoLayer.h; sourceTree = "<group>"; };
 		EA8AD1021AEF25C3001B8E39 /* CoinsTo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinsTo.cpp; sourceTree = "<group>"; };
 		EA8AD1031AEF25C3001B8E39 /* CoinsTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinsTo.h; sourceTree = "<group>"; };
 		EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroImageSprite.cpp; sourceTree = "<group>"; };
@@ -536,6 +542,10 @@
 			children = (
 				EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */,
 				EA8900341B86C0850022C278 /* UIModelMainLayer.h */,
+				EA89003C1B86F9E80022C278 /* UIModelListLayer.cpp */,
+				EA89003D1B86F9E80022C278 /* UIModelListLayer.h */,
+				EA89003F1B86F9FA0022C278 /* UIModelInfoLayer.cpp */,
+				EA8900401B86F9FA0022C278 /* UIModelInfoLayer.h */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -807,6 +817,7 @@
 				EAB9E2871B7CDD26005370B7 /* MetroMainLayer.cpp in Sources */,
 				EA2C15AA1B85C858001D9ADF /* CrashHelper.mm in Sources */,
 				EAAA54631B81DAFE00CDB595 /* UILogin2Layer.cpp in Sources */,
+				EA89003E1B86F9E80022C278 /* UIModelListLayer.cpp in Sources */,
 				EAB4D8501B7C404E00C1B093 /* JsonHelper.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				EA44C31E1B83105200B94A5A /* UIInfoManage.cpp in Sources */,
@@ -821,6 +832,7 @@
 				EAB9E2961B7CF74F005370B7 /* MetroTextSprite.cpp in Sources */,
 				EAAA544C1B8174A200CDB595 /* MetroNullSprite.cpp in Sources */,
 				EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */,
+				EA8900411B86F9FA0022C278 /* UIModelInfoLayer.cpp in Sources */,
 				EAAA54691B81DB1100CDB595 /* UILogin4Layer.cpp in Sources */,
 				EAAA54591B81CBF500CDB595 /* UIMainLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,

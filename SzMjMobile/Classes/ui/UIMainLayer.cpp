@@ -14,7 +14,6 @@ UIMainLayer *UIMainLayer::gUIMainLayer = nullptr;
 
 UIMainLayer::UIMainLayer()
 : mCurrentLayer(nullptr)
-, mLastLayer(nullptr)
 {
     gUIMainLayer = this;
 }
@@ -38,7 +37,15 @@ bool UIMainLayer::init()
 
 void UIMainLayer::intoMain()
 {
-    mLayout = CocosHelper::singleton()->getScaleLayout("CCS_main.csb", this, 2);
+    //字界面容器
+    mChildLayer = Layer::create();
+    this->addChild(mChildLayer);
+    
+    //字界面容器
+    mMainLayer = Layer::create();
+    pushLayer(mMainLayer);
+    
+    mLayout = CocosHelper::singleton()->getScaleLayout("CCS_main.csb", mMainLayer, 2);
     
     Panel_tools = CocosHelper::getWidgetByName(mLayout, "Panel_tools");
     
@@ -65,11 +72,11 @@ void UIMainLayer::intoMain()
      );
     
     mUIModelMainLayer = UIModelMainLayer::create();
-    this->addChild(mUIModelMainLayer);
+    mMainLayer->addChild(mUIModelMainLayer);
     mLayers.push_back(mUIModelMainLayer);
     
     mUIPublishMainLayer = UIPublishMainLayer::create();
-    this->addChild(mUIPublishMainLayer);
+    mMainLayer->addChild(mUIPublishMainLayer);
     mLayers.push_back(mUIPublishMainLayer);
     
     for (auto it : mLayers)
@@ -126,36 +133,65 @@ void UIMainLayer::changeAction(UIBaseCenterLayer *sender)
     sender->setZOrder(0);
     
     mCurrentLayer->setZOrder(1);
-    
-    Panel_tools->setPosition(Point(0, 0));
-    Panel_tools->runAction
+    mCurrentLayer->runAction
     (
      Sequence::create
      (
-      MoveTo::create(0.2, Point(0, 0)),
+      FadeOutDownTiles::create(1.0f, Size(12, 18)),
+      StopGrid::create(),
       CallFunc::create([this, sender]()
                        {
-                           mCurrentLayer->runAction
-                           (
-                            Sequence::create
-                            (
-                             FadeOutBLTiles::create(1.0f, Size(12, 18)),
-                             StopGrid::create(),
-                             CallFunc::create([this, sender]()
-                                              {
-                                                  mCurrentLayer->setVisible(false);
-                                                  mCurrentLayer = sender;
-                                              }),
-                             NULL));
-                           
+                           mCurrentLayer->setVisible(false);
+                           mCurrentLayer = sender;
                        }),
-      DelayTime::create(1.0f),
-      MoveTo::create(0.2, Point(0, 0)),
       NULL));
 
 }
 
+void UIMainLayer::pushLayer(Node *layer)
+{
+    if (mChildLayers.size() == 0)
+    {
+        mChildLayer->addChild(layer);
+        mChildLayers.push_back(layer);
+    }
+    else
+    {
+        //动画
+        Node *back = mChildLayers.back();
+        
+        mChildLayer->addChild(layer);
+        mChildLayers.push_back(layer);
+        
+        back->setPosition(Point(0, 0));
+        layer->setPosition(Point(1080, 0));
+        
+        back->runAction(Sequence::create(MoveTo::create(0.2, Point(-540, 0)), NULL));
+        layer->runAction(Sequence::create(MoveTo::create(0.2, Point(0, 0)), NULL));
+    }
+}
 
+void UIMainLayer::popLayer()
+{
+    if (mChildLayers.size() != 0)
+    {
+        Node *back = mChildLayers.back();
+        mChildLayers.pop_back();
+        
+        Node *secondBack = mChildLayers.back();
+        
+        secondBack->setPosition(Point(-540, 0));
+        back->setPosition(Point(0, 0));
+        
+        secondBack->runAction(Sequence::create(MoveTo::create(0.2, Point(0, 0)), NULL));
+        back->runAction(Sequence::create(MoveTo::create(0.2, Point(1080, 0)),
+                                         CallFunc::create([back, this]()
+                                                          {
+                                                              mChildLayer->removeChild(back);
+                                                          }),
+                                         NULL));
+    }
+}
 
 
 
