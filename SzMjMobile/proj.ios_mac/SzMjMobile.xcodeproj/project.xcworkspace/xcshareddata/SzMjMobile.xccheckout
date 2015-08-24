@@ -5,7 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>F8F3D7AF-6285-4B7A-8040-284ABFBB3D25</string>
+=======
+	<string>4CCD616F-6228-480D-8E59-28B40B8C5F6D</string>
+>>>>>>> b75dfa75606208af3697269fdf5a734ba75fc176
 	<key>IDESourceControlProjectName</key>
 	<string>SzMjMobile</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>

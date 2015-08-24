@@ -1,5 +1,5 @@
 <GameProjectFile>
-  <PropertyGroup Type="Layer" Name="CCS_model_info" ID="93eba330-e4bb-4a10-b299-f708b6f22398" Version="2.3.1.1" />
+  <PropertyGroup Type="Layer" Name="CCS_model_info" ID="93eba330-e4bb-4a10-b299-f708b6f22398" Version="2.3.1.2" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
