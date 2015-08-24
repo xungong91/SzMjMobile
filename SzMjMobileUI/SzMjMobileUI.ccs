@@ -1,5 +1,5 @@
 <Solution>
-  <PropertyGroup Name="SzMjMobileUI" Version="2.3.1.1" Type="CocosStudio" />
+  <PropertyGroup Name="SzMjMobileUI" Version="2.3.1.2" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">

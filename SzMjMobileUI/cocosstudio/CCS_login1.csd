@@ -1,5 +1,5 @@
 <GameProjectFile>
-  <PropertyGroup Type="Layer" Name="CCS_login1" ID="6a8cb8d2-349d-4f39-948a-9ffb748771bc" Version="2.3.1.1" />
+  <PropertyGroup Type="Layer" Name="CCS_login1" ID="6a8cb8d2-349d-4f39-948a-9ffb748771bc" Version="2.3.1.2" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

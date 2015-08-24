@@ -1,5 +1,5 @@
 <GameProjectFile>
-  <PropertyGroup Type="Layer" Name="CCS_mediaSelect" ID="45e3f194-5161-4d1c-859c-1b579f473a7d" Version="2.3.1.1" />
+  <PropertyGroup Type="Layer" Name="CCS_mediaSelect" ID="45e3f194-5161-4d1c-859c-1b579f473a7d" Version="2.3.1.2" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
