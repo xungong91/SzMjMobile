@@ -59,6 +59,7 @@
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		9D5F9DCB1B8AF97F00923A15 /* UITaskListLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9DC91B8AF97F00923A15 /* UITaskListLayer.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -196,6 +197,8 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		9D5F9DC91B8AF97F00923A15 /* UITaskListLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITaskListLayer.cpp; sourceTree = "<group>"; };
+		9D5F9DCA1B8AF97F00923A15 /* UITaskListLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITaskListLayer.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -546,6 +549,8 @@
 				EA89003D1B86F9E80022C278 /* UIModelListLayer.h */,
 				EA89003F1B86F9FA0022C278 /* UIModelInfoLayer.cpp */,
 				EA8900401B86F9FA0022C278 /* UIModelInfoLayer.h */,
+				9D5F9DC91B8AF97F00923A15 /* UITaskListLayer.cpp */,
+				9D5F9DCA1B8AF97F00923A15 /* UITaskListLayer.h */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -840,6 +845,7 @@
 				EA6805131B80C655008034EE /* MetroTouchManage.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				EA8AD1041AEF25C3001B8E39 /* CoinsTo.cpp in Sources */,
+				9D5F9DCB1B8AF97F00923A15 /* UITaskListLayer.cpp in Sources */,
 				EA2C159B1B85BC5E001D9ADF /* UIMediaVideoLayer.cpp in Sources */,
 				EAAA54661B81DB0700CDB595 /* UILogin3Layer.cpp in Sources */,
 				EAB9E28E1B7CE898005370B7 /* BaseLayer.cpp in Sources */,

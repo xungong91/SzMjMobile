@@ -9,21 +9,28 @@
 #include "UIModelListLayer.h"
 #include "UIModelInfoLayer.h"
 #include "UIMainLayer.h"
+#include "ui/CocosGUI.h"
+
+using namespace cocos2d::ui;
 
 bool UIModelListLayer::init()
 {
-    if (!UIBaseTopLayer::init())
+    if (!UIBaseCenterLayer::init())
     {
         return false;
     }
     
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_model_list.csb", this);
     
-    CocosHelper::getWidgetByName(mLayout, "Image_1_2")->addTouchEventListener
-    ([](Ref *sender, Widget::TouchEventType type)
+    ImageView *image0 = (ImageView*)CocosHelper::getWidgetByName(mLayout, "Image_0");
+    image0-> addTouchEventListener
+    ([image0](Ref *sender, Widget::TouchEventType type)
      {
+         if(type == Widget::TouchEventType::BEGAN)
+             image0->loadTexture("model/Model_0_1");
          if (type == Widget::TouchEventType::ENDED)
          {
+             image0->loadTexture("model/Model_0_1");
              UIMainLayer::gUIMainLayer->pushLayer(UIModelInfoLayer::create());
          }
      });

@@ -11,12 +11,10 @@
 
 UIBaseTopLayer::UIBaseTopLayer()
 {
-    
 }
 
 UIBaseTopLayer::~UIBaseTopLayer()
 {
-    
 }
 
 bool UIBaseTopLayer::init()

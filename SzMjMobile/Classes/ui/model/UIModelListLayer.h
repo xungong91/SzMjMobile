@@ -9,9 +9,9 @@
 #ifndef __SzMjMobile__UIModelListLayer__
 #define __SzMjMobile__UIModelListLayer__
 
-#include "UIBaseTopLayer.h"
+#include "UIBaseCenterLayer.h"
 
-class UIModelListLayer : public UIBaseTopLayer
+class UIModelListLayer : public UIBaseCenterLayer
 {
 public:
     CREATE_FUNC(UIModelListLayer);

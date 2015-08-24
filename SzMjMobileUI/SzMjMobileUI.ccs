@@ -38,6 +38,38 @@
         <Project Name="CCS_publish.csd" Type="Layer" />
         <Project Name="CCS_model_list.csd" Type="Layer" />
         <Project Name="CCS_model_info.csd" Type="Layer" />
+        <Folder Name="hall">
+          <Image Name="Grab_0.png" />
+          <Image Name="Grab_1.png" />
+          <Image Name="Hall_PanelTool_Bg.png" />
+          <Image Name="Model_0.png" />
+          <Image Name="Model_1.png" />
+          <Image Name="Profit_0.png" />
+          <Image Name="Profit_1.png" />
+          <Image Name="Publish_0.png" />
+          <Image Name="Publish_1.png" />
+          <File Name="Thumbs.db" />
+          <Image Name="Update_0.png" />
+          <Image Name="Update_1.png" />
+        </Folder>
+        <Folder Name="model">
+          <Image Name="Add_0.png" />
+          <Image Name="Add_1.png" />
+          <Image Name="Bg.png" />
+          <Image Name="ModelList_0.png" />
+          <Image Name="ModelList_1.png" />
+          <Image Name="Model_0_0.png" />
+          <Image Name="Model_0_1.png" />
+          <Image Name="Model_1_0.png" />
+          <Image Name="Model_2_0.png" />
+          <Image Name="Model_3_0.png" />
+          <Image Name="Model_4_0.png" />
+          <Image Name="Search_0.png" />
+          <Image Name="Search_1.png" />
+          <Image Name="TaskList_0.png" />
+          <Image Name="TaskList_1.png" />
+          <Image Name="TipPoint.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>
