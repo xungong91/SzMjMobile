@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F8F3D7AF-6285-4B7A-8040-284ABFBB3D25</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SzMjMobile</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4FD52B2D6E7F8E7FE35CBAFEABF5EF611B28A3A1</key>
+		<string>https://github.com/xungong91/SzMjMobile.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SzMjMobile/proj.ios_mac/SzMjMobile.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4FD52B2D6E7F8E7FE35CBAFEABF5EF611B28A3A1</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xungong91/SzMjMobile.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4FD52B2D6E7F8E7FE35CBAFEABF5EF611B28A3A1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4FD52B2D6E7F8E7FE35CBAFEABF5EF611B28A3A1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SzMjMobile</string>
+		</dict>
+	</array>
+</dict>
+</plist>
