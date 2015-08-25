@@ -27,10 +27,14 @@ bool UIModelListLayer::init()
     ([image0](Ref *sender, Widget::TouchEventType type)
      {
          if(type == Widget::TouchEventType::BEGAN)
-             image0->loadTexture("model/Model_0_1");
+             image0->loadTexture("model/Model_0_1.png");
+         
+         if(type == Widget::TouchEventType::CANCELED)
+             image0->loadTexture("model/Model_0_0.png");
+         
          if (type == Widget::TouchEventType::ENDED)
          {
-             image0->loadTexture("model/Model_0_1");
+             image0->loadTexture("model/Model_0_0.png");
              UIMainLayer::gUIMainLayer->pushLayer(UIModelInfoLayer::create());
          }
      });

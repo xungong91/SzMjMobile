@@ -6,6 +6,9 @@
 #define _UITaskListLayer_h_
 
 #include "UIBaseCenterLayer.h"
+#include "ui/CocosGUI.h"
+
+using namespace cocos2d::ui;
 
 class UITaskListLayer : public UIBaseCenterLayer
 {

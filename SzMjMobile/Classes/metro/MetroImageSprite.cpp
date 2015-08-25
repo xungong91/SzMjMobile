@@ -53,7 +53,7 @@ void MetroImageSprite::imageRun()
     (
      Sequence::create
      (
-      DelayTime::create(CCRANDOM_0_1() * 3 + 1),
+      DelayTime::create(CCRANDOM_0_1() * 5 + 1),
       MoveTo::create(0.3f, Point(0, 200)),
       CallFunc::create([this, nextfile]()
                        {

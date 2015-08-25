@@ -38,7 +38,7 @@ inline Size getSizeForStyle(MetroSpriteStyle style)
             rSize = Size(90, 90);
             break;
         case MetroSpriteStyle::widget2x2:
-            rSize = Size(190, 190);
+            rSize = Size(341, 340);
             break;
         case MetroSpriteStyle::widget4x2:
             rSize = Size(390, 190);

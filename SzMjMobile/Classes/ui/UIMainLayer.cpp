@@ -26,9 +26,7 @@ UIMainLayer::~UIMainLayer()
 bool UIMainLayer::init()
 {
     if (!Layer::init())
-    {
         return false;
-    }
     
     this->addChild(UILogin1Layer::create());
     
@@ -37,11 +35,11 @@ bool UIMainLayer::init()
 
 void UIMainLayer::intoMain()
 {
-    //字界面容器
+    //子界面容器
     mChildLayer = Layer::create();
     this->addChild(mChildLayer);
     
-    //字界面容器
+    //子界面容器
     mMainLayer = Layer::create();
     pushLayer(mMainLayer);
     
@@ -49,6 +47,25 @@ void UIMainLayer::intoMain()
     
     Panel_tools = CocosHelper::getWidgetByName(mLayout, "Panel_tools");
     
+    mBtnModel = (Button*)CocosHelper::getNodeByName(mLayout, "Button_mote");
+    mBtnModel->addTouchEventListener(CC_CALLBACK_2(UIMainLayer::CallbackMenu, this));
+    mBtnModel->loadTextures("hall/Model_1.png", "hall/Model_1.png");
+    mBtnModel->setPressedActionEnabled(false);
+    
+    mBtnPublish = (Button*)CocosHelper::getNodeByName(mLayout, "Button_fabu");
+    mBtnPublish->addTouchEventListener(CC_CALLBACK_2(UIMainLayer::CallbackMenu, this));
+    
+    mBtnProfit = (Button*)CocosHelper::getNodeByName(mLayout, "Button_qian");
+    mBtnProfit->addTouchEventListener(CC_CALLBACK_2(UIMainLayer::CallbackMenu, this));
+    
+    mBtnGrab = (Button*)CocosHelper::getNodeByName(mLayout, "Button_qiangdan");
+    mBtnGrab->addTouchEventListener(CC_CALLBACK_2(UIMainLayer::CallbackMenu, this));
+    
+    mBtnUpdate = (Button*)CocosHelper::getNodeByName(mLayout, "Button_gengxin");
+    mBtnUpdate->addTouchEventListener(CC_CALLBACK_2(UIMainLayer::CallbackMenu, this));
+    
+    
+    /*
     CocosHelper::getWidgetByName(mLayout, "Button_mote")->addTouchEventListener
     (
      [this](Ref* sender, Widget::TouchEventType type)
@@ -59,7 +76,9 @@ void UIMainLayer::intoMain()
          }
      }
     );
+    */
     
+    /*
     CocosHelper::getWidgetByName(mLayout, "Button_fabu")->addTouchEventListener
     (
      [this](Ref* sender, Widget::TouchEventType type)
@@ -70,6 +89,7 @@ void UIMainLayer::intoMain()
          }
      }
      );
+     */
     
     mUIModelMainLayer = UIModelMainLayer::create();
     mMainLayer->addChild(mUIModelMainLayer);
@@ -107,10 +127,6 @@ void UIMainLayer::intoModelLayer()
 
 void UIMainLayer::intoPublishLayer()
 {
-//    for (auto it : mLayers)
-//    {
-//        it->setVisible(false);
-//    }
     if (mCurrentLayer == mUIPublishMainLayer)
     {
         return;
@@ -193,6 +209,55 @@ void UIMainLayer::popLayer()
     }
 }
 
+//菜单按钮事件
+void UIMainLayer::CallbackMenu(cocos2d::Ref *sender, Widget::TouchEventType type)
+{
+    if(type == Widget::TouchEventType::ENDED)
+    {
+        mBtnModel->loadTextures("hall/Model_0.png", "hall/Model_0.png");
+        mBtnModel->setPressedActionEnabled(true);
+        
+        mBtnPublish->loadTextures("hall/Publish_0.png", "hall/Publish_0.png");
+        mBtnPublish->setPressedActionEnabled(true);
+        
+        mBtnProfit->loadTextures("hall/Profit_0.png", "hall/Profit_0.png");
+        mBtnProfit->setPressedActionEnabled(true);
+        
+        mBtnGrab->loadTextures("hall/Grab_0.png", "hall/Grab_0.png");
+        mBtnGrab->setPressedActionEnabled(true);
+        
+        mBtnUpdate->loadTextures("hall/Update_0.png", "hall/Update_0.png");
+        mBtnUpdate->setPressedActionEnabled(true);
+        
+        if(sender == mBtnModel)
+        {
+            mBtnModel->loadTextures("hall/Model_1.png", "hall/Model_1.png");
+            mBtnModel->setPressedActionEnabled(false);
+            intoModelLayer();
+        }
+        else if(sender == mBtnPublish)
+        {
+            mBtnPublish->loadTextures("hall/Publish_1.png", "hall/Publish_1.png");
+            mBtnPublish->setPressedActionEnabled(false);
+            intoPublishLayer();
+        }
+        else if(sender == mBtnProfit)
+        {
+            mBtnProfit->loadTextures("hall/Profit_1.png", "hall/Profit_1.png");
+            mBtnProfit->setPressedActionEnabled(false);
+        }
+        else if (sender == mBtnGrab)
+        {
+            mBtnGrab->loadTextures("hall/Grab_1.png", "hall/Grab_1.png");
+            mBtnGrab->setPressedActionEnabled(false);
+        }
+        else if (sender == mBtnUpdate)
+        {
+            mBtnUpdate->loadTextures("hall/Update_1.png", "hall/Update_1.png");
+            mBtnUpdate->setPressedActionEnabled(false);
+        }
+    }
+}
 
 
 

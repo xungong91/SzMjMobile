@@ -6,17 +6,21 @@
       <ObjectData Name="Layer" Tag="28" ctype="GameLayerObjectData">
         <Size X="1080.0000" Y="200.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_top" ActionTag="18842662" Tag="29" IconVisible="False" TouchEnable="True" ComboBoxIndex="2" ColorAngle="299.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_top" ActionTag="18842662" Tag="29" IconVisible="False" TouchEnable="True" ColorAngle="299.0000" ctype="PanelObjectData">
             <Size X="1080.0000" Y="200.0000" />
             <Children>
-              <AbstractNodeData Name="Text_exit" ActionTag="673622469" Tag="30" IconVisible="False" LeftMargin="80.0000" RightMargin="760.0000" TopMargin="55.0000" BottomMargin="55.0000" TouchEnable="True" FontSize="80" LabelText="⬅️返回" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="240.0000" Y="90.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="200.0000" Y="100.0000" />
+              <AbstractNodeData Name="BtnReturn" ActionTag="-1079542073" Tag="31" IconVisible="False" LeftMargin="50.0000" RightMargin="824.0000" TopMargin="64.0000" BottomMargin="40.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="176" Scale9Height="74" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="206.0000" Y="96.0000" />
+                <AnchorPoint />
+                <Position X="50.0000" Y="40.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1852" Y="0.5000" />
-                <PreSize X="0.0000" Y="0.0000" />
+                <PrePosition X="0.0463" Y="0.2000" />
+                <PreSize X="0.1907" Y="0.4800" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="addModel/Return_1.png" Plist="" />
+                <NormalFileData Type="Normal" Path="addModel/Return_0.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

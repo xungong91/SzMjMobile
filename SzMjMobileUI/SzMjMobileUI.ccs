@@ -70,6 +70,98 @@
           <Image Name="TaskList_1.png" />
           <Image Name="TipPoint.png" />
         </Folder>
+        <Folder Name="taskList">
+          <Image Name="TaskListTitle.png" />
+          <Image Name="Task_0_0.png" />
+          <Image Name="Task_0_1.png" />
+          <Image Name="Task_0_2.png" />
+          <Image Name="Task_10_0.png" />
+          <Image Name="Task_10_1.png" />
+          <Image Name="Task_10_2.png" />
+          <Image Name="Task_11_0.png" />
+          <Image Name="Task_11_1.png" />
+          <Image Name="Task_11_2.png" />
+          <Image Name="Task_1_0.png" />
+          <Image Name="Task_1_1.png" />
+          <Image Name="Task_1_2.png" />
+          <Image Name="Task_2_0.png" />
+          <Image Name="Task_2_1.png" />
+          <Image Name="Task_2_2.png" />
+          <Image Name="Task_3_0.png" />
+          <Image Name="Task_3_1.png" />
+          <Image Name="Task_3_2.png" />
+          <Image Name="Task_4_0.png" />
+          <Image Name="Task_4_1.png" />
+          <Image Name="Task_4_2.png" />
+          <Image Name="Task_5_0.png" />
+          <Image Name="Task_5_1.png" />
+          <Image Name="Task_5_2.png" />
+          <Image Name="Task_6_0.png" />
+          <Image Name="Task_6_1.png" />
+          <Image Name="Task_6_2.png" />
+          <Image Name="Task_7_0.png" />
+          <Image Name="Task_7_1.png" />
+          <Image Name="Task_7_2.png" />
+          <Image Name="Task_8_0.png" />
+          <Image Name="Task_8_1.png" />
+          <Image Name="Task_8_2.png" />
+          <Image Name="Task_9_0.png" />
+          <Image Name="Task_9_1.png" />
+          <Image Name="Task_9_2.png" />
+          <Image Name="Task_12_0.png" />
+          <Image Name="Task_12_1.png" />
+          <Image Name="Task_12_2.png" />
+        </Folder>
+        <Project Name="CCS_task_list.csd" Type="Layer" />
+        <Folder Name="taskInfo">
+          <Image Name="Talk_0.png" />
+          <Image Name="Talk_1.png" />
+          <Image Name="TaskInfo_Boy.png" />
+          <Image Name="TaskInfo_DingDan.png" />
+          <Image Name="TaskInfo_Girl.png" />
+          <Image Name="TaskInfo_JuHui.png" />
+          <Image Name="TaskInfo_Progress_0.png" />
+          <Image Name="TaskInfo_Progress_1.png" />
+          <Image Name="TaskInfo_Progress_2.png" />
+          <File Name="Thumbs.db" />
+        </Folder>
+        <Folder Name="addModel">
+          <Image Name="AddModel_AddPicture_0.png" />
+          <Image Name="AddModel_AddPicture_1.png" />
+          <Image Name="AddModel_AddVideo_0.png" />
+          <Image Name="AddModel_Add_0.png" />
+          <Image Name="AddModel_Add_1.png" />
+          <Image Name="AddModel_AvatarBg.png" />
+          <Image Name="AddModel_GaoGui_0.png" />
+          <Image Name="AddModel_GaoGui_1.png" />
+          <Image Name="AddModel_Image_0.png" />
+          <Image Name="AddModel_Image_1.png" />
+          <Image Name="AddModel_Input_Bg.png" />
+          <Image Name="AddModel_No_0.png" />
+          <Image Name="AddModel_No_1.png" />
+          <Image Name="AddModel_Ok_0.png" />
+          <Image Name="AddModel_Ok_1.png" />
+          <Image Name="AddModel_QiaoLi_0.png" />
+          <Image Name="AddModel_QiaoLi_1.png" />
+          <Image Name="AddModel_QingChun_0.png" />
+          <Image Name="AddModel_QingChun_1.png" />
+          <Image Name="AddModel_WenYiFan_0.png" />
+          <Image Name="AddModel_WenYiFan_1.png" />
+          <Image Name="AddModel_YouYa_0.png" />
+          <Image Name="AddModel_YouYa_1.png" />
+          <Image Name="Return_0.png" />
+          <Image Name="Return_1.png" />
+          <Image Name="ShangWuSiRen.png" />
+          <Image Name="ShangWu_0.png" />
+          <Image Name="ShangWu_1.png" />
+          <Image Name="SiRen_0.png" />
+          <Image Name="SiRen_1.png" />
+          <Image Name="Task.png" />
+          <File Name="Thumbs.db" />
+          <Image Name="TiJiao_0.png" />
+          <Image Name="TiJiao_1.png" />
+        </Folder>
+        <Project Name="CCS_task_info.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

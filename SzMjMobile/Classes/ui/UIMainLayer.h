@@ -26,15 +26,24 @@ class UIMainLayer : public Layer
 public:
     static UIMainLayer *gUIMainLayer;
     
-    UIMainLayer();
-    ~UIMainLayer();
     CREATE_FUNC(UIMainLayer);
-    bool init();
+    UIMainLayer();
+    virtual ~UIMainLayer();
+    virtual bool init();
 
+public:
     void intoMain();
     
     void pushLayer(Node *layer);
     void popLayer();
+    
+private:
+    void changeAction(UIBaseCenterLayer *sender);
+    void intoModelLayer();
+    void intoPublishLayer();
+    
+    void CallbackMenu(Ref *sender, Widget::TouchEventType type);
+    
 private:
     //所有的layer
     vector<Node*> mChildLayers;
@@ -46,14 +55,11 @@ private:
     Node *mCurrentLayer;
     
     Widget *Panel_tools;
+    Button *mBtnModel, *mBtnPublish, *mBtnProfit, *mBtnGrab, *mBtnUpdate;
     
     UIModelMainLayer *mUIModelMainLayer;
     UIPublishMainLayer *mUIPublishMainLayer;
     vector<UIBaseCenterLayer*> mLayers;
-    
-    void changeAction(UIBaseCenterLayer *sender);
-    void intoModelLayer();
-    void intoPublishLayer();
 };
 
 #endif /* defined(__SzMjMobile__UIMainLayer__) */

@@ -12,6 +12,7 @@
 #include "cocos2d.h"
 #include "BaseMetroSprite.h"
 #include "MetroSpriteManage.h"
+#include "TaskMetroChildManager.h"
 
 USING_NS_CC;
 
@@ -21,6 +22,7 @@ public:
     MetroTouchManage();
     ~MetroTouchManage();
     void setInfo(Node *mainNode, EventDispatcher *eventDispatcher, Node *moveLayer, MetroSpriteManage *metroSpriteManage);
+    void setInfo(Node *mainNode, EventDispatcher *eventDispatcher, Node *moveLayer, TaskMetroChildManager *metroSpriteManage);
     
     void setTouchMove();
     void setTouchChange();
@@ -30,6 +32,7 @@ private:
     Node *mMainNode;
     EventDispatcher *mEventDispatcher;
     MetroSpriteManage *mMetroSpriteManage;
+    TaskMetroChildManager *mMetroChildManager;
     
     //滑动
     EventListenerTouchOneByOne *mEventListenerMove;

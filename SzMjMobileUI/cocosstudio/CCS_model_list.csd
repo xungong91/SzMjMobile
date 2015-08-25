@@ -31,56 +31,56 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ModelList" ActionTag="-1247766585" Tag="13" IconVisible="False" TopMargin="367.0000" BottomMargin="165.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" ScrollDirectionType="0" ItemMargin="2" DirectionType="Vertical" ctype="ListViewObjectData">
+          <AbstractNodeData Name="ModelList" ActionTag="-1247766585" Tag="13" IconVisible="False" TopMargin="367.0000" BottomMargin="165.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" ItemMargin="2" DirectionType="Vertical" ctype="ListViewObjectData">
             <Size X="1080.0000" Y="1388.0000" />
             <Children>
-              <AbstractNodeData Name="Image_0" ActionTag="161871745" Tag="14" IconVisible="False" BottomMargin="2100.0000" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_0" ActionTag="161871745" Tag="14" IconVisible="False" BottomMargin="1088.0000" TouchEnable="True" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
                 <Size X="1080.0000" Y="300.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="1358.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.9128" />
+                <PrePosition X="0.5000" Y="0.8919" />
                 <PreSize X="1.0000" Y="0.1250" />
                 <FileData Type="Normal" Path="model/Model_0_0.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_1" ActionTag="-442795314" ZOrder="1" Tag="15" IconVisible="False" TopMargin="300.0000" BottomMargin="1800.0000" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_1" ActionTag="-442795314" ZOrder="1" Tag="15" IconVisible="False" TopMargin="302.0000" BottomMargin="786.0000" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
                 <Size X="1080.0000" Y="300.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="1056.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.7384" />
+                <PrePosition X="0.5000" Y="0.6744" />
                 <PreSize X="1.0000" Y="0.1250" />
                 <FileData Type="Normal" Path="model/Model_1_0.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_2" ActionTag="1102725526" ZOrder="2" Tag="16" IconVisible="False" TopMargin="600.0000" BottomMargin="1500.0000" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_2" ActionTag="1102725526" ZOrder="2" Tag="16" IconVisible="False" TopMargin="604.0000" BottomMargin="484.0000" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
                 <Size X="1080.0000" Y="300.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="754.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.5640" />
+                <PrePosition X="0.5000" Y="0.4568" />
                 <PreSize X="1.0000" Y="0.1250" />
                 <FileData Type="Normal" Path="model/Model_2_0.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_3" ActionTag="-2059491014" ZOrder="3" Tag="17" IconVisible="False" TopMargin="900.0000" BottomMargin="1200.0000" TouchEnable="True" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_3" ActionTag="-2059491014" ZOrder="3" Tag="17" IconVisible="False" TopMargin="906.0000" BottomMargin="182.0000" TouchEnable="True" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
                 <Size X="1080.0000" Y="300.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="452.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.3895" />
+                <PrePosition X="0.5000" Y="0.2392" />
                 <PreSize X="1.0000" Y="0.1250" />
                 <FileData Type="Normal" Path="model/Model_3_0.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_4" ActionTag="-715256750" ZOrder="4" Tag="21" IconVisible="False" TopMargin="1200.0000" BottomMargin="53.0000" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_4" ActionTag="-715256750" ZOrder="4" Tag="21" IconVisible="False" TopMargin="1208.0000" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
                 <Size X="1080.0000" Y="300.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="150.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.1307" />
+                <PrePosition X="0.5000" Y="0.0995" />
                 <PreSize X="1.0000" Y="0.1932" />
                 <FileData Type="Normal" Path="model/Model_4_0.png" Plist="" />
               </AbstractNodeData>

@@ -14,12 +14,10 @@ MetroTouchManage::MetroTouchManage()
 , mEventListenerMove(nullptr)
 , mEventListenerChange(nullptr)
 {
-    
 }
 
 MetroTouchManage::~MetroTouchManage()
 {
-    
 }
 
 void MetroTouchManage::setInfo(Node *mainNode, EventDispatcher *eventDispatcher, Node *moveLayer, MetroSpriteManage *metroSpriteManage)
@@ -119,6 +117,105 @@ void MetroTouchManage::setInfo(Node *mainNode, EventDispatcher *eventDispatcher,
     };
 }
 
+void MetroTouchManage::setInfo(Node *mainNode, EventDispatcher *eventDispatcher, Node *moveLayer, TaskMetroChildManager *metroSpriteManage)
+{
+    mMainNode = mainNode;
+    mEventDispatcher = eventDispatcher;
+    mMoveLayer = moveLayer;
+    mMetroChildManager = metroSpriteManage;
+    
+    //移动
+    static Point gTouchStartPoint = Point::ZERO;
+    static Point gMoveLayerStartPoint = mMoveLayer->getPosition();
+    
+    mEventListenerMove = EventListenerTouchOneByOne::create();
+    mEventListenerMove->retain();
+    mEventListenerMove->onTouchBegan = [this](Touch* touch, Event  *event)
+    {
+        gTouchStartPoint = touch->getLocation();
+        gMoveLayerStartPoint = mMoveLayer->getPosition();
+        
+        onSelectBegan(gTouchStartPoint);
+        return true;
+    };
+    
+    mEventListenerMove->onTouchMoved = [this](Touch* touch, Event  *event)
+    {
+        Point local = touch->getLocation();
+        //float offsetx = local.x - gTouchStartPoint.x;
+        //mMoveLayer->setPosition(gMoveLayerStartPoint + Point(offsetx, 0));
+        float offsety = local.y - gTouchStartPoint.y;
+        mMoveLayer->setPosition(gMoveLayerStartPoint + Point(0, offsety));
+        
+        onSelectBegan(local);
+    };
+    
+    mEventListenerMove->onTouchEnded = [this](Touch* touch, Event  *event)
+    {
+        onTouchEnd();
+        onSelectEnd(touch->getLocation());
+    };
+    
+    mEventListenerMove->onTouchCancelled = [this](Touch* touch, Event  *event)
+    {
+        onTouchEnd();
+        onSelectEnd(touch->getLocation());
+    };
+    
+    //拖动
+    static Point gChangeSpriteStartPoint = Point::ZERO;
+    static Point gChangeStartPoint = Point::ZERO;
+    static BaseMetroSprite *gChangeSprite = nullptr;
+    
+    mEventListenerChange = EventListenerTouchOneByOne::create();
+    mEventListenerChange->retain();
+    mEventListenerChange->onTouchBegan = [this](Touch* touch, Event  *event)
+    {
+        gChangeSprite = nullptr;
+        gChangeStartPoint = touch->getLocation();
+        if (getSpriteForPoint(gChangeStartPoint, gChangeSprite))
+        {
+            gChangeSpriteStartPoint = gChangeSprite->getPosition();
+            gChangeSprite->setZOrder(1);
+            
+            mMetroChildManager->setChangeUpdataStart(getPointForMove(touch->getLocation()), gChangeSprite);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    };
+    
+    mEventListenerChange->onTouchMoved = [this](Touch* touch, Event  *event)
+    {
+        Point local = touch->getLocation();
+        gChangeSprite->setPosition(gChangeSpriteStartPoint + local - gChangeStartPoint);
+        
+        Point realP = getPointForMove(local);
+        mMetroChildManager->setChangeUpdata(realP, gChangeSprite);
+    };
+    
+    mEventListenerChange->onTouchEnded = [this](Touch* touch, Event  *event)
+    {
+        Point realP = getPointForMove(touch->getLocation());
+        mMetroChildManager->resetUpdata();
+        gChangeSprite->setZOrder(0);
+        
+        mMetroChildManager->setChangeUpdataEnd(realP, gChangeSprite);
+    };
+    
+    mEventListenerChange->onTouchCancelled = [this](Touch* touch, Event  *event)
+    {
+        Point realP = getPointForMove(touch->getLocation());
+        mMetroChildManager->resetUpdata();
+        gChangeSprite->setZOrder(0);
+        
+        mMetroChildManager->setChangeUpdataEnd(realP, gChangeSprite);
+    };
+}
+
+
 void MetroTouchManage::setTouchMove()
 {
     mEventDispatcher->removeEventListener(mEventListenerMove);
@@ -200,6 +297,11 @@ void MetroTouchManage::onTouchEnd()
     else if (getSizeWin().width - p.x > size.width)
     {
         mMoveLayer->runAction(Sequence::create(MoveTo::create(time, Point(getSizeWin().width - size.width, 0)), NULL));
+    }
+    
+    if(p.y > 1040)
+    {
+        mMoveLayer->runAction(Sequence::create(MoveTo::create(time, Point(20, 1040)), NULL));
     }
 }
 

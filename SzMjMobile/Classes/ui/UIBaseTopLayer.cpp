@@ -28,7 +28,7 @@ bool UIBaseTopLayer::init()
     mTopLayout->setPosition(Point(0, 1720));
     this->addChild(mTopLayout, 1);
     
-    CocosHelper::getWidgetByName(mTopLayout, "Text_exit")->addTouchEventListener
+    CocosHelper::getWidgetByName(mTopLayout, "BtnReturn")->addTouchEventListener
     ([](Ref *sender, Widget::TouchEventType type)
      {
          if (type == Widget::TouchEventType::ENDED)
