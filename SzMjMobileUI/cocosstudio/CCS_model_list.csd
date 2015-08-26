@@ -31,7 +31,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ModelList" ActionTag="-1247766585" Tag="13" IconVisible="False" TopMargin="367.0000" BottomMargin="165.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" ItemMargin="2" DirectionType="Vertical" ctype="ListViewObjectData">
+          <AbstractNodeData Name="ModelList" ActionTag="-1247766585" Tag="13" IconVisible="False" TopMargin="367.0000" BottomMargin="165.0000" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" ItemMargin="2" DirectionType="Vertical" ctype="ListViewObjectData">
             <Size X="1080.0000" Y="1388.0000" />
             <Children>
               <AbstractNodeData Name="Image_0" ActionTag="161871745" Tag="14" IconVisible="False" BottomMargin="1088.0000" TouchEnable="True" Scale9Width="1080" Scale9Height="300" ctype="ImageViewObjectData">
@@ -91,7 +91,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition Y="0.0859" />
             <PreSize X="1.0000" Y="0.7229" />
-            <SingleColor A="255" R="150" G="150" B="255" />
+            <SingleColor A="255" R="191" G="191" B="191" />
             <FirstColor A="255" R="150" G="150" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />

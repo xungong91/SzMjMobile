@@ -4,6 +4,8 @@
 
 #include "TaskMetroChild.h"
 #include "XHelper.h"
+#include "UIMainLayer.h"
+#include "UITaskInfoLayer.h"
 
 const string PrefixName = "Task_";
 
@@ -72,6 +74,8 @@ void TaskMetroChild::imageRun()
 void TaskMetroChild::onSelect()
 {
     mImage->setOpacity(150);
+    
+    UIMainLayer::gUIMainLayer->pushLayer(UITaskInfoLayer::create());
 }
 
 void TaskMetroChild::onSelectLeave()

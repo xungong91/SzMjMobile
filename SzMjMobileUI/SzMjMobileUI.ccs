@@ -160,8 +160,18 @@
           <File Name="Thumbs.db" />
           <Image Name="TiJiao_0.png" />
           <Image Name="TiJiao_1.png" />
+          <Image Name="InputBg_1.png" />
+          <Image Name="InputBg_0.png" />
         </Folder>
         <Project Name="CCS_task_info.csd" Type="Layer" />
+        <Project Name="CCS_model_add.csd" Type="Layer" />
+        <Folder Name="modelInfo">
+          <Image Name="ModelInfo_0.png" />
+          <Image Name="ModelInfo_1.png" />
+          <Image Name="ModelInfo_2.png" />
+          <Image Name="ModelInfo_3.png" />
+          <File Name="Thumbs.db" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

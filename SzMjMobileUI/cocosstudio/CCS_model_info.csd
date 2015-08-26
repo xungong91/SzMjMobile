@@ -6,29 +6,69 @@
       <ObjectData Name="Layer" Tag="22" ctype="GameLayerObjectData">
         <Size X="1080.0000" Y="1920.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_canter" ActionTag="-1508328386" Tag="23" IconVisible="False" TopMargin="200.0000" TouchEnable="True" BackColorAlpha="245" ComboBoxIndex="2" ColorAngle="90.0000" ctype="PanelObjectData">
-            <Size X="1080.0000" Y="1720.0000" />
+          <AbstractNodeData Name="ModelInfoBg" ActionTag="-1320858192" Tag="72" IconVisible="False" Scale9Width="1080" Scale9Height="1920" ctype="ImageViewObjectData">
+            <Size X="1080.0000" Y="1920.0000" />
+            <AnchorPoint />
+            <Position />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition />
+            <PreSize X="1.0000" Y="1.0000" />
+            <FileData Type="Normal" Path="model/Bg.png" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="ModelName" ActionTag="-2108572959" Tag="73" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="396.0000" RightMargin="396.0000" TopMargin="113.0000" BottomMargin="1753.0000" FontSize="48" LabelText="任性的小伊伊" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="288.0000" Y="54.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="540.0000" Y="1780.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5000" Y="0.9271" />
+            <PreSize X="0.2667" Y="0.0281" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="ListModelInfo" ActionTag="-1787763683" Tag="74" IconVisible="False" TopMargin="220.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" ItemMargin="10" DirectionType="Vertical" ctype="ListViewObjectData">
+            <Size X="1080.0000" Y="1700.0000" />
             <Children>
-              <AbstractNodeData Name="Image_1" ActionTag="1848892396" Tag="25" IconVisible="False" LeftMargin="50.0000" RightMargin="730.0000" TopMargin="610.0000" BottomMargin="810.0000" Scale9Width="116" Scale9Height="116" ctype="ImageViewObjectData">
-                <Size X="300.0000" Y="300.0000" />
+              <AbstractNodeData Name="Image_2" ActionTag="-1729527272" Tag="75" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="-582.0000" BottomMargin="1072.0000" Scale9Width="1080" Scale9Height="1210" ctype="ImageViewObjectData">
+                <Size X="1080.0000" Y="1210.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="200.0000" Y="960.0000" />
+                <Position X="540.0000" Y="1775.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1852" Y="0.5581" />
-                <PreSize X="0.2778" Y="0.1744" />
-                <FileData Type="Normal" Path="logo_wechat.png" Plist="" />
+                <PrePosition X="0.1150" Y="0.8850" />
+                <PreSize X="1.0000" Y="0.7118" />
+                <FileData Type="Normal" Path="modelInfo/ModelInfo_0.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_1" ActionTag="-1905395748" Tag="24" IconVisible="False" LeftMargin="520.0000" RightMargin="160.0000" TopMargin="703.5000" BottomMargin="903.5000" FontSize="100" LabelText="模特张飞" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="400.0000" Y="113.0000" />
+              <AbstractNodeData Name="Image_3" ActionTag="-1529065163" ZOrder="1" Tag="76" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="1043.0000" BottomMargin="277.0000" Scale9Width="1080" Scale9Height="380" ctype="ImageViewObjectData">
+                <Size X="1080.0000" Y="380.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="720.0000" Y="960.0000" />
+                <Position X="540.0000" Y="970.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6667" Y="0.5581" />
-                <PreSize X="0.0000" Y="0.0000" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <PrePosition X="0.1150" Y="0.6550" />
+                <PreSize X="1.0000" Y="0.2235" />
+                <FileData Type="Normal" Path="modelInfo/ModelInfo_1.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Image_4" ActionTag="2012308614" ZOrder="2" Tag="77" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="1423.0000" BottomMargin="-103.0000" Scale9Width="1080" Scale9Height="380" ctype="ImageViewObjectData">
+                <Size X="1080.0000" Y="380.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="540.0000" Y="580.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.1150" Y="0.4250" />
+                <PreSize X="1.0000" Y="0.2235" />
+                <FileData Type="Normal" Path="modelInfo/ModelInfo_2.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Image_5" ActionTag="1720258246" ZOrder="3" Tag="78" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="1803.0000" BottomMargin="-167.0000" Scale9Width="1080" Scale9Height="380" ctype="ImageViewObjectData">
+                <Size X="1080.0000" Y="380.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="540.0000" Y="190.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.1150" Y="0.1950" />
+                <PreSize X="1.0000" Y="0.1885" />
+                <FileData Type="Normal" Path="modelInfo/ModelInfo_3.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
@@ -36,9 +76,9 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
-            <PreSize X="1.0000" Y="0.8958" />
-            <SingleColor A="255" R="150" G="200" B="255" />
-            <FirstColor A="255" R="0" G="0" B="255" />
+            <PreSize X="1.0000" Y="0.8854" />
+            <SingleColor A="255" R="229" G="229" B="229" />
+            <FirstColor A="255" R="150" G="150" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>

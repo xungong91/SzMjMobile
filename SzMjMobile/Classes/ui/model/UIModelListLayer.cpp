@@ -8,6 +8,7 @@
 
 #include "UIModelListLayer.h"
 #include "UIModelInfoLayer.h"
+#include "UIModelAddLayer.h"
 #include "UIMainLayer.h"
 #include "ui/CocosGUI.h"
 
@@ -22,9 +23,18 @@ bool UIModelListLayer::init()
     
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_model_list.csb", this);
     
+    Button *btnModelAdd = (Button*)CocosHelper::getWidgetByName(mLayout, "Button_Add");
+    btnModelAdd->addTouchEventListener
+    ([btnModelAdd, this](Ref *sender, Widget::TouchEventType type)
+     {
+         if(type == Widget::TouchEventType::ENDED)
+             UIMainLayer::gUIMainLayer->pushLayer(UIModelAddLayer::create());
+     }
+    );
+    
     ImageView *image0 = (ImageView*)CocosHelper::getWidgetByName(mLayout, "Image_0");
     image0-> addTouchEventListener
-    ([image0](Ref *sender, Widget::TouchEventType type)
+    ([image0, this](Ref *sender, Widget::TouchEventType type)
      {
          if(type == Widget::TouchEventType::BEGAN)
              image0->loadTexture("model/Model_0_1.png");

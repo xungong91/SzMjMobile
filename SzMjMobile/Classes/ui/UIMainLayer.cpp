@@ -182,7 +182,7 @@ void UIMainLayer::pushLayer(Node *layer)
         back->setPosition(Point(0, 0));
         layer->setPosition(Point(1080, 0));
         
-        back->runAction(Sequence::create(MoveTo::create(0.2, Point(-540, 0)), NULL));
+        back->runAction(Sequence::create(MoveTo::create(0.2, Point(-1080, 0)), NULL));
         layer->runAction(Sequence::create(MoveTo::create(0.2, Point(0, 0)), NULL));
     }
 }

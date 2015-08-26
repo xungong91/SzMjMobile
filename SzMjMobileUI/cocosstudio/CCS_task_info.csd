@@ -86,7 +86,7 @@
             <PreSize X="0.3333" Y="0.0677" />
             <FileData Type="Normal" Path="taskInfo/TaskInfo_Progress_2.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="BtnTalk" ActionTag="828556632" Tag="55" IconVisible="False" LeftMargin="917.0000" RightMargin="11.0000" TopMargin="1507.0000" BottomMargin="261.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="122" Scale9Height="130" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="BtnTalk" ActionTag="828556632" Tag="55" IconVisible="False" LeftMargin="917.0000" RightMargin="11.0000" TopMargin="1507.0000" BottomMargin="261.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="122" Scale9Height="130" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="152.0000" Y="152.0000" />
             <AnchorPoint />
             <Position X="917.0000" Y="261.0000" />
