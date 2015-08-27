@@ -21,10 +21,13 @@ public:
     void onSelect() override;
     void onSelectLeave() override;
     
+    //播放动画
+    float setHanldRunAction();
 protected:
     Sprite *mImage;
-    
     string mName;
+    Sprite *mNormal0, *mNormal1, *mSelect;
+    int mShowIndex;
     
     void imageRun();
 };
