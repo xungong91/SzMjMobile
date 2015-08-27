@@ -47,12 +47,12 @@ void TaskMetroChildManager::createMetroList()
             MetroSpriteStyle::widget2x2,
             MetroSpriteType::image,
             colors[CCRANDOM_0_1() * colors.size()],
-            "图片"
+            ""
         };
         lists.push_back(temp);
     }
     
-    for (int i=0; i<lists.size(); i++)
+    for (int i=0; i < lists.size(); i++)
     {
         auto it = lists.at(i);
         
@@ -98,6 +98,11 @@ void TaskMetroChildManager::setMetro(Layer *node)
     }
     
     UpdateMaxSize();
+}
+
+void TaskMetroChildManager::runTaskAction()
+{
+    
 }
 
 void TaskMetroChildManager::resetUpdata()

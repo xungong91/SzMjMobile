@@ -39,6 +39,7 @@ public:
     void setChangeUpdata(Point p, BaseMetroSprite *sprite);
     void setChangeUpdataEnd(Point p, BaseMetroSprite *sprite);
     
+    void runTaskAction();
 private:
     void createMetroList();
     
