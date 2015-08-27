@@ -46,13 +46,12 @@ void UIModelAddLayer::InitUI()
     mBtnCommerce  = (Button*)CocosHelper::getNodeByName(mLayout, "BtnCommerce");
     mBtnCommerce->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackTaskBtn, this));
     
-    //添加多媒体按钮
-    //mImageAvatar = (ImageView*)CocosHelper::getNodeByName(mLayout, "ImageAvatar");
+    //模特头像
     mImageAvatar = ImageView::create();
     
-    //模特头像的遮罩
     Layout *modelAvatarPanel = (Layout*)CocosHelper::getNodeByName(mLayout, "PanelAvatar");
     
+    //模特头像的遮罩
     mAvatarClipping = ClippingNode::create();
     mAvatarClipping->setAnchorPoint(Point(0, 0));
     mAvatarClipping->setPosition(220, 220);
@@ -68,6 +67,7 @@ void UIModelAddLayer::InitUI()
     //mAvatarClipping->addChild(ImageView::create("taskList/Task_0_2.png"));
     mAvatarClipping->addChild(mImageAvatar);
     
+    //添加多媒体按钮
     mBtnAvatar = (Button*)CocosHelper::getNodeByName(mLayout, "Button_Add");
     mBtnAvatar->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackAvatarBtn, this));
     
@@ -134,23 +134,11 @@ void UIModelAddLayer::AddVideo(UIImageStruct imageStruct)
     Layout *videoPanel = (Layout*)CocosHelper::getNodeByName(mLayout, "PanelVideo");
     Size panelSize = videoPanel->getContentSize();
     
-    UIMediaVideoLayer *play = UIMediaVideoLayer::create();
-    play->setVideoFile(imageStruct.file);
-    videoPanel->addChild(play);
+    UIMediaVideoLayer *videoLayer = UIMediaVideoLayer::create();
+    videoLayer->setVideoFile(imageStruct.file);
+    videoLayer->setContentSize(panelSize);
     
-    Size size = play->getContentSize();
-    float scale;
-    if (size.width / size.height > panelSize.width / panelSize.height)
-    {
-        scale = panelSize.width / size.width;
-    }
-    else
-    {
-        scale = panelSize.height / size.height;
-    }
-    size = Size(size.width * scale, size.height * scale);
-    play->setContentSize(size);
-    //play->setPosition(getPointHalf(panelSize) - getPointHalf(size));
+    videoPanel->addChild(videoLayer);
 }
 
 //添加头像
