@@ -4,7 +4,7 @@
 
 #include "UIModelAddLayer.h"
 #include "UISpecialInputLayer.h"
-#include "UIMediaSelectLayer.h"
+#include "UIMediaVideoLayer.h"
 
 bool UIModelAddLayer::init()
 {
@@ -75,6 +75,7 @@ void UIModelAddLayer::InitUI()
     mBtnImage->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackImageBtn, this));
     
     mBtnVideo = (ImageView*)CocosHelper::getNodeByName(mLayout, "ModelVideo");
+    mBtnVideo->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackVideoBtn, this));
     
     //模特信息
     Layout *modelBaseInfo = (Layout*)CocosHelper::getNodeByName(mLayout, "PanelModelBaseInfo");
@@ -124,6 +125,34 @@ void UIModelAddLayer::AddImage(string imagePath)
     }
 }
 
+//添加视频
+void UIModelAddLayer::AddVideo(UIImageStruct imageStruct)
+{
+    if(imageStruct.file == "")
+        return;
+    
+    Layout *videoPanel = (Layout*)CocosHelper::getNodeByName(mLayout, "PanelVideo");
+    Size panelSize = videoPanel->getContentSize();
+    
+    UIMediaVideoLayer *play = UIMediaVideoLayer::create();
+    play->setVideoFile(imageStruct.file);
+    videoPanel->addChild(play);
+    
+    Size size = play->getContentSize();
+    float scale;
+    if (size.width / size.height > panelSize.width / panelSize.height)
+    {
+        scale = panelSize.width / size.width;
+    }
+    else
+    {
+        scale = panelSize.height / size.height;
+    }
+    size = Size(size.width * scale, size.height * scale);
+    play->setContentSize(size);
+    //play->setPosition(getPointHalf(panelSize) - getPointHalf(size));
+}
+
 //添加头像
 void UIModelAddLayer::CallbackAvatarBtn(cocos2d::Ref *sender, Widget::TouchEventType type)
 {
@@ -149,6 +178,8 @@ void UIModelAddLayer::CallbackVideoBtn(cocos2d::Ref *sender, Widget::TouchEventT
 {
     if(type == Widget::TouchEventType::ENDED)
     {
+        mState = 2;//添加视频
+        this->addChild(UIMediaSelectLayer::create());
     }
 }
 

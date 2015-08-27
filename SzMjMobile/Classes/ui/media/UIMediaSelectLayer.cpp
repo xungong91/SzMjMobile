@@ -51,8 +51,15 @@ bool UIMediaSelectLayer::init()
                       
                       
                       UIImageStruct imageStruct = mSelectSprites[0]->getType();
-                      string filePath = imageStruct.file;
-                      ((UIModelAddLayer*)this->getParent())->AddImage(filePath);
+                      if(imageStruct.type == UIMediaType::image)
+                      {
+                          string filePath = imageStruct.file;
+                          ((UIModelAddLayer*)this->getParent())->AddImage(filePath);
+                      }
+                      else if(imageStruct.type == UIMediaType::video)
+                      {
+                          ((UIModelAddLayer*)this->getParent())->AddVideo(imageStruct);
+                      }
                       
                       this->getParent()->removeChild(this);
                   });

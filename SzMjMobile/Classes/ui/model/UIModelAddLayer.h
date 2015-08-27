@@ -6,6 +6,8 @@
 #define _UIModelAddLayer_h_
 
 #include "UIBaseTopLayer.h"
+#include "UIMediaSelectLayer.h"
+#include "UIInfoManage.h"
 
 class UIModelAddLayer : public UIBaseTopLayer
 {
@@ -16,6 +18,8 @@ public:
 public:
     //添加照片
     void AddImage(string imagePath);
+    //添加视频
+    void AddVideo(UIImageStruct imageStruct);
     
 private:
     void InitUI();
