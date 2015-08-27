@@ -195,15 +195,30 @@
                     <PreSize X="0.4991" Y="1.0000" />
                     <FileData Type="Normal" Path="addModel/AddModel_AddPicture_0.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ModelVideo" ActionTag="-1063058968" Tag="63" IconVisible="False" LeftMargin="541.0000" TouchEnable="True" Scale9Width="539" Scale9Height="539" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="PanelVideo" ActionTag="298770994" Tag="51" IconVisible="False" LeftMargin="541.0000" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
                     <Size X="539.0000" Y="539.0000" />
+                    <Children>
+                      <AbstractNodeData Name="ModelVideo" ActionTag="-1063058968" Tag="63" IconVisible="False" TouchEnable="True" Scale9Width="539" Scale9Height="539" ctype="ImageViewObjectData">
+                        <Size X="539.0000" Y="539.0000" />
+                        <AnchorPoint />
+                        <Position />
+                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                        <CColor A="255" R="255" G="255" B="255" />
+                        <PrePosition />
+                        <PreSize X="0.4991" Y="1.0000" />
+                        <FileData Type="Normal" Path="addModel/AddModel_AddVideo_0.png" Plist="" />
+                      </AbstractNodeData>
+                    </Children>
                     <AnchorPoint />
                     <Position X="541.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5009" />
                     <PreSize X="0.4991" Y="1.0000" />
-                    <FileData Type="Normal" Path="addModel/AddModel_AddVideo_0.png" Plist="" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
