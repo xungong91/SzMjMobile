@@ -53,16 +53,6 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="addModel/AddModel_AvatarBg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ImageAvatar" ActionTag="1550497672" Tag="47" VisibleForFrame="False" IconVisible="False" LeftMargin="68.0000" RightMargin="712.0000" TopMargin="76.0000" BottomMargin="74.0000" ctype="ImageViewObjectData">
-                <Size X="300.0000" Y="300.0000" />
-                <AnchorPoint />
-                <Position X="68.0000" Y="74.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0630" Y="0.1644" />
-                <PreSize X="0.2778" Y="0.6667" />
-                <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="Button_Add" ActionTag="2020664506" Tag="52" IconVisible="False" LeftMargin="180.0000" RightMargin="825.0000" TopMargin="199.0000" BottomMargin="176.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="45" Scale9Height="53" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="75.0000" Y="75.0000" />
                 <AnchorPoint />
