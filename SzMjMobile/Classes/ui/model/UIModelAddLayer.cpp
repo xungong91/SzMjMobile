@@ -47,7 +47,8 @@ void UIModelAddLayer::InitUI()
     mBtnCommerce->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackTaskBtn, this));
     
     //添加多媒体按钮
-    mImageAvatar = (ImageView*)CocosHelper::getNodeByName(mLayout, "ImageAvatar");
+    //mImageAvatar = (ImageView*)CocosHelper::getNodeByName(mLayout, "ImageAvatar");
+    mImageAvatar = ImageView::create();
     
     //模特头像的遮罩
     Layout *modelAvatarPanel = (Layout*)CocosHelper::getNodeByName(mLayout, "PanelAvatar");
@@ -56,13 +57,16 @@ void UIModelAddLayer::InitUI()
     mAvatarClipping->setAnchorPoint(Point(0, 0));
     mAvatarClipping->setPosition(220, 220);
     DrawNode *shap = DrawNode::create();
-    shap->drawSolidRect(Point(0, 0), Point(300, 300), Color4F(0, 0, 0, 0));
-    shap->setPosition(Point(-150, -150));
+    //shap->drawSolidRect(Point(0, 0), Point(300, 300), Color4F(0, 0, 0, 0));
+    //shap->drawDot(Vec2(150, 150), 150, Color4F(0, 0, 0, 0));
+    shap->drawSolidCircle(Vec2(0, 0), 150, M_PI * 2, 50, 1.0, 1.0, Color4F(0, 0, 0, 0));
+    //shap->setPosition(Point(-150, -150));
     shap->setAnchorPoint(Point(0, 0));
     mAvatarClipping->setStencil(shap);
-    mAvatarClipping->setInverted(true);
+    mAvatarClipping->setInverted(false);
     modelAvatarPanel->addChild(mAvatarClipping);
-    mAvatarClipping->addChild(ImageView::create("taskList/Task_0_2.png"));
+    //mAvatarClipping->addChild(ImageView::create("taskList/Task_0_2.png"));
+    mAvatarClipping->addChild(mImageAvatar);
     
     mBtnAvatar = (Button*)CocosHelper::getNodeByName(mLayout, "Button_Add");
     mBtnAvatar->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackAvatarBtn, this));
@@ -116,7 +120,7 @@ void UIModelAddLayer::AddImage(string imagePath)
         mBtnAvatar->setOpacity(0);//设置透明度
         
         mImageAvatar->loadTexture(imagePath);
-        mImageAvatar->setVisible(true);
+        mImageAvatar->setScale(300 / mImageAvatar->getContentSize().width, 300 / mImageAvatar->getContentSize().height);
     }
 }
 
