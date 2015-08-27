@@ -126,13 +126,13 @@ void MetroTouchManage::setInfo(Node *mainNode, EventDispatcher *eventDispatcher,
     mMetroChildManager = metroSpriteManage;
     
     //移动
-    static Point gTouchStartPoint = Point::ZERO;
     static Point gMoveLayerStartPoint = mMoveLayer->getPosition();
     
     mEventListenerMove = EventListenerTouchOneByOne::create();
     mEventListenerMove->retain();
     mEventListenerMove->onTouchBegan = [this](Touch* touch, Event  *event)
     {
+        mIsTouchMove = false;
         gTouchStartPoint = touch->getLocation();
         gMoveLayerStartPoint = mMoveLayer->getPosition();
         
@@ -258,12 +258,14 @@ Point MetroTouchManage::getPointForMove(Point p)
 
 void MetroTouchManage::onSelectBegan(Point p)
 {
+    setIsTouchMove(p);
+    
     BaseMetroSprite *sprite;
     if (getSpriteForPoint(p, sprite))
     {
         if (sprite != mSelectMetroSprite && mSelectMetroSprite)
         {
-            mSelectMetroSprite->onSelectLeave();
+            mSelectMetroSprite->onSelectLeave(mIsTouchMove);
         }
         
         mSelectMetroSprite = sprite;
@@ -273,17 +275,28 @@ void MetroTouchManage::onSelectBegan(Point p)
 
 void MetroTouchManage::onSelectEnd(Point p)
 {
+    setIsTouchMove(p);
+    
     BaseMetroSprite *sprite;
     if (getSpriteForPoint(p, sprite))
     {
         if (sprite != mSelectMetroSprite && mSelectMetroSprite)
         {
-            mSelectMetroSprite->onSelectLeave();
+            mSelectMetroSprite->onSelectLeave(mIsTouchMove);
         }
         
-        sprite->onSelectLeave();
+        sprite->onSelectLeave(mIsTouchMove);
     }
     mSelectMetroSprite = nullptr;
+}
+
+void MetroTouchManage::setIsTouchMove(Point movePoint)
+{
+    Rect rect(gTouchStartPoint.x - 25, gTouchStartPoint.y - 25, 50, 50);
+    if (!rect.containsPoint(movePoint))
+    {
+        mIsTouchMove = true;
+    }
 }
 
 void MetroTouchManage::onTouchEnd()

@@ -90,7 +90,7 @@ void TaskMetroChild::imageRun()
      );
 }
 
-float TaskMetroChild::setHanldRunAction()
+float TaskMetroChild::setHanldRunAction(function<void ()> func)
 {
     float moveTime = 0.3f;
     mNormal0->stopAllActions();
@@ -103,6 +103,8 @@ float TaskMetroChild::setHanldRunAction()
          Sequence::create
          (
           MoveTo::create(moveTime, Point(0, - 350)),
+          DelayTime::create(CCRANDOM_0_1() * 1),
+          CallFunc::create(func),
           NULL)
          );
         mNormal1->runAction
@@ -140,10 +142,13 @@ void TaskMetroChild::onSelect()
     mSelect->setVisible(true);
 }
 
-void TaskMetroChild::onSelectLeave()
+void TaskMetroChild::onSelectLeave(bool isMove)
 {
     mSelect->setVisible(false);
-    UIMainLayer::gUIMainLayer->pushLayer(UITaskInfoLayer::create());
+    if (!isMove)
+    {
+        UIMainLayer::gUIMainLayer->pushLayer(UITaskInfoLayer::create());
+    }
 }
 
 

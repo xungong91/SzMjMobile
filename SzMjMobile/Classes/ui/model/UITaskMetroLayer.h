@@ -23,9 +23,7 @@ public:
 private:
     void setTouch();
     void update(float dt) override;
-    
-    void testAddChild();
-    
+
 private:
     //MetroSpriteManage *mMetroSpriteManage;
     TaskMetroChildManager *mMetroChildManager;

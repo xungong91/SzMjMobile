@@ -40,7 +40,7 @@ void MetroVideoSprite::onSelect()
     
 }
 
-void MetroVideoSprite::onSelectLeave()
+void MetroVideoSprite::onSelectLeave(bool isMove)
 {
     if (!mIsPlay)
     {

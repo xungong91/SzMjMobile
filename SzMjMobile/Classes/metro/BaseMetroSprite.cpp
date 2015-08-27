@@ -117,7 +117,7 @@ void BaseMetroSprite::onSelect()
     mBgColor->setOpacity(150);
 }
 
-void BaseMetroSprite::onSelectLeave()
+void BaseMetroSprite::onSelectLeave(bool isMove)
 {
     mBgColor->setOpacity(255);
 }

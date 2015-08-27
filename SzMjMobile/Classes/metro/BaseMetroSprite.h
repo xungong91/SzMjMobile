@@ -71,7 +71,7 @@ public:
     virtual void setMetorName(const string &name);
     
     virtual void onSelect();
-    virtual void onSelectLeave();
+    virtual void onSelectLeave(bool isMove);
     
     MetroSpriteStyle getStyle() { return mStyle; }
 protected:

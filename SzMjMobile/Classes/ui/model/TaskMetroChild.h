@@ -6,6 +6,9 @@
 #define _TaskMetroChild_h_
 
 #include "BaseMetroSprite.h"
+#include <functional>
+
+using namespace std;
 
 class TaskMetroChild : public BaseMetroSprite
 {
@@ -19,10 +22,10 @@ public:
     void setStyle(MetroSpriteStyle style) override;
     
     void onSelect() override;
-    void onSelectLeave() override;
+    void onSelectLeave(bool isMove) override;
     
     //播放动画
-    float setHanldRunAction();
+    float setHanldRunAction(function<void ()> func);
 protected:
     Sprite *mImage;
     string mName;

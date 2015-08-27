@@ -37,6 +37,12 @@ private:
     MetroSpriteManage *mMetroSpriteManage;
     TaskMetroChildManager *mMetroChildManager;
     
+    //点击是否移动
+    bool mIsTouchMove;
+    void setIsTouchMove(Point movePoint);
+    //点击点的坐标
+    Point gTouchStartPoint;
+    
     //偏差Point
     Point mOffsetPoint;
     

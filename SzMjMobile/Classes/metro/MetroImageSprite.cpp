@@ -71,7 +71,7 @@ void MetroImageSprite::onSelect()
     mImage->setOpacity(150);
 }
 
-void MetroImageSprite::onSelectLeave()
+void MetroImageSprite::onSelectLeave(bool isMove)
 {
     mImage->setOpacity(255);
 }

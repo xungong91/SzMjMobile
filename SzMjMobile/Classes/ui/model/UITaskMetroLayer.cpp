@@ -49,7 +49,7 @@ bool UITaskMetroLayer::init()
     mClippingNode->addChild(mMoveLayer);
     
     mMetroChildManager->setMetro(mMoveLayer);
-    //testAddChild();
+    mMetroChildManager->runTaskAction();
     
     //touch move layer
     setTouch();
@@ -92,13 +92,6 @@ void UITaskMetroLayer::update(float dt)
 {
     BaseLayer::update(dt);
 }
-
-void UITaskMetroLayer::testAddChild()
-{
-    //mMetroSpriteManage->setMetro(mMoveLayer);
-    mMetroChildManager->setMetro(mMoveLayer);
-}
-
 
 
 

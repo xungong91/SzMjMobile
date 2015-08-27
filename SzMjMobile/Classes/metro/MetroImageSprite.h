@@ -22,7 +22,7 @@ public:
     void setStyle(MetroSpriteStyle style) override;
     
     void onSelect() override;
-    void onSelectLeave() override;
+    void onSelectLeave(bool isMove) override;
 protected:
     Sprite *mImage;
     

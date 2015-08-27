@@ -93,7 +93,6 @@ void TaskMetroChildManager::setMetro(Layer *node)
         SetChildPosition(holdIndex, it);
         node->addChild(it);
         it->release();
-        
         ++index;
     }
     
@@ -102,7 +101,14 @@ void TaskMetroChildManager::setMetro(Layer *node)
 
 void TaskMetroChildManager::runTaskAction()
 {
-    
+    int index = CCRANDOM_0_1() * mMetroList.size();
+    static_cast<TaskMetroChild*>(mMetroList[index])->setHanldRunAction
+    (
+    [this]()
+     {
+         runTaskAction();
+     }
+    );
 }
 
 void TaskMetroChildManager::resetUpdata()
