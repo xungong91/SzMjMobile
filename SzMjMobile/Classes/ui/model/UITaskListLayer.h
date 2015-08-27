@@ -18,7 +18,10 @@ public:
     virtual ~UITaskListLayer();
     virtual bool init();
     
+    void setVisible(bool visible) override;
 private:
+    Layout *panelTaskList;
+    
     //初始化UI
     void InitUI();
 };

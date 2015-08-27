@@ -13,6 +13,7 @@ MetroTouchManage::MetroTouchManage()
 : mSelectMetroSprite(nullptr)
 , mEventListenerMove(nullptr)
 , mEventListenerChange(nullptr)
+, mOffsetPoint(Point::ZERO)
 {
 }
 
@@ -215,20 +216,21 @@ void MetroTouchManage::setInfo(Node *mainNode, EventDispatcher *eventDispatcher,
     };
 }
 
-
-void MetroTouchManage::setTouchMove()
+void MetroTouchManage::setTouchNull()
 {
     mEventDispatcher->removeEventListener(mEventListenerMove);
     mEventDispatcher->removeEventListener(mEventListenerChange);
-    
+}
+
+void MetroTouchManage::setTouchMove()
+{
+    setTouchNull();
     mEventDispatcher->addEventListenerWithSceneGraphPriority(mEventListenerMove, mMainNode);
 }
 
 void MetroTouchManage::setTouchChange()
 {
-    mEventDispatcher->removeEventListener(mEventListenerMove);
-    mEventDispatcher->removeEventListener(mEventListenerChange);
-    
+    setTouchNull();
     mEventDispatcher->addEventListenerWithSceneGraphPriority(mEventListenerChange, mMainNode);
 }
 
@@ -251,7 +253,7 @@ bool MetroTouchManage::getSpriteForPoint(Point p, BaseMetroSprite *&sprite)
 
 Point MetroTouchManage::getPointForMove(Point p)
 {
-    return p - mMoveLayer->getPosition();
+    return p - mMoveLayer->getPosition() - mOffsetPoint;
 }
 
 void MetroTouchManage::onSelectBegan(Point p)

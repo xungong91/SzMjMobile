@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="27" ctype="GameLayerObjectData">
         <Size X="1080.0000" Y="1920.0000" />
         <Children>
-          <AbstractNodeData Name="TaskInfoBg" ActionTag="872802019" Tag="43" IconVisible="False" Scale9Width="1080" Scale9Height="1920" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="TaskInfoBg" ActionTag="872802019" Tag="43" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" TouchEnable="True" StretchWidthEnable="True" StretchHeightEnable="True" Scale9Width="1080" Scale9Height="1920" ctype="ImageViewObjectData">
             <Size X="1080.0000" Y="1920.0000" />
             <AnchorPoint />
             <Position />
