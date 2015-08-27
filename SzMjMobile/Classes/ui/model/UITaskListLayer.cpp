@@ -29,10 +29,17 @@ void UITaskListLayer::InitUI()
     //加载UI
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_task_list.csb", this);
     
-    Layout *panelTaskList = (Layout*)CocosHelper::getNodeByName(mLayout, "PanelTaskList");
+    panelTaskList = (Layout*)CocosHelper::getNodeByName(mLayout, "PanelTaskList");
     
     UITaskMetroLayer *taskMetro = UITaskMetroLayer::create();
+    taskMetro->setTag(101);
     //taskMetro->setPosition(Vec2(0, 165));
     panelTaskList->addChild(taskMetro);
     //panelTaskList->setClippingEnabled(true);
+}
+
+void UITaskListLayer::setVisible(bool visible)
+{
+    UIBaseCenterLayer::setVisible(visible);
+    static_cast<UITaskMetroLayer*>(panelTaskList->getChildByTag(101))->onTouchSwitch(visible);
 }

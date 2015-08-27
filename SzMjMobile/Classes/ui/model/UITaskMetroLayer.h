@@ -19,6 +19,7 @@ public:
     void onEnter() override;
     void onExit() override;
     
+    void onTouchSwitch(bool isTouch);
 private:
     void setTouch();
     void update(float dt) override;

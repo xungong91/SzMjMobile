@@ -26,6 +26,9 @@ public:
     
     void setTouchMove();
     void setTouchChange();
+    void setTouchNull();
+    
+    void setOffsetPoint(Point offset) {mOffsetPoint = offset;}
 private:
     Node *mMoveLayer;
     BaseMetroSprite *mSelectMetroSprite;
@@ -33,6 +36,9 @@ private:
     EventDispatcher *mEventDispatcher;
     MetroSpriteManage *mMetroSpriteManage;
     TaskMetroChildManager *mMetroChildManager;
+    
+    //偏差Point
+    Point mOffsetPoint;
     
     //滑动
     EventListenerTouchOneByOne *mEventListenerMove;

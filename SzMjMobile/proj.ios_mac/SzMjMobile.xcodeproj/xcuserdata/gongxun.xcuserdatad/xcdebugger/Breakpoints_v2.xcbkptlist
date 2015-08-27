@@ -359,12 +359,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/metro/MetroTouchManage.cpp"
-            timestampString = "461471392.478671"
+            timestampString = "462354278.365768"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "MetroTouchManage::getSpriteForPoint(Point p, BaseMetroSprite *&amp;sprite)"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "MetroTouchManage::setInfo(Node *mainNode, EventDispatcher *eventDispatcher, Node *moveLayer, TaskMetroChildManager *metroSpriteManage)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -375,12 +375,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/metro/MetroTouchManage.cpp"
-            timestampString = "461471392.478671"
+            timestampString = "462354278.365768"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "MetroTouchManage::onSelectBegan(Point p)"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "MetroTouchManage::setInfo(Node *mainNode, EventDispatcher *eventDispatcher, Node *moveLayer, TaskMetroChildManager *metroSpriteManage)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -872,7 +872,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "155"
             endingLineNumber = "155"
-            landmarkName = "UIMainLayer::pushLayer(Node *layer)"
+            landmarkName = "UIMainLayer::changeAction(UIBaseCenterLayer *sender)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -888,7 +888,71 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
             endingLineNumber = "27"
-            landmarkName = "UIModelMainLayer::init()"
+            landmarkName = "UIModelMainLayer::InitUI()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/ui/model/UIModelListLayer.cpp"
+            timestampString = "462351827.802447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "UIModelListLayer::init()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/ui/model/UIModelInfoLayer.cpp"
+            timestampString = "462351893.664932"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "UIModelInfoLayer::init()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/ui/model/UIModelInfoLayer.cpp"
+            timestampString = "462351911.431873"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "UIModelInfoLayer::init()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/ui/model/UITaskInfoLayer.cpp"
+            timestampString = "462353313.068434"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "UITaskInfoLayer::init()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

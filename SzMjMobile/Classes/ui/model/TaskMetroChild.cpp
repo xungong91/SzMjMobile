@@ -74,13 +74,12 @@ void TaskMetroChild::imageRun()
 void TaskMetroChild::onSelect()
 {
     mImage->setOpacity(150);
-    
-    UIMainLayer::gUIMainLayer->pushLayer(UITaskInfoLayer::create());
 }
 
 void TaskMetroChild::onSelectLeave()
 {
     mImage->setOpacity(255);
+    UIMainLayer::gUIMainLayer->pushLayer(UITaskInfoLayer::create());
 }
 
 
