@@ -7,8 +7,10 @@
 //
 
 #include "UIMediaSelectLayer.h"
+#include "UIModelAddLayer.h"
 #include "XHelper.h"
 #include "UIMediaLayer.h"
+#include "UIInfoManage.h"
 
 UIMediaSelectLayer::UIMediaSelectLayer()
 : mSelectMediaItem(nullptr)
@@ -45,7 +47,13 @@ bool UIMediaSelectLayer::init()
                       }
                       auto layer = UIMediaLayer::create();
                       layer->setMediaInfo(types);
-                      this->getParent()->addChild(layer);
+                      //this->getParent()->addChild(layer);
+                      
+                      
+                      UIImageStruct imageStruct = mSelectSprites[0]->getType();
+                      string filePath = imageStruct.file;
+                      ((UIModelAddLayer*)this->getParent())->AddImage(filePath);
+                      
                       this->getParent()->removeChild(this);
                   });
     

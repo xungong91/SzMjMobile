@@ -27,6 +27,7 @@ public:
     void selectThis();
     
     UIImageStruct getType();
+    //string GetFilePath() {return mFile;};
     
     bool mIsSelect;
 private:

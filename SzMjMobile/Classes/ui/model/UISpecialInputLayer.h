@@ -17,6 +17,16 @@ using namespace std;
 class UISpecialInputLayer : public Layer, public EditBoxDelegate
 {
 public:
+    enum class InputType
+    {
+        ANY,
+        BIRTHDAY,
+        HEIGHT,
+        BHW,
+        TEL
+    };
+    
+public:
     CREATE_FUNC(UISpecialInputLayer);
     UISpecialInputLayer();
     virtual ~UISpecialInputLayer();
@@ -27,8 +37,11 @@ public:
     virtual void editBoxTextChanged(EditBox* editBox, const std::string& text);
     virtual void editBoxReturn(EditBox* editBox);
     
+public:
+    void InitUI(string titleStr, string placeHolderStr, ui::EditBox::InputMode inputMode, InputType inputType);
+    
 private:
-    void InitUI();
+    void SetString(string str);
     
 private:
     ui::Text *mNullLabel;        //内容为空时的label
@@ -37,11 +50,11 @@ private:
     
     UIInput *mInput;
     
-    string mStrNickname;
-    string mStrBirthday;
-    string mStrHeight;
-    string mStrBWH;
-    string mStrTel;
+    string mTitleStr;
+    string mPlaceHolderStr;
+    string mStr;
+    
+    InputType mInputType;
 };
 
 #endif

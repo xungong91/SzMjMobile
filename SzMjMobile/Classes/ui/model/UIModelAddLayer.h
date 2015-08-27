@@ -6,15 +6,16 @@
 #define _UIModelAddLayer_h_
 
 #include "UIBaseTopLayer.h"
-#include "ui/CocosGUI.h"
-
-using namespace cocos2d::ui;
 
 class UIModelAddLayer : public UIBaseTopLayer
 {
 public:
     CREATE_FUNC(UIModelAddLayer);
     virtual bool init();
+    
+public:
+    //添加照片
+    void AddImage(string imagePath);
     
 private:
     void InitUI();
@@ -23,6 +24,10 @@ private:
     void CallbackBiaoQianBtn(Ref *sender, Widget::TouchEventType type);
     //任务按钮响应事件
     void CallbackTaskBtn(Ref *sender, Widget::TouchEventType type);
+    //添加多媒体按钮响应事件
+    void CallbackAvatarBtn(Ref *sender, Widget::TouchEventType type);
+    void CallbackImageBtn(Ref *sender, Widget::TouchEventType type);
+    void CallbackVideoBtn(Ref *sender, Widget::TouchEventType type);
     
 private:
     //标签按钮
@@ -31,10 +36,18 @@ private:
     Button *mBtnYouYa;
     Button *mBtnWenYi;
     Button *mBtnGaoGui;
-    
+
     //任务按钮
     Button *mBtnPerson;
     Button *mBtnCommerce;
+    
+    //添加多媒体按钮
+    int mState;
+    ImageView *mImageAvatar;
+    ClippingNode *mAvatarClipping;
+    Button *mBtnAvatar;
+    ImageView *mBtnImage;
+    ImageView *mBtnVideo;
 };
 
 #endif
