@@ -9,6 +9,7 @@
 #include "UIMainLayer.h"
 #include "CocosHelper.h"
 #include "UILogin1Layer.h"
+#include "UmoInfo.h"
 
 UIMainLayer *UIMainLayer::gUIMainLayer = nullptr;
 
@@ -99,6 +100,10 @@ void UIMainLayer::intoMain()
     mMainLayer->addChild(mUIPublishMainLayer);
     mLayers.push_back(mUIPublishMainLayer);
     
+    mUIIncomeMainLayer = UIIncomeMainLayer::create();
+    mMainLayer->addChild(mUIIncomeMainLayer);
+    mLayers.push_back(mUIIncomeMainLayer);
+    
     for (auto it : mLayers)
     {
         it->setVisible(false);
@@ -143,8 +148,31 @@ void UIMainLayer::intoPublishLayer()
     }
 }
 
+void UIMainLayer::intoIncomeLayer()
+{
+    UIBaseCenterLayer *temp = mUIIncomeMainLayer;
+    if (mCurrentLayer == temp)
+    {
+        return;
+    }
+    
+    if (mCurrentLayer)
+    {
+        changeAction(temp);
+    }
+    else
+    {
+        temp->setVisible(true);
+        mCurrentLayer = temp;
+    }
+}
+
 void UIMainLayer::changeAction(UIBaseCenterLayer *sender)
 {
+    sender->setVisible(true);
+    mCurrentLayer->setVisible(false);
+    mCurrentLayer = sender;
+    return;
     sender->setVisible(true);
     sender->setZOrder(0);
     
@@ -245,6 +273,8 @@ void UIMainLayer::CallbackMenu(cocos2d::Ref *sender, Widget::TouchEventType type
         {
             mBtnProfit->loadTextures("hall/Profit_1.png", "hall/Profit_1.png");
             mBtnProfit->setPressedActionEnabled(false);
+            intoIncomeLayer();
+            UmoInfo::getInstance()->showMsg();
         }
         else if (sender == mBtnGrab)
         {

@@ -86,6 +86,12 @@
 		EA2C15AA1B85C858001D9ADF /* CrashHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2C15A61B85C858001D9ADF /* CrashHelper.mm */; };
 		EA44C31E1B83105200B94A5A /* UIInfoManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA44C31C1B83105200B94A5A /* UIInfoManage.cpp */; };
 		EA6805131B80C655008034EE /* MetroTouchManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA6805111B80C655008034EE /* MetroTouchManage.cpp */; };
+		EA7882001B8FFC0C009E887F /* UIIncomeMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7881FE1B8FFC0C009E887F /* UIIncomeMainLayer.cpp */; };
+		EA7882031B8FFC4A009E887F /* UIIncomeModelLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882011B8FFC4A009E887F /* UIIncomeModelLayer.cpp */; };
+		EA7882061B8FFD1C009E887F /* UIIncomePickLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882041B8FFD1C009E887F /* UIIncomePickLayer.cpp */; };
+		EA7882091B8FFD2D009E887F /* UIIncomePickRegLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882071B8FFD2D009E887F /* UIIncomePickRegLayer.cpp */; };
+		EA78820E1B900315009E887F /* SingletonBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA78820D1B900315009E887F /* SingletonBase.cpp */; };
+		EA7882111B900403009E887F /* UmoInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA78820F1B900403009E887F /* UmoInfo.cpp */; };
 		EA89002C1B86BE440022C278 /* UIBaseTopLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */; };
 		EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */; };
 		EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */; };
@@ -250,6 +256,18 @@
 		EA44C31D1B83105200B94A5A /* UIInfoManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInfoManage.h; sourceTree = "<group>"; };
 		EA6805111B80C655008034EE /* MetroTouchManage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroTouchManage.cpp; sourceTree = "<group>"; };
 		EA6805121B80C655008034EE /* MetroTouchManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroTouchManage.h; sourceTree = "<group>"; };
+		EA7881FE1B8FFC0C009E887F /* UIIncomeMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIIncomeMainLayer.cpp; sourceTree = "<group>"; };
+		EA7881FF1B8FFC0C009E887F /* UIIncomeMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIIncomeMainLayer.h; sourceTree = "<group>"; };
+		EA7882011B8FFC4A009E887F /* UIIncomeModelLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIIncomeModelLayer.cpp; sourceTree = "<group>"; };
+		EA7882021B8FFC4A009E887F /* UIIncomeModelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIIncomeModelLayer.h; sourceTree = "<group>"; };
+		EA7882041B8FFD1C009E887F /* UIIncomePickLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIIncomePickLayer.cpp; sourceTree = "<group>"; };
+		EA7882051B8FFD1C009E887F /* UIIncomePickLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIIncomePickLayer.h; sourceTree = "<group>"; };
+		EA7882071B8FFD2D009E887F /* UIIncomePickRegLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIIncomePickRegLayer.cpp; sourceTree = "<group>"; };
+		EA7882081B8FFD2D009E887F /* UIIncomePickRegLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIIncomePickRegLayer.h; sourceTree = "<group>"; };
+		EA78820B1B9002D9009E887F /* SingletonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonBase.h; sourceTree = "<group>"; };
+		EA78820D1B900315009E887F /* SingletonBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingletonBase.cpp; sourceTree = "<group>"; };
+		EA78820F1B900403009E887F /* UmoInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UmoInfo.cpp; sourceTree = "<group>"; };
+		EA7882101B900403009E887F /* UmoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UmoInfo.h; sourceTree = "<group>"; };
 		EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseTopLayer.cpp; sourceTree = "<group>"; };
 		EA89002B1B86BE440022C278 /* UIBaseTopLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseTopLayer.h; sourceTree = "<group>"; };
 		EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseCenterLayer.cpp; sourceTree = "<group>"; };
@@ -564,6 +582,21 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		EA7881FD1B8FFC0C009E887F /* income */ = {
+			isa = PBXGroup;
+			children = (
+				EA7881FE1B8FFC0C009E887F /* UIIncomeMainLayer.cpp */,
+				EA7881FF1B8FFC0C009E887F /* UIIncomeMainLayer.h */,
+				EA7882011B8FFC4A009E887F /* UIIncomeModelLayer.cpp */,
+				EA7882021B8FFC4A009E887F /* UIIncomeModelLayer.h */,
+				EA7882041B8FFD1C009E887F /* UIIncomePickLayer.cpp */,
+				EA7882051B8FFD1C009E887F /* UIIncomePickLayer.h */,
+				EA7882071B8FFD2D009E887F /* UIIncomePickRegLayer.cpp */,
+				EA7882081B8FFD2D009E887F /* UIIncomePickRegLayer.h */,
+			);
+			path = income;
+			sourceTree = "<group>";
+		};
 		EA89002F1B86BFDD0022C278 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,6 +640,7 @@
 		EAAA54561B81C7FE00CDB595 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				EA7881FD1B8FFC0C009E887F /* income */,
 				EA8900361B86C4370022C278 /* publish */,
 				EA89002F1B86BFDD0022C278 /* model */,
 				EA1F705B1B84781600669B9D /* media */,
@@ -703,6 +737,10 @@
 				EAB9E2831B7CDC3C005370B7 /* CocosHelper.h */,
 				EAB9E2891B7CE65E005370B7 /* XHelper.cpp */,
 				EAB9E28A1B7CE65E005370B7 /* XHelper.h */,
+				EA78820D1B900315009E887F /* SingletonBase.cpp */,
+				EA78820B1B9002D9009E887F /* SingletonBase.h */,
+				EA78820F1B900403009E887F /* UmoInfo.cpp */,
+				EA7882101B900403009E887F /* UmoInfo.h */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -862,6 +900,7 @@
 				9DF9843D1B8DB9AF00818401 /* UIInput.cpp in Sources */,
 				EAB9E2871B7CDD26005370B7 /* MetroMainLayer.cpp in Sources */,
 				EA2C15AA1B85C858001D9ADF /* CrashHelper.mm in Sources */,
+				EA7882001B8FFC0C009E887F /* UIIncomeMainLayer.cpp in Sources */,
 				EAAA54631B81DAFE00CDB595 /* UILogin2Layer.cpp in Sources */,
 				EA89003E1B86F9E80022C278 /* UIModelListLayer.cpp in Sources */,
 				EAB4D8501B7C404E00C1B093 /* JsonHelper.cpp in Sources */,
@@ -873,6 +912,7 @@
 				EA2C15A91B85C858001D9ADF /* CatchCrash.m in Sources */,
 				EA89002C1B86BE440022C278 /* UIBaseTopLayer.cpp in Sources */,
 				EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */,
+				EA7882091B8FFD2D009E887F /* UIIncomePickRegLayer.cpp in Sources */,
 				9D29DD6D1B8C550700F1EFEE /* TaskMetroChild.cpp in Sources */,
 				9D29DD6A1B8C3CE900F1EFEE /* TaskMetroChildManager.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
@@ -890,15 +930,19 @@
 				9DF984331B8D402000818401 /* UITaskInfoLayer.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				EA8AD1041AEF25C3001B8E39 /* CoinsTo.cpp in Sources */,
+				EA7882031B8FFC4A009E887F /* UIIncomeModelLayer.cpp in Sources */,
 				9D5F9DCB1B8AF97F00923A15 /* UITaskListLayer.cpp in Sources */,
 				EA2C159B1B85BC5E001D9ADF /* UIMediaVideoLayer.cpp in Sources */,
 				EAAA54661B81DB0700CDB595 /* UILogin3Layer.cpp in Sources */,
+				EA7882111B900403009E887F /* UmoInfo.cpp in Sources */,
 				EAB9E28E1B7CE898005370B7 /* BaseLayer.cpp in Sources */,
 				EA8900391B86C44C0022C278 /* UIPublishMainLayer.cpp in Sources */,
+				EA78820E1B900315009E887F /* SingletonBase.cpp in Sources */,
 				9DF9843A1B8D942D00818401 /* UISpecialInputLayer.cpp in Sources */,
 				9D0FCA0C1B8C1AFA001788EE /* UITaskMetroLayer.cpp in Sources */,
 				EAB9E2911B7CE921005370B7 /* BaseMetroSprite.cpp in Sources */,
 				EAB9E2841B7CDC3C005370B7 /* CocosHelper.cpp in Sources */,
+				EA7882061B8FFD1C009E887F /* UIIncomePickLayer.cpp in Sources */,
 				EADA70991B496B5E002878AA /* CTestDrawLayer.cpp in Sources */,
 				EAAA545D1B81D90900CDB595 /* UILogin1Layer.cpp in Sources */,
 				9DF984361B8D4D0B00818401 /* UIModelAddLayer.cpp in Sources */,
