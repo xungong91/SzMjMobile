@@ -16,6 +16,8 @@ public:
 private:
     void InitUI();
     
+    void AddImage(string imagePath);
+    
 private:
     //添加头像
     ImageView *mImageAvatar;

@@ -8,6 +8,7 @@
 
 #include "UIMediaSelectItemLayer.h"
 #include "UIMediaVideoLayer.h"
+#include "UIMainLayer.h"
 
 UIMediaSelectItemLayer::UIMediaSelectItemLayer()
 : mIsSelect(false)
@@ -33,6 +34,7 @@ bool UIMediaSelectItemLayer::init()
     mSelectSprite->setScale(2.0f);
     mSelectSprite->setVisible(mIsSelect);
     this->addChild(mSelectSprite, 1);
+    
     
     return true;
 }
