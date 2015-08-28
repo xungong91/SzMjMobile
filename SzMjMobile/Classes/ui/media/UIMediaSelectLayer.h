@@ -12,6 +12,7 @@
 #include "UIBaseLayer.h"
 #include "UIInfoManage.h"
 #include "UIMediaSelectItemLayer.h"
+#include <functional>
 
 class UIMediaSelectLayer : public UIBaseLayer
 {
@@ -21,11 +22,14 @@ public:
     CREATE_FUNC(UIMediaSelectLayer);
     bool init();
     void onEnter();
+    
+    void setSelectCallFunc(function<void (vector<UIImageStruct> files)> func);
 private:
     Layer *mMoveLayer;
     Point mTouchStartPoint;
     Point mMoveLayerStartPoint;
     UIMediaSelectItemLayer *mSelectMediaItem;
+    function<void (vector<UIImageStruct> files)> mSelectCallFunc;
     //选中用的
     Point mTouchSelectPoint;
     bool mIsSelect;
