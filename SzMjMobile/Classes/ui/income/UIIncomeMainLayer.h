@@ -20,4 +20,6 @@ public:
     bool init();
 };
 
+
+
 #endif /* defined(__SzMjMobile__UIIncomeMainLayer__) */

@@ -15,6 +15,7 @@
 #include "ui/CocosGUI.h"
 #include "UIModelMainLayer.h"
 #include "UIPublishMainLayer.h"
+#include "UIIncomeMainLayer.h"
 #include "UIBaseTopLayer.h"
 
 USING_NS_CC;
@@ -41,6 +42,7 @@ private:
     void changeAction(UIBaseCenterLayer *sender);
     void intoModelLayer();
     void intoPublishLayer();
+    void intoIncomeLayer();
     
     void CallbackMenu(Ref *sender, Widget::TouchEventType type);
     
@@ -59,6 +61,7 @@ private:
     
     UIModelMainLayer *mUIModelMainLayer;
     UIPublishMainLayer *mUIPublishMainLayer;
+    UIIncomeMainLayer *mUIIncomeMainLayer;
     vector<UIBaseCenterLayer*> mLayers;
 };
 

@@ -7,3 +7,13 @@
 //
 
 #include "UIIncomeMainLayer.h"
+
+bool UIIncomeMainLayer::init()
+{
+    if (!UIBaseCenterLayer::init())
+    {
+        return false;
+    }
+    
+    return true;
+}
