@@ -59,6 +59,7 @@
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		9D0455AF1B8FFDF70053E920 /* UIPublishMetroChild.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D0455AD1B8FFDF70053E920 /* UIPublishMetroChild.cpp */; };
 		9D0FCA0C1B8C1AFA001788EE /* UITaskMetroLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FCA0A1B8C1AFA001788EE /* UITaskMetroLayer.cpp */; };
 		9D29DD6A1B8C3CE900F1EFEE /* TaskMetroChildManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D29DD681B8C3CE900F1EFEE /* TaskMetroChildManager.cpp */; };
 		9D29DD6D1B8C550700F1EFEE /* TaskMetroChild.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D29DD6B1B8C550700F1EFEE /* TaskMetroChild.cpp */; };
@@ -204,6 +205,8 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		9D0455AD1B8FFDF70053E920 /* UIPublishMetroChild.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIPublishMetroChild.cpp; sourceTree = "<group>"; };
+		9D0455AE1B8FFDF70053E920 /* UIPublishMetroChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPublishMetroChild.h; sourceTree = "<group>"; };
 		9D0FCA0A1B8C1AFA001788EE /* UITaskMetroLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITaskMetroLayer.cpp; sourceTree = "<group>"; };
 		9D0FCA0B1B8C1AFA001788EE /* UITaskMetroLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITaskMetroLayer.h; sourceTree = "<group>"; };
 		9D29DD681B8C3CE900F1EFEE /* TaskMetroChildManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TaskMetroChildManager.cpp; sourceTree = "<group>"; };
@@ -595,6 +598,8 @@
 			children = (
 				EA8900371B86C44C0022C278 /* UIPublishMainLayer.cpp */,
 				EA8900381B86C44C0022C278 /* UIPublishMainLayer.h */,
+				9D0455AD1B8FFDF70053E920 /* UIPublishMetroChild.cpp */,
+				9D0455AE1B8FFDF70053E920 /* UIPublishMetroChild.h */,
 			);
 			path = publish;
 			sourceTree = "<group>";
@@ -872,6 +877,7 @@
 				9D29DD6A1B8C3CE900F1EFEE /* TaskMetroChildManager.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				EAACAE541B7B45050047CA77 /* ShareHelper.cpp in Sources */,
+				9D0455AF1B8FFDF70053E920 /* UIPublishMetroChild.cpp in Sources */,
 				EAB9E2961B7CF74F005370B7 /* MetroTextSprite.cpp in Sources */,
 				EAAA544C1B8174A200CDB595 /* MetroNullSprite.cpp in Sources */,
 				EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */,
