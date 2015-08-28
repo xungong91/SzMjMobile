@@ -46,6 +46,7 @@ bool UITaskMetroLayer::init()
     this->addChild(mClippingNode);
     
     mMoveLayer = Layer::create();
+    mMoveLayer->setPosition(Point(0, 1388));
     mClippingNode->addChild(mMoveLayer);
     
     mMetroChildManager->setMetro(mMoveLayer);
@@ -85,6 +86,7 @@ void UITaskMetroLayer::setTouch()
     //mMetroTouchManage->setInfo(this, _eventDispatcher, mMoveLayer, mMetroSpriteManage);
     mMetroTouchManage->setInfo(this, _eventDispatcher, mMoveLayer, mMetroChildManager);
     mMetroTouchManage->setOffsetPoint(Point(0, 165));
+    mMetroTouchManage->setMaxSize(Size(1080, 1388));
     mMetroTouchManage->setTouchMove();
 }
 

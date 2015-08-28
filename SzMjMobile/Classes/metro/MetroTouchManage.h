@@ -28,7 +28,10 @@ public:
     void setTouchChange();
     void setTouchNull();
     
+    //偏移的size
     void setOffsetPoint(Point offset) {mOffsetPoint = offset;}
+    //长宽
+    void setMaxSize(Size size) { mMaxSize = size; }
 private:
     Node *mMoveLayer;
     BaseMetroSprite *mSelectMetroSprite;
@@ -37,6 +40,8 @@ private:
     MetroSpriteManage *mMetroSpriteManage;
     TaskMetroChildManager *mMetroChildManager;
     
+    //边框大小
+    Size mMaxSize;
     //点击是否移动
     bool mIsTouchMove;
     void setIsTouchMove(Point movePoint);
