@@ -45,8 +45,8 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_2" ActionTag="487131290" Tag="14" IconVisible="False" LeftMargin="452.5000" RightMargin="452.5000" TopMargin="160.0000" BottomMargin="10.0000" FontSize="35" LabelText="10000RMB" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="175.0000" Y="40.0000" />
+              <AbstractNodeData Name="Text_2" ActionTag="487131290" Tag="14" IconVisible="False" LeftMargin="452.5000" RightMargin="452.5000" TopMargin="160.0000" BottomMargin="10.0000" FontSize="35" LabelText="10000MB" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="149.0000" Y="40.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="30.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
