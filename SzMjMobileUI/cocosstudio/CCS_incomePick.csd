@@ -55,7 +55,7 @@
                 <PreSize X="1.0000" Y="0.1302" />
                 <FileData Type="Normal" Path="income/qianbao1.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_help" ActionTag="-47716189" ZOrder="1" Tag="83" IconVisible="False" TopMargin="210.0000" BottomMargin="1077.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_help" ActionTag="-47716189" ZOrder="1" Tag="83" IconVisible="False" TopMargin="260.0000" BottomMargin="1027.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
                 <Size X="1080.0000" Y="250.0000" />
                 <Children>
                   <AbstractNodeData Name="Image_1" ActionTag="-1068360046" ZOrder="2" Tag="58" IconVisible="False" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
@@ -132,30 +132,30 @@
                 <Position Y="1027.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.7007" />
+                <PrePosition Y="0.6682" />
                 <PreSize X="1.0000" Y="0.1627" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_2" ActionTag="534452677" ZOrder="2" Tag="59" IconVisible="False" TopMargin="1120.0000" BottomMargin="167.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_2" ActionTag="534452677" ZOrder="2" Tag="59" IconVisible="False" TopMargin="520.0000" BottomMargin="767.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
                 <Size X="1080.0000" Y="250.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
                 <Position X="540.0000" Y="1017.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.2713" />
+                <PrePosition X="0.5000" Y="0.6617" />
                 <PreSize X="1.0000" Y="0.1302" />
                 <FileData Type="Normal" Path="income/qianbao3.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_3" ActionTag="1981875577" ZOrder="3" Tag="60" IconVisible="False" TopMargin="1380.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_3" ActionTag="1981875577" ZOrder="3" Tag="60" IconVisible="False" TopMargin="780.0000" BottomMargin="507.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
                 <Size X="1080.0000" Y="250.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
                 <Position X="540.0000" Y="757.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.1534" />
+                <PrePosition X="0.5000" Y="0.4925" />
                 <PreSize X="1.0000" Y="0.1302" />
                 <FileData Type="Normal" Path="income/qianbao4.png" Plist="" />
               </AbstractNodeData>
