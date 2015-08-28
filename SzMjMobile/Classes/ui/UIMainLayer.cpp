@@ -9,6 +9,7 @@
 #include "UIMainLayer.h"
 #include "CocosHelper.h"
 #include "UILogin1Layer.h"
+#include "UmoInfo.h"
 
 UIMainLayer *UIMainLayer::gUIMainLayer = nullptr;
 
@@ -273,6 +274,7 @@ void UIMainLayer::CallbackMenu(cocos2d::Ref *sender, Widget::TouchEventType type
             mBtnProfit->loadTextures("hall/Profit_1.png", "hall/Profit_1.png");
             mBtnProfit->setPressedActionEnabled(false);
             intoIncomeLayer();
+            UmoInfo::getInstance()->showMsg();
         }
         else if (sender == mBtnGrab)
         {
