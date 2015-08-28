@@ -18,6 +18,12 @@ public:
     bool init();
     
     void setTitle(const string &title);
+private:
+    ImageView *Image_main;
+    vector<Node*> mTaskLayers;
+    
+    void setTask();
+    void runTaskAction();
 };
 
 #endif /* defined(__SzMjMobile__UIIncomeModelLayer__) */
