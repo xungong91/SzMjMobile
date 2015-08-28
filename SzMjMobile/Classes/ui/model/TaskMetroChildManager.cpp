@@ -101,7 +101,8 @@ void TaskMetroChildManager::setMetro(Layer *node)
 
 void TaskMetroChildManager::runTaskAction()
 {
-    int index = CCRANDOM_0_1() * mMetroList.size();
+    int size = mMetroList.size();
+    int index = CCRANDOM_0_1() * size;
     static_cast<TaskMetroChild*>(mMetroList[index])->setHanldRunAction
     (
     [this]()
@@ -232,9 +233,7 @@ void TaskMetroChildManager::SetChildPosition(int holdIndex, Node *sprite)
 {
 #if METRO_ORIENTATION_HOR
     //竖版
-    Point p(holdIndex % gColumnCount * gWidth, holdIndex / gColumnCount * gHeight);
-    p = Point(p.x, -p.y);
-    p += gStartPoint;
+    Point p(holdIndex % gColumnCount * gWidth, -(holdIndex / gColumnCount + 1) * gHeight);
     sprite->setPosition(p);
 #else
     //横版
@@ -253,7 +252,7 @@ void TaskMetroChildManager::UpdateMaxSize()
     float maxHeight = 0;
     for (auto it : mMetroList)
     {
-        float height = it->getPosition().y + it->getContentSize().height;
+        float height = -it->getPosition().y;
         if (height > maxHeight)
         {
             maxHeight = height;

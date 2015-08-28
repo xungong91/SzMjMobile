@@ -15,6 +15,7 @@ MetroTouchManage::MetroTouchManage()
 , mEventListenerChange(nullptr)
 , mOffsetPoint(Point::ZERO)
 {
+    mMaxSize = getSizeWin();
 }
 
 MetroTouchManage::~MetroTouchManage()
@@ -134,6 +135,11 @@ void MetroTouchManage::setInfo(Node *mainNode, EventDispatcher *eventDispatcher,
     {
         mIsTouchMove = false;
         gTouchStartPoint = touch->getLocation();
+        Rect rect(mOffsetPoint.x, mOffsetPoint.y, mMaxSize.width, mMaxSize.height);
+        if (!rect.containsPoint(gTouchStartPoint))
+        {
+            return false;
+        }
         gMoveLayerStartPoint = mMoveLayer->getPosition();
         
         onSelectBegan(gTouchStartPoint);
@@ -305,6 +311,16 @@ void MetroTouchManage::onTouchEnd()
     Point p = mMoveLayer->getPosition();
     
     float time = 0.3f;
+    if (p.y < mMaxSize.height || mMaxSize.height > size.height)
+    {
+        mMoveLayer->runAction(Sequence::create(MoveTo::create(time, Point(0, mMaxSize.height)), NULL));
+    }
+    else if (p.y > size.height)
+    {
+        mMoveLayer->runAction(Sequence::create(MoveTo::create(time, Point(0, size.height)), NULL));
+    }
+        
+    return;
     if (p.x > 0 || size.width < getSizeWin().width)
     {
         mMoveLayer->runAction(Sequence::create(MoveTo::create(time, Point::ZERO), NULL));

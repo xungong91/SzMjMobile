@@ -103,7 +103,6 @@ float TaskMetroChild::setHanldRunAction(function<void ()> func)
          Sequence::create
          (
           MoveTo::create(moveTime, Point(0, - 350)),
-          DelayTime::create(CCRANDOM_0_1() * 1),
           CallFunc::create(func),
           NULL)
          );
@@ -123,6 +122,7 @@ float TaskMetroChild::setHanldRunAction(function<void ()> func)
          Sequence::create
          (
           MoveTo::create(moveTime, Point(0, 0)),
+          CallFunc::create(func),
           NULL)
          );
         mNormal1->runAction
