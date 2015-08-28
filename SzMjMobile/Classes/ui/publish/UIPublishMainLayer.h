@@ -16,6 +16,9 @@ class UIPublishMainLayer : public UIBaseCenterLayer
 public:
     CREATE_FUNC(UIPublishMainLayer);
     bool init();
+    
+private:
+    void InitUI();
 };
 
 #endif /* defined(__SzMjMobile__UIPublishMainLayer__) */

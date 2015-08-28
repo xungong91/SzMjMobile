@@ -129,13 +129,13 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="List2ShouRu" ActionTag="1240222278" Tag="77" IconVisible="False" LeftMargin="-45.5000" RightMargin="1034.5000" TopMargin="688.5000" BottomMargin="-11.5000" FontSize="20" LabelText="收入：3891MB" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="134.0000" Y="23.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position />
+                  <AbstractNodeData Name="List2ShouRu" ActionTag="1240222278" Tag="77" IconVisible="False" LeftMargin="390.0000" RightMargin="368.0000" TopMargin="186.0000" BottomMargin="460.0000" FontSize="48" LabelText="收入：3891MB" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="322.0000" Y="54.0000" />
+                    <AnchorPoint />
+                    <Position X="390.0000" Y="460.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
+                    <CColor A="255" R="240" G="162" B="26" />
+                    <PrePosition X="0.3611" Y="0.6571" />
                     <PreSize X="0.0000" Y="0.0000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
@@ -163,6 +163,21 @@
             <FirstColor A="255" R="150" G="150" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="BtnTalk" ActionTag="-1805390619" Tag="78" IconVisible="False" LeftMargin="898.0000" RightMargin="30.0000" TopMargin="1570.0000" BottomMargin="198.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="122" Scale9Height="130" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="152.0000" Y="152.0000" />
+            <AnchorPoint />
+            <Position X="898.0000" Y="198.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.8315" Y="0.1031" />
+            <PreSize X="0.1407" Y="0.0792" />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="Normal" Path="taskInfo/Talk_1.png" Plist="" />
+            <NormalFileData Type="Normal" Path="taskInfo/Talk_0.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
