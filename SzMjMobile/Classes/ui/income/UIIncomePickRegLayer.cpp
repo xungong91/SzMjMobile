@@ -15,5 +15,7 @@ bool UIIncomePickRegLayer::init()
         return false;
     }
     
+    mLayout = CocosHelper::singleton()->getScaleLayout("CCS_incomePickReg.csb", this);
+    
     return true;
 }

@@ -16,6 +16,8 @@ class UIIncomeModelLayer : public UIBaseTopLayer
 public:
     CREATE_FUNC(UIIncomeModelLayer);
     bool init();
+    
+    void setTitle(const string &title);
 };
 
 #endif /* defined(__SzMjMobile__UIIncomeModelLayer__) */

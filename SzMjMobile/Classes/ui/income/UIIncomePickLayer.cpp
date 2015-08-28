@@ -7,6 +7,8 @@
 //
 
 #include "UIIncomePickLayer.h"
+#include "UIIncomePickRegLayer.h"
+#include "UIMainLayer.h"
 
 bool UIIncomePickLayer::init()
 {
@@ -14,6 +16,19 @@ bool UIIncomePickLayer::init()
     {
         return false;
     }
+    
+    mLayout = CocosHelper::singleton()->getScaleLayout("CCS_incomePick.csb", this);
+    
+    CocosHelper::getWidgetByName(mLayout, "Button_reg")->addTouchEventListener
+    (
+     [](Ref *sender, Widget::TouchEventType type)
+     {
+         if (type == Widget::TouchEventType::ENDED)
+         {
+             UIMainLayer::gUIMainLayer->pushLayer(UIIncomePickRegLayer::create());
+         }
+     }
+     );
     
     return true;
 }

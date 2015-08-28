@@ -85,12 +85,14 @@
 		EA2C15A91B85C858001D9ADF /* CatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2C15A51B85C858001D9ADF /* CatchCrash.m */; };
 		EA2C15AA1B85C858001D9ADF /* CrashHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2C15A61B85C858001D9ADF /* CrashHelper.mm */; };
 		EA44C31E1B83105200B94A5A /* UIInfoManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA44C31C1B83105200B94A5A /* UIInfoManage.cpp */; };
+		EA4C87621B903F6600E9D847 /* UIWidgetTaskLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA4C87601B903F6600E9D847 /* UIWidgetTaskLayer.cpp */; };
 		EA6805131B80C655008034EE /* MetroTouchManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA6805111B80C655008034EE /* MetroTouchManage.cpp */; };
 		EA7882001B8FFC0C009E887F /* UIIncomeMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7881FE1B8FFC0C009E887F /* UIIncomeMainLayer.cpp */; };
 		EA7882031B8FFC4A009E887F /* UIIncomeModelLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882011B8FFC4A009E887F /* UIIncomeModelLayer.cpp */; };
 		EA7882061B8FFD1C009E887F /* UIIncomePickLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882041B8FFD1C009E887F /* UIIncomePickLayer.cpp */; };
 		EA7882091B8FFD2D009E887F /* UIIncomePickRegLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882071B8FFD2D009E887F /* UIIncomePickRegLayer.cpp */; };
-		EA78820E1B900315009E887F /* SingletonBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA78820D1B900315009E887F /* SingletonBase.cpp */; };
+		EA7882181B90099F009E887F /* CocosHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882141B90099F009E887F /* CocosHelper.cpp */; };
+		EA7882191B90099F009E887F /* XHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882161B90099F009E887F /* XHelper.cpp */; };
 		EA89002C1B86BE440022C278 /* UIBaseTopLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */; };
 		EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */; };
 		EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */; };
@@ -119,9 +121,7 @@
 		EAB4D8531B7C77DC00C1B093 /* logo_sinaweibo.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB4D8511B7C77DC00C1B093 /* logo_sinaweibo.png */; };
 		EAB4D8541B7C77DC00C1B093 /* logo_wechat.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB4D8521B7C77DC00C1B093 /* logo_wechat.png */; };
 		EAB4D8571B7C898100C1B093 /* ShareHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = EAB4D8561B7C898100C1B093 /* ShareHelper.mm */; };
-		EAB9E2841B7CDC3C005370B7 /* CocosHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E2821B7CDC3C005370B7 /* CocosHelper.cpp */; };
 		EAB9E2871B7CDD26005370B7 /* MetroMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E2851B7CDD26005370B7 /* MetroMainLayer.cpp */; };
-		EAB9E28B1B7CE65E005370B7 /* XHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E2891B7CE65E005370B7 /* XHelper.cpp */; };
 		EAB9E28E1B7CE898005370B7 /* BaseLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E28C1B7CE898005370B7 /* BaseLayer.cpp */; };
 		EAB9E2911B7CE921005370B7 /* BaseMetroSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E28F1B7CE921005370B7 /* BaseMetroSprite.cpp */; };
 		EAB9E2961B7CF74F005370B7 /* MetroTextSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB9E2941B7CF74F005370B7 /* MetroTextSprite.cpp */; };
@@ -253,6 +253,8 @@
 		EA2C15A61B85C858001D9ADF /* CrashHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CrashHelper.mm; sourceTree = "<group>"; };
 		EA44C31C1B83105200B94A5A /* UIInfoManage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIInfoManage.cpp; sourceTree = "<group>"; };
 		EA44C31D1B83105200B94A5A /* UIInfoManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInfoManage.h; sourceTree = "<group>"; };
+		EA4C87601B903F6600E9D847 /* UIWidgetTaskLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIWidgetTaskLayer.cpp; sourceTree = "<group>"; };
+		EA4C87611B903F6600E9D847 /* UIWidgetTaskLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWidgetTaskLayer.h; sourceTree = "<group>"; };
 		EA6805111B80C655008034EE /* MetroTouchManage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroTouchManage.cpp; sourceTree = "<group>"; };
 		EA6805121B80C655008034EE /* MetroTouchManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroTouchManage.h; sourceTree = "<group>"; };
 		EA7881FE1B8FFC0C009E887F /* UIIncomeMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIIncomeMainLayer.cpp; sourceTree = "<group>"; };
@@ -263,8 +265,10 @@
 		EA7882051B8FFD1C009E887F /* UIIncomePickLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIIncomePickLayer.h; sourceTree = "<group>"; };
 		EA7882071B8FFD2D009E887F /* UIIncomePickRegLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIIncomePickRegLayer.cpp; sourceTree = "<group>"; };
 		EA7882081B8FFD2D009E887F /* UIIncomePickRegLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIIncomePickRegLayer.h; sourceTree = "<group>"; };
-		EA78820B1B9002D9009E887F /* SingletonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonBase.h; sourceTree = "<group>"; };
-		EA78820D1B900315009E887F /* SingletonBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingletonBase.cpp; sourceTree = "<group>"; };
+		EA7882141B90099F009E887F /* CocosHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CocosHelper.cpp; sourceTree = "<group>"; };
+		EA7882151B90099F009E887F /* CocosHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosHelper.h; sourceTree = "<group>"; };
+		EA7882161B90099F009E887F /* XHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XHelper.cpp; sourceTree = "<group>"; };
+		EA7882171B90099F009E887F /* XHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHelper.h; sourceTree = "<group>"; };
 		EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseTopLayer.cpp; sourceTree = "<group>"; };
 		EA89002B1B86BE440022C278 /* UIBaseTopLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseTopLayer.h; sourceTree = "<group>"; };
 		EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseCenterLayer.cpp; sourceTree = "<group>"; };
@@ -313,12 +317,8 @@
 		EAB4D8511B7C77DC00C1B093 /* logo_sinaweibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_sinaweibo.png; sourceTree = "<group>"; };
 		EAB4D8521B7C77DC00C1B093 /* logo_wechat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_wechat.png; sourceTree = "<group>"; };
 		EAB4D8561B7C898100C1B093 /* ShareHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShareHelper.mm; sourceTree = "<group>"; };
-		EAB9E2821B7CDC3C005370B7 /* CocosHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CocosHelper.cpp; sourceTree = "<group>"; };
-		EAB9E2831B7CDC3C005370B7 /* CocosHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosHelper.h; sourceTree = "<group>"; };
 		EAB9E2851B7CDD26005370B7 /* MetroMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroMainLayer.cpp; sourceTree = "<group>"; };
 		EAB9E2861B7CDD26005370B7 /* MetroMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroMainLayer.h; sourceTree = "<group>"; };
-		EAB9E2891B7CE65E005370B7 /* XHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XHelper.cpp; sourceTree = "<group>"; };
-		EAB9E28A1B7CE65E005370B7 /* XHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHelper.h; sourceTree = "<group>"; };
 		EAB9E28C1B7CE898005370B7 /* BaseLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseLayer.cpp; sourceTree = "<group>"; };
 		EAB9E28D1B7CE898005370B7 /* BaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLayer.h; sourceTree = "<group>"; };
 		EAB9E28F1B7CE921005370B7 /* BaseMetroSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseMetroSprite.cpp; sourceTree = "<group>"; };
@@ -471,10 +471,10 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EA7882131B90099F009E887F /* tools */,
 				EA2C159E1B85C858001D9ADF /* crash */,
 				EA1F70221B8425AB00669B9D /* demo */,
 				EAAA54561B81C7FE00CDB595 /* ui */,
-				EAB9E2811B7CDC3C005370B7 /* tools */,
 				EAB9E2801B7CDBC1005370B7 /* metro */,
 				EAACAE4D1B7B429A0047CA77 /* OC */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
@@ -579,6 +579,15 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		EA4C875F1B903F3100E9D847 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				EA4C87601B903F6600E9D847 /* UIWidgetTaskLayer.cpp */,
+				EA4C87611B903F6600E9D847 /* UIWidgetTaskLayer.h */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
 		EA7881FD1B8FFC0C009E887F /* income */ = {
 			isa = PBXGroup;
 			children = (
@@ -592,6 +601,17 @@
 				EA7882081B8FFD2D009E887F /* UIIncomePickRegLayer.h */,
 			);
 			path = income;
+			sourceTree = "<group>";
+		};
+		EA7882131B90099F009E887F /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				EA7882141B90099F009E887F /* CocosHelper.cpp */,
+				EA7882151B90099F009E887F /* CocosHelper.h */,
+				EA7882161B90099F009E887F /* XHelper.cpp */,
+				EA7882171B90099F009E887F /* XHelper.h */,
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 		EA89002F1B86BFDD0022C278 /* model */ = {
@@ -637,6 +657,7 @@
 		EAAA54561B81C7FE00CDB595 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				EA4C875F1B903F3100E9D847 /* widget */,
 				EA7881FD1B8FFC0C009E887F /* income */,
 				EA8900361B86C4370022C278 /* publish */,
 				EA89002F1B86BFDD0022C278 /* model */,
@@ -725,19 +746,6 @@
 				EA17FFB91B7DF13B0011179D /* MetroSpriteManage.h */,
 			);
 			path = metro;
-			sourceTree = "<group>";
-		};
-		EAB9E2811B7CDC3C005370B7 /* tools */ = {
-			isa = PBXGroup;
-			children = (
-				EAB9E2821B7CDC3C005370B7 /* CocosHelper.cpp */,
-				EAB9E2831B7CDC3C005370B7 /* CocosHelper.h */,
-				EAB9E2891B7CE65E005370B7 /* XHelper.cpp */,
-				EAB9E28A1B7CE65E005370B7 /* XHelper.h */,
-				EA78820D1B900315009E887F /* SingletonBase.cpp */,
-				EA78820B1B9002D9009E887F /* SingletonBase.h */,
-			);
-			path = tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -890,14 +898,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAB9E28B1B7CE65E005370B7 /* XHelper.cpp in Sources */,
 				EA2C15A81B85C858001D9ADF /* CrashHelper.cpp in Sources */,
 				9DF9843D1B8DB9AF00818401 /* UIInput.cpp in Sources */,
 				EAB9E2871B7CDD26005370B7 /* MetroMainLayer.cpp in Sources */,
 				EA2C15AA1B85C858001D9ADF /* CrashHelper.mm in Sources */,
+				EA7882191B90099F009E887F /* XHelper.cpp in Sources */,
 				EA7882001B8FFC0C009E887F /* UIIncomeMainLayer.cpp in Sources */,
 				EAAA54631B81DAFE00CDB595 /* UILogin2Layer.cpp in Sources */,
 				EA89003E1B86F9E80022C278 /* UIModelListLayer.cpp in Sources */,
+				EA4C87621B903F6600E9D847 /* UIWidgetTaskLayer.cpp in Sources */,
 				EAB4D8501B7C404E00C1B093 /* JsonHelper.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				EA44C31E1B83105200B94A5A /* UIInfoManage.cpp in Sources */,
@@ -919,6 +928,7 @@
 				EA8900411B86F9FA0022C278 /* UIModelInfoLayer.cpp in Sources */,
 				EAAA54691B81DB1100CDB595 /* UILogin4Layer.cpp in Sources */,
 				EAAA54591B81CBF500CDB595 /* UIMainLayer.cpp in Sources */,
+				EA7882181B90099F009E887F /* CocosHelper.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				EAAA54511B81B18200CDB595 /* MetroVideoSprite.cpp in Sources */,
 				EA6805131B80C655008034EE /* MetroTouchManage.cpp in Sources */,
@@ -931,11 +941,9 @@
 				EAAA54661B81DB0700CDB595 /* UILogin3Layer.cpp in Sources */,
 				EAB9E28E1B7CE898005370B7 /* BaseLayer.cpp in Sources */,
 				EA8900391B86C44C0022C278 /* UIPublishMainLayer.cpp in Sources */,
-				EA78820E1B900315009E887F /* SingletonBase.cpp in Sources */,
 				9DF9843A1B8D942D00818401 /* UISpecialInputLayer.cpp in Sources */,
 				9D0FCA0C1B8C1AFA001788EE /* UITaskMetroLayer.cpp in Sources */,
 				EAB9E2911B7CE921005370B7 /* BaseMetroSprite.cpp in Sources */,
-				EAB9E2841B7CDC3C005370B7 /* CocosHelper.cpp in Sources */,
 				EA7882061B8FFD1C009E887F /* UIIncomePickLayer.cpp in Sources */,
 				EADA70991B496B5E002878AA /* CTestDrawLayer.cpp in Sources */,
 				EAAA545D1B81D90900CDB595 /* UILogin1Layer.cpp in Sources */,

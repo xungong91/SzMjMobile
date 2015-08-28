@@ -867,11 +867,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/ui/UIMainLayer.cpp"
-            timestampString = "462421665.480072"
+            timestampString = "462424495.129788"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "UIMainLayer::changeAction(UIBaseCenterLayer *sender)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1385,6 +1385,38 @@
             startingLineNumber = "39"
             endingLineNumber = "39"
             landmarkName = "MetroTouchManage::setInfo(Node *mainNode, EventDispatcher *eventDispatcher, Node *moveLayer, MetroSpriteManage *metroSpriteManage)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/ui/income/UIIncomePickLayer.cpp"
+            timestampString = "462436240.433554"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "UIIncomePickLayer::init()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/ui/income/UIIncomePickLayer.cpp"
+            timestampString = "462436642.236358"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "UIIncomePickLayer::init()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

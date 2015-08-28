@@ -28,7 +28,9 @@ bool UIMainLayer::init()
     if (!Layer::init())
         return false;
     
-    this->addChild(UILogin1Layer::create());
+    //TODO
+//    this->addChild(UILogin1Layer::create());
+    intoMain();
     
     return true;
 }
