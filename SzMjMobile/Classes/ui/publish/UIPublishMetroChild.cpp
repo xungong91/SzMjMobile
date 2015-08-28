@@ -30,7 +30,7 @@ void UIPublishMetroChild::LoadImages(int name)
     stringstream ss;
     ss<<name;
     ss>>mName;
-    
+    /*
     string snormal0 = __String::createWithFormat("publish/Publish_%d_0.png", name)->getCString();
     string snormal1 = __String::createWithFormat("publish/Publish_%d_1.png", name)->getCString();
     string sselect = __String::createWithFormat("publish/Publish_%d_2.png", name)->getCString();
@@ -48,14 +48,49 @@ void UIPublishMetroChild::LoadImages(int name)
     mSelect = Sprite::create(sselect);
     mSelect->setAnchorPoint(Point::ZERO);
     mSelect->setVisible(false);
-    mClippingNode->addChild(mSelect);
+    mClippingNode->addChild(mSelect);*/
     
-    //    string pathStr = "taskList/" + PrefixName + mName + "_%d.png";
-    //    const char *path = pathStr.c_str();
-    //    mImage->initWithFile(__String::createWithFormat(path, (int)(CCRANDOM_0_1() * 2))->getCString());
-    //    mImage->setAnchorPoint(Point(0, 0));
-    //
-    //    imageRun();
+    string pathStr = "publish/" + PrefixName + mName + "_%d.png";
+    const char *path = pathStr.c_str();
+    mImage->initWithFile(__String::createWithFormat(path, (int)(CCRANDOM_0_1() * 2))->getCString());
+    mImage->setAnchorPoint(Point(0, 0));
+    
+    static Point gTouchStartPoint = Point::ZERO;
+    
+    mEventListener = EventListenerTouchOneByOne::create();
+    mEventListener->retain();
+    mEventListener->onTouchBegan = [this](Touch* touch, Event  *event)
+    {
+        return true;
+    };
+    
+    mEventListener->onTouchMoved = [this](Touch* touch, Event  *event)
+    {
+    };
+    
+    mEventListener->onTouchEnded = [this](Touch* touch, Event  *event)
+    {
+        this->onSelect();
+    };
+    
+    mEventListener->onTouchCancelled = [this](Touch* touch, Event  *event)
+    {
+    };
+
+    //_eventDispatcher->addEventListenerWithSceneGraphPriority(mEventListener, this);
+    
+    //mBtn = MenuItemImage::create("publish/" + PrefixName + mName + "_0.png", "publish/" + PrefixName + mName + "_2.png");
+    //mBtn->
+    
+    //mBtn = ImageView::create("publish/" + PrefixName + mName + "_2.png");
+    mBtn = Button::create();
+    mBtn->loadTextures("publish/Publish_" + mName + "_2.png", ("publish/Publish_" + mName + "_2.png").c_str());
+    mBtn->addTouchEventListener(CC_CALLBACK_2(UIPublishMetroChild::CallbackClick, this));
+    mBtn->setOpacity(0);
+    mBtn->setPosition(Vec2(341*0.5, 340*0.5));
+    this->addChild(mBtn);
+    
+    imageRun();
 }
 
 void UIPublishMetroChild::imageRun()
@@ -151,6 +186,30 @@ void UIPublishMetroChild::onSelectLeave(bool isMove)
     }
 }
 
+void UIPublishMetroChild::CallbackClick(cocos2d::Ref *sender, Widget::TouchEventType type)
+{
+    if(type == Widget::TouchEventType::BEGAN)
+    {
+        mBtn->setOpacity(255);
+    }
+    else if(type == Widget::TouchEventType::ENDED)
+    {
+        mBtn->setOpacity(0);
+        
+        if(mName == "0")
+        {
+            
+        }
+        else if(mName == "1")
+        {
+            
+        }
+    }
+    else if(type == Widget::TouchEventType::CANCELED)
+    {
+        mBtn->setOpacity(0);
+    }
+}
 
 
 

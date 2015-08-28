@@ -7,6 +7,9 @@
 
 #include "BaseMetroSprite.h"
 #include <functional>
+#include "ui/CocosGUI.h"
+
+using namespace cocos2d::ui;
 
 using namespace std;
 
@@ -29,11 +32,17 @@ public:
     
     void imageRun();
     
+private:
+    void CallbackClick(Ref *sender, Widget::TouchEventType type);
+    
 protected:
     Sprite *mImage;
     string mName;
     Sprite *mNormal0, *mNormal1, *mSelect;
     int mShowIndex;
+    
+    EventListenerTouchOneByOne *mEventListener;
+    Button *mBtn;
 };
 
 #endif
