@@ -42,7 +42,7 @@ void UIPublishMainLayer::InitUI()
     child11->imageRun();
     child11->setPosition(Vec2(10, 10));
     child11->setStyle(temp.style);
-    child11->setMetorName(temp.title);
+    //child11->setMetorName(temp.title);
     model1Panel->addChild(child11);
     
     UIPublishMetroChild *child12 = UIPublishMetroChild::create();
