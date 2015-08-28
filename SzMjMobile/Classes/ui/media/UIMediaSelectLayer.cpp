@@ -14,6 +14,7 @@
 
 UIMediaSelectLayer::UIMediaSelectLayer()
 : mSelectMediaItem(nullptr)
+, mSelectCallFunc(nullptr)
 {
     
 }
@@ -45,20 +46,26 @@ bool UIMediaSelectLayer::init()
                       {
                           types.push_back(mSelectSprites[i]->getType());
                       }
-                      auto layer = UIMediaLayer::create();
-                      layer->setMediaInfo(types);
-                      //this->getParent()->addChild(layer);
                       
-                      
-                      UIImageStruct imageStruct = mSelectSprites[0]->getType();
-                      if(imageStruct.type == UIMediaType::image)
+                      if (mSelectCallFunc)
                       {
-                          string filePath = imageStruct.file;
-                          ((UIModelAddLayer*)this->getParent())->AddImage(filePath);
+                          mSelectCallFunc(types);
                       }
-                      else if(imageStruct.type == UIMediaType::video)
+                      else
                       {
-                          ((UIModelAddLayer*)this->getParent())->AddVideo(imageStruct);
+                          auto layer = UIMediaLayer::create();
+                          layer->setMediaInfo(types);
+                          
+                          UIImageStruct imageStruct = mSelectSprites[0]->getType();
+                          if(imageStruct.type == UIMediaType::image)
+                          {
+                              string filePath = imageStruct.file;
+                              ((UIModelAddLayer*)this->getParent())->AddImage(filePath);
+                          }
+                          else if(imageStruct.type == UIMediaType::video)
+                          {
+                              ((UIModelAddLayer*)this->getParent())->AddVideo(imageStruct);
+                          }
                       }
                       
                       this->getParent()->removeChild(this);
@@ -96,6 +103,11 @@ bool UIMediaSelectLayer::init()
     setOkButtonStatas();
     
     return true;
+}
+
+void UIMediaSelectLayer::setSelectCallFunc(function<void (vector<UIImageStruct> files)> func)
+{
+    mSelectCallFunc = func;
 }
 
 void UIMediaSelectLayer::onEnter()

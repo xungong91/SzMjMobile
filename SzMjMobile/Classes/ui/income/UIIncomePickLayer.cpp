@@ -40,18 +40,22 @@ bool UIIncomePickLayer::init()
     
     auto openFunc = [this]()
     {
-        Panel_help->setContentSize(Size(1080, 840));
-        Image_help->setScaleY(1);
-        Image_1->setPosition(Point(0, 590));
-        ListView_main->refreshView();
+        Image_help->stopAllActions();
+        Image_help->runAction(Sequence::create(ScaleTo::create(0.3, 1, 1), NULL));
+//        Panel_help->setContentSize(Size(1080, 840));
+//        Image_help->setScaleY(1);
+//        Image_1->setPosition(Point(0, 590));
+//        ListView_main->refreshView();
     };
     
     auto closeFunc = [this]()
     {
-        Panel_help->setContentSize(Size(1080, 250));
-        Image_help->setScaleY(0);
-        Image_1->setPosition(Point(0, 0));
-        ListView_main->refreshView();
+        Image_help->stopAllActions();
+        Image_help->runAction(Sequence::create(ScaleTo::create(0.3, 1, 0), NULL));
+//        Panel_help->setContentSize(Size(1080, 250));
+//        Image_help->setScaleY(0);
+//        Image_1->setPosition(Point(0, 0));
+//        ListView_main->refreshView();
     };
     
     Button *Button_help = static_cast<Button*>(CocosHelper::getWidgetByName(mLayout, "Button_help"));
@@ -73,6 +77,7 @@ bool UIIncomePickLayer::init()
                  Button_help->loadTextureNormal("income/btn_qianbao2.png");
                  Button_help->loadTexturePressed("income/btn_qianbao2.png");
                  openFunc();
+                 Button_help->setTouchEnabled(false);
              }
              gIsOpenHelp = !gIsOpenHelp;
          }
@@ -80,6 +85,9 @@ bool UIIncomePickLayer::init()
      );
     
     addTask();
+    
+    this->schedule(CC_CALLBACK_1(UIIncomePickLayer::updateList, this), "updateList");
+    
     return true;
 }
 
@@ -123,6 +131,13 @@ void UIIncomePickLayer::sethanldAction()
                                                                          });
 }
 
+void UIIncomePickLayer::updateList(float dt)
+{
+    float height = 590 * Image_help->getScaleY();
+    Panel_help->setContentSize(Size(1080, 250 + height));
+    Image_1->setPosition(Point(0, height));
+    ListView_main->refreshView();
+}
 
 
 

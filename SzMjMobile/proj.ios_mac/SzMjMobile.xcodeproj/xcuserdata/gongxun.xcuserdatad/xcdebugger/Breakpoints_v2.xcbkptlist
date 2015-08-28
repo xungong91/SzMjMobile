@@ -556,38 +556,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
             endingLineNumber = "93"
-            landmarkName = "UIMediaSelectLayer::onEnter()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Classes/ui/media/UIMediaSelectLayer.cpp"
-            timestampString = "461745366.261014"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "UIMediaSelectLayer::init()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Classes/ui/media/UIMediaSelectLayer.cpp"
-            timestampString = "461745366.261014"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
             landmarkName = "UIMediaSelectLayer::init()"
             landmarkType = "5">
          </BreakpointContent>
@@ -603,7 +571,21 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "197"
-            endingLineNumber = "197"
+            endingLineNumber = "197">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/ui/media/UIMediaSelectLayer.cpp"
+            timestampString = "461745366.261014"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
             landmarkName = "UIMediaSelectLayer::onTouchEnd()"
             landmarkType = "5">
          </BreakpointContent>
@@ -618,23 +600,9 @@
             timestampString = "461745366.261014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Classes/ui/media/UIMediaSelectLayer.cpp"
-            timestampString = "461745366.261014"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "176"
             endingLineNumber = "176"
-            landmarkName = "UIMediaSelectLayer::onSelectEnd(Point p)"
+            landmarkName = "UIMediaSelectLayer::onSelectMove(Point p)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -666,7 +634,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "127"
             endingLineNumber = "127"
-            landmarkName = "UIMediaSelectLayer::onSelectBegan(Point p)"
+            landmarkName = "UIMediaSelectLayer::onEnter()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
