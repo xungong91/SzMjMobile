@@ -3,6 +3,8 @@
 //  Created by LiuXueCheng on 15/8/28
 
 #include "UIPublishTaskInfo.h"
+#include "UIMediaSelectLayer.h"
+#include "UIMainLayer.h"
 
 bool UIPublishTaskInfo::init()
 {
@@ -55,6 +57,17 @@ void UIPublishTaskInfo::InitUI()
     
     //添加头像按钮
     Button *btnAdd = (Button*)CocosHelper::getNodeByName(mLayout, "Button_Add");
+    btnAdd->addTouchEventListener
+    (
+     [this](Ref *sender, Widget::TouchEventType type)
+     {
+         if(type == Widget::TouchEventType::ENDED)
+         {
+              //this->addChild(UIMediaSelectLayer::create());
+             UIMainLayer::gUIMainLayer->pushLayer(UIMediaSelectLayer::create());
+         }
+     }
+    );
     
     //模特头像
     mImageAvatar = ImageView::create();
