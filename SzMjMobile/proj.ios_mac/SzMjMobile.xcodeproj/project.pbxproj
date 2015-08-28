@@ -64,6 +64,7 @@
 		9D29DD6A1B8C3CE900F1EFEE /* TaskMetroChildManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D29DD681B8C3CE900F1EFEE /* TaskMetroChildManager.cpp */; };
 		9D29DD6D1B8C550700F1EFEE /* TaskMetroChild.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D29DD6B1B8C550700F1EFEE /* TaskMetroChild.cpp */; };
 		9D5F9DCB1B8AF97F00923A15 /* UITaskListLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9DC91B8AF97F00923A15 /* UITaskListLayer.cpp */; };
+		9DC3A9D91B90488000E2A735 /* UIPublishTaskInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3A9D71B90488000E2A735 /* UIPublishTaskInfo.cpp */; };
 		9DF984331B8D402000818401 /* UITaskInfoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DF984311B8D402000818401 /* UITaskInfoLayer.cpp */; };
 		9DF984361B8D4D0B00818401 /* UIModelAddLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DF984341B8D4D0B00818401 /* UIModelAddLayer.cpp */; };
 		9DF9843A1B8D942D00818401 /* UISpecialInputLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DF984381B8D942D00818401 /* UISpecialInputLayer.cpp */; };
@@ -220,6 +221,8 @@
 		9D29DD6C1B8C550700F1EFEE /* TaskMetroChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskMetroChild.h; sourceTree = "<group>"; };
 		9D5F9DC91B8AF97F00923A15 /* UITaskListLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITaskListLayer.cpp; sourceTree = "<group>"; };
 		9D5F9DCA1B8AF97F00923A15 /* UITaskListLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITaskListLayer.h; sourceTree = "<group>"; };
+		9DC3A9D71B90488000E2A735 /* UIPublishTaskInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIPublishTaskInfo.cpp; sourceTree = "<group>"; };
+		9DC3A9D81B90488000E2A735 /* UIPublishTaskInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPublishTaskInfo.h; sourceTree = "<group>"; };
 		9DF984311B8D402000818401 /* UITaskInfoLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITaskInfoLayer.cpp; sourceTree = "<group>"; };
 		9DF984321B8D402000818401 /* UITaskInfoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITaskInfoLayer.h; sourceTree = "<group>"; };
 		9DF984341B8D4D0B00818401 /* UIModelAddLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIModelAddLayer.cpp; sourceTree = "<group>"; };
@@ -650,6 +653,8 @@
 				EA8900381B86C44C0022C278 /* UIPublishMainLayer.h */,
 				9D0455AD1B8FFDF70053E920 /* UIPublishMetroChild.cpp */,
 				9D0455AE1B8FFDF70053E920 /* UIPublishMetroChild.h */,
+				9DC3A9D71B90488000E2A735 /* UIPublishTaskInfo.cpp */,
+				9DC3A9D81B90488000E2A735 /* UIPublishTaskInfo.h */,
 			);
 			path = publish;
 			sourceTree = "<group>";
@@ -924,6 +929,7 @@
 				9D0455AF1B8FFDF70053E920 /* UIPublishMetroChild.cpp in Sources */,
 				EAB9E2961B7CF74F005370B7 /* MetroTextSprite.cpp in Sources */,
 				EAAA544C1B8174A200CDB595 /* MetroNullSprite.cpp in Sources */,
+				9DC3A9D91B90488000E2A735 /* UIPublishTaskInfo.cpp in Sources */,
 				EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */,
 				EA8900411B86F9FA0022C278 /* UIModelInfoLayer.cpp in Sources */,
 				EAAA54691B81DB1100CDB595 /* UILogin4Layer.cpp in Sources */,
