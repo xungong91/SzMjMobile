@@ -172,6 +172,56 @@
           <Image Name="ModelInfo_3.png" />
           <File Name="Thumbs.db" />
         </Folder>
+        <Folder Name="publish">
+          <Image Name="Close_0.png" />
+          <Image Name="Close_1.png" />
+          <Image Name="Publish_0_0.png" />
+          <Image Name="Publish_0_1.png" />
+          <Image Name="Publish_0_2.png" />
+          <Image Name="Publish_1_0.png" />
+          <Image Name="Publish_1_1.png" />
+          <Image Name="Publish_1_2.png" />
+          <Image Name="Publish_2_0.png" />
+          <Image Name="Publish_2_1.png" />
+          <Image Name="Publish_2_2.png" />
+          <Image Name="Publish_3_0.png" />
+          <Image Name="Publish_3_1.png" />
+          <Image Name="Publish_3_2.png" />
+          <Image Name="Publish_4_0.png" />
+          <Image Name="Publish_4_1.png" />
+          <Image Name="Publish_4_2.png" />
+          <Image Name="Publish_Address_0.png" />
+          <Image Name="Publish_Address_1.png" />
+          <Image Name="Publish_Commerce_0.png" />
+          <Image Name="Publish_Commerce_1.png" />
+          <Image Name="Publish_HanKou_0.png" />
+          <Image Name="Publish_HanKou_1.png" />
+          <Image Name="Publish_HanYang_0.png" />
+          <Image Name="Publish_HanYang_1.png" />
+          <Image Name="Publish_Jian_0.png" />
+          <Image Name="Publish_Jia_0.png" />
+          <Image Name="Publish_Model_0.png" />
+          <Image Name="Publish_Model_1.png" />
+          <Image Name="Publish_Person_0.png" />
+          <Image Name="Publish_Person_1.png" />
+          <Image Name="Publish_QiTa_0.png" />
+          <Image Name="Publish_QiTa_1.png" />
+          <Image Name="Publish_QiTa_2.png" />
+          <Image Name="Publish_QiTa_4.png" />
+          <Image Name="Publish_QiTa_5.png" />
+          <Image Name="Publish_ShenHeImage_0.png" />
+          <Image Name="Publish_ShenHeImage_1.png" />
+          <Image Name="Publish_ShenHeImage_Bg.png" />
+          <Image Name="Publish_Task_0.png" />
+          <Image Name="Publish_Task_1.png" />
+          <Image Name="Publish_UploadImage.png" />
+          <Image Name="Publish_UploadImage_Bg.png" />
+          <Image Name="Publish_Upload_0.png" />
+          <Image Name="Publish_Upload_1.png" />
+          <Image Name="Publish_WuChang_0.png" />
+          <Image Name="Publish_WuChang_1.png" />
+          <File Name="Thumbs.db" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>
