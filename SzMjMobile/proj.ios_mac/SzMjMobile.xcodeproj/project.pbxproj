@@ -91,7 +91,6 @@
 		EA7882061B8FFD1C009E887F /* UIIncomePickLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882041B8FFD1C009E887F /* UIIncomePickLayer.cpp */; };
 		EA7882091B8FFD2D009E887F /* UIIncomePickRegLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882071B8FFD2D009E887F /* UIIncomePickRegLayer.cpp */; };
 		EA78820E1B900315009E887F /* SingletonBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA78820D1B900315009E887F /* SingletonBase.cpp */; };
-		EA7882111B900403009E887F /* UmoInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA78820F1B900403009E887F /* UmoInfo.cpp */; };
 		EA89002C1B86BE440022C278 /* UIBaseTopLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */; };
 		EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */; };
 		EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */; };
@@ -266,8 +265,6 @@
 		EA7882081B8FFD2D009E887F /* UIIncomePickRegLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIIncomePickRegLayer.h; sourceTree = "<group>"; };
 		EA78820B1B9002D9009E887F /* SingletonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonBase.h; sourceTree = "<group>"; };
 		EA78820D1B900315009E887F /* SingletonBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingletonBase.cpp; sourceTree = "<group>"; };
-		EA78820F1B900403009E887F /* UmoInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UmoInfo.cpp; sourceTree = "<group>"; };
-		EA7882101B900403009E887F /* UmoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UmoInfo.h; sourceTree = "<group>"; };
 		EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseTopLayer.cpp; sourceTree = "<group>"; };
 		EA89002B1B86BE440022C278 /* UIBaseTopLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseTopLayer.h; sourceTree = "<group>"; };
 		EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseCenterLayer.cpp; sourceTree = "<group>"; };
@@ -739,8 +736,6 @@
 				EAB9E28A1B7CE65E005370B7 /* XHelper.h */,
 				EA78820D1B900315009E887F /* SingletonBase.cpp */,
 				EA78820B1B9002D9009E887F /* SingletonBase.h */,
-				EA78820F1B900403009E887F /* UmoInfo.cpp */,
-				EA7882101B900403009E887F /* UmoInfo.h */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -934,7 +929,6 @@
 				9D5F9DCB1B8AF97F00923A15 /* UITaskListLayer.cpp in Sources */,
 				EA2C159B1B85BC5E001D9ADF /* UIMediaVideoLayer.cpp in Sources */,
 				EAAA54661B81DB0700CDB595 /* UILogin3Layer.cpp in Sources */,
-				EA7882111B900403009E887F /* UmoInfo.cpp in Sources */,
 				EAB9E28E1B7CE898005370B7 /* BaseLayer.cpp in Sources */,
 				EA8900391B86C44C0022C278 /* UIPublishMainLayer.cpp in Sources */,
 				EA78820E1B900315009E887F /* SingletonBase.cpp in Sources */,
