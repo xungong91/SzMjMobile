@@ -7,6 +7,7 @@
 //
 
 #include "UIIncomeModelLayer.h"
+#include "UIWidgetTaskLayer.h"
 
 bool UIIncomeModelLayer::init()
 {
@@ -16,6 +17,8 @@ bool UIIncomeModelLayer::init()
     }
     
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_incomeModel.csb", this);
+    
+    Image_main = static_cast<ImageView*>(CocosHelper::getNodeByName(mLayout, "Image_main"));
     
     return true;
 }
@@ -29,3 +32,14 @@ void UIIncomeModelLayer::setTitle(const string &title)
     text->setPosition(Point(540, 1790));
     this->addChild(text, 2);
 }
+
+void UIIncomeModelLayer::setTask()
+{
+    
+}
+
+
+
+
+
+

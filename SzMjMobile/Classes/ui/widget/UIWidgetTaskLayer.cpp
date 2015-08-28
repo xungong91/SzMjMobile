@@ -22,5 +22,6 @@ bool UIWidgetTaskLayer::init()
 
 void UIWidgetTaskLayer::setImage(const string &img1, const string &img2)
 {
-//    static_cast<ImageView*>(CocosHelper::getNodeByName(mLayout, <#const string &name#>))
+    static_cast<ImageView*>(CocosHelper::getNodeByName(mLayout, "Image_1"))->loadTexture(img1);
+    static_cast<ImageView*>(CocosHelper::getNodeByName(mLayout, "Image_1"))->loadTexture(img2);
 }
