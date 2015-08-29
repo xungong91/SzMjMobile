@@ -64,7 +64,19 @@ void UIPublishTaskInfo::InitUI()
          if(type == Widget::TouchEventType::ENDED)
          {
               //this->addChild(UIMediaSelectLayer::create());
-             UIMainLayer::gUIMainLayer->pushLayer(UIMediaSelectLayer::create());
+             UIMediaSelectLayer *select =UIMediaSelectLayer::create();
+             select->setSelectCallFunc
+             (
+              [this](vector<UIImageStruct> files)
+              {
+                  for(int i=0; i<files.size(); i++)
+                  {
+                      UIImageStruct temp = files.at(i);
+                      this->AddImage(temp.file);
+                  }
+              }
+             );
+             //UIMainLayer::gUIMainLayer->pushLayer(select);
          }
      }
     );
@@ -83,6 +95,16 @@ void UIPublishTaskInfo::InitUI()
     mAvatarClipping->setStencil(shap);
     mAvatarClipping->setInverted(false);
     modelAvatarPanel->addChild(mAvatarClipping);
-    mAvatarClipping->addChild(ImageView::create("taskList/Task_0_2.png"));
-    //mAvatarClipping->addChild(mImageAvatar);
+    //mAvatarClipping->addChild(ImageView::create("taskList/Task_0_2.png"));
+    mAvatarClipping->addChild(mImageAvatar);
+}
+
+//添加照片
+void UIPublishTaskInfo::AddImage(string imagePath)
+{
+    if(imagePath == "")
+        return;
+    
+    mImageAvatar->loadTexture(imagePath);
+    mImageAvatar->setScale(344 / mImageAvatar->getContentSize().width, 340 / mImageAvatar->getContentSize().height);
 }

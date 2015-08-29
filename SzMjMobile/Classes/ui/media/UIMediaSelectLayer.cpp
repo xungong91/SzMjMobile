@@ -11,6 +11,7 @@
 #include "XHelper.h"
 #include "UIMediaLayer.h"
 #include "UIInfoManage.h"
+#include "UIMainLayer.h"
 
 UIMediaSelectLayer::UIMediaSelectLayer()
 : mSelectMediaItem(nullptr)
@@ -101,6 +102,11 @@ bool UIMediaSelectLayer::init()
     }
     
     setOkButtonStatas();
+    
+    if(UIMainLayer::gUIMainLayer)
+    {
+        UIMainLayer::gUIMainLayer->addChild(this, 10);
+    }
     
     return true;
 }
