@@ -18,7 +18,7 @@ private:
     
 private:
     //添加照片
-    ImageView *mImageAvatar;
+    ImageView *mImage;
 };
 
 #endif
