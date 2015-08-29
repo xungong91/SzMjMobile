@@ -8,6 +8,7 @@
 #include "UITaskInfoLayer.h"
 #include "UIMainLayer.h"
 #include "UIPublishTaskInfo.h"
+#include "UIPublishTaskSet.h"
 
 const string PrefixName = "Publish_";
 
@@ -200,7 +201,7 @@ void UIPublishMetroChild::CallbackClick(cocos2d::Ref *sender, Widget::TouchEvent
         
         if(mName == "0")
         {
-            
+            UIMainLayer::gUIMainLayer->pushLayer(UIPublishTaskSet::create());
         }
         else if(mName == "1")
         {

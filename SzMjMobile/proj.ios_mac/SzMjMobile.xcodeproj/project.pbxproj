@@ -69,6 +69,7 @@
 		9DF984361B8D4D0B00818401 /* UIModelAddLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DF984341B8D4D0B00818401 /* UIModelAddLayer.cpp */; };
 		9DF9843A1B8D942D00818401 /* UISpecialInputLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DF984381B8D942D00818401 /* UISpecialInputLayer.cpp */; };
 		9DF9843D1B8DB9AF00818401 /* UIInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9843B1B8DB9AF00818401 /* UIInput.cpp */; };
+		9DFAE1721B91449500EC2543 /* UIPublishTaskSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAE1701B91449500EC2543 /* UIPublishTaskSet.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -232,6 +233,8 @@
 		9DF984391B8D942D00818401 /* UISpecialInputLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISpecialInputLayer.h; sourceTree = "<group>"; };
 		9DF9843B1B8DB9AF00818401 /* UIInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIInput.cpp; sourceTree = "<group>"; };
 		9DF9843C1B8DB9AF00818401 /* UIInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInput.h; sourceTree = "<group>"; };
+		9DFAE1701B91449500EC2543 /* UIPublishTaskSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIPublishTaskSet.cpp; sourceTree = "<group>"; };
+		9DFAE1711B91449500EC2543 /* UIPublishTaskSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPublishTaskSet.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -660,6 +663,8 @@
 				9D0455AE1B8FFDF70053E920 /* UIPublishMetroChild.h */,
 				9DC3A9D71B90488000E2A735 /* UIPublishTaskInfo.cpp */,
 				9DC3A9D81B90488000E2A735 /* UIPublishTaskInfo.h */,
+				9DFAE1701B91449500EC2543 /* UIPublishTaskSet.cpp */,
+				9DFAE1711B91449500EC2543 /* UIPublishTaskSet.h */,
 			);
 			path = publish;
 			sourceTree = "<group>";
@@ -951,6 +956,7 @@
 				9D5F9DCB1B8AF97F00923A15 /* UITaskListLayer.cpp in Sources */,
 				EA2C159B1B85BC5E001D9ADF /* UIMediaVideoLayer.cpp in Sources */,
 				EAAA54661B81DB0700CDB595 /* UILogin3Layer.cpp in Sources */,
+				9DFAE1721B91449500EC2543 /* UIPublishTaskSet.cpp in Sources */,
 				EAB9E28E1B7CE898005370B7 /* BaseLayer.cpp in Sources */,
 				EA8900391B86C44C0022C278 /* UIPublishMainLayer.cpp in Sources */,
 				9DF9843A1B8D942D00818401 /* UISpecialInputLayer.cpp in Sources */,
