@@ -103,6 +103,9 @@
 		EA89003E1B86F9E80022C278 /* UIModelListLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89003C1B86F9E80022C278 /* UIModelListLayer.cpp */; };
 		EA8900411B86F9FA0022C278 /* UIModelInfoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89003F1B86F9FA0022C278 /* UIModelInfoLayer.cpp */; };
 		EA8AD1041AEF25C3001B8E39 /* CoinsTo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8AD1021AEF25C3001B8E39 /* CoinsTo.cpp */; };
+		EA9DD09F1B9158D9006FE005 /* UIGrabMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD09D1B9158D9006FE005 /* UIGrabMainLayer.cpp */; };
+		EA9DD0A21B91593E006FE005 /* UIGrabInfoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD0A01B91593E006FE005 /* UIGrabInfoLayer.cpp */; };
+		EA9DD0A51B915951006FE005 /* UIGrabModelInfoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD0A31B915951006FE005 /* UIGrabModelInfoLayer.cpp */; };
 		EAA48DE31B7DBED50081DC45 /* MetroImageSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */; };
 		EAA48DE71B7DC5420081DC45 /* Metro in Resources */ = {isa = PBXBuildFile; fileRef = EAA48DE61B7DC5420081DC45 /* Metro */; };
 		EAAA544C1B8174A200CDB595 /* MetroNullSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAA544A1B8174A200CDB595 /* MetroNullSprite.cpp */; };
@@ -292,6 +295,12 @@
 		EA8900401B86F9FA0022C278 /* UIModelInfoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModelInfoLayer.h; sourceTree = "<group>"; };
 		EA8AD1021AEF25C3001B8E39 /* CoinsTo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinsTo.cpp; sourceTree = "<group>"; };
 		EA8AD1031AEF25C3001B8E39 /* CoinsTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinsTo.h; sourceTree = "<group>"; };
+		EA9DD09D1B9158D9006FE005 /* UIGrabMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIGrabMainLayer.cpp; sourceTree = "<group>"; };
+		EA9DD09E1B9158D9006FE005 /* UIGrabMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGrabMainLayer.h; sourceTree = "<group>"; };
+		EA9DD0A01B91593E006FE005 /* UIGrabInfoLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIGrabInfoLayer.cpp; sourceTree = "<group>"; };
+		EA9DD0A11B91593E006FE005 /* UIGrabInfoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGrabInfoLayer.h; sourceTree = "<group>"; };
+		EA9DD0A31B915951006FE005 /* UIGrabModelInfoLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIGrabModelInfoLayer.cpp; sourceTree = "<group>"; };
+		EA9DD0A41B915951006FE005 /* UIGrabModelInfoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGrabModelInfoLayer.h; sourceTree = "<group>"; };
 		EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroImageSprite.cpp; sourceTree = "<group>"; };
 		EAA48DE21B7DBED50081DC45 /* MetroImageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroImageSprite.h; sourceTree = "<group>"; };
 		EAA48DE61B7DC5420081DC45 /* Metro */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Metro; sourceTree = "<group>"; };
@@ -669,9 +678,23 @@
 			path = publish;
 			sourceTree = "<group>";
 		};
+		EA9DD09C1B9158C3006FE005 /* grab */ = {
+			isa = PBXGroup;
+			children = (
+				EA9DD09D1B9158D9006FE005 /* UIGrabMainLayer.cpp */,
+				EA9DD09E1B9158D9006FE005 /* UIGrabMainLayer.h */,
+				EA9DD0A01B91593E006FE005 /* UIGrabInfoLayer.cpp */,
+				EA9DD0A11B91593E006FE005 /* UIGrabInfoLayer.h */,
+				EA9DD0A31B915951006FE005 /* UIGrabModelInfoLayer.cpp */,
+				EA9DD0A41B915951006FE005 /* UIGrabModelInfoLayer.h */,
+			);
+			path = grab;
+			sourceTree = "<group>";
+		};
 		EAAA54561B81C7FE00CDB595 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				EA9DD09C1B9158C3006FE005 /* grab */,
 				EA4C875F1B903F3100E9D847 /* widget */,
 				EA7881FD1B8FFC0C009E887F /* income */,
 				EA8900361B86C4370022C278 /* publish */,
@@ -928,11 +951,14 @@
 				EA44C31E1B83105200B94A5A /* UIInfoManage.cpp in Sources */,
 				EAA48DE31B7DBED50081DC45 /* MetroImageSprite.cpp in Sources */,
 				EA1F70641B84814900669B9D /* UIMediaSelectItemLayer.cpp in Sources */,
+				EA9DD0A51B915951006FE005 /* UIGrabModelInfoLayer.cpp in Sources */,
+				EA9DD0A21B91593E006FE005 /* UIGrabInfoLayer.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				EA2C15A91B85C858001D9ADF /* CatchCrash.m in Sources */,
 				EA89002C1B86BE440022C278 /* UIBaseTopLayer.cpp in Sources */,
 				EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */,
 				EA7882091B8FFD2D009E887F /* UIIncomePickRegLayer.cpp in Sources */,
+				EA9DD09F1B9158D9006FE005 /* UIGrabMainLayer.cpp in Sources */,
 				9D29DD6D1B8C550700F1EFEE /* TaskMetroChild.cpp in Sources */,
 				9D29DD6A1B8C3CE900F1EFEE /* TaskMetroChildManager.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,

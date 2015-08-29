@@ -251,6 +251,10 @@
           <Image Name="task_inconme0.png" />
           <Image Name="task_inconme1.png" />
           <Image Name="task_inconme2.png" />
+          <Image Name="btn_faburenwu1.png" />
+          <Image Name="btn_faburenwu2.png" />
+          <Image Name="btn_qiangdan1.png" />
+          <Image Name="btn_qiangdan2.png" />
         </Folder>
         <Project Name="CCS_incomeModel.csd" Type="Layer" />
         <Project Name="CCS_incomePickReg.csd" Type="Layer" />
@@ -258,6 +262,35 @@
         <Project Name="CCS_WIDGET_Task.csd" Type="Layer" />
         <Project Name="CCS_publish_taskInfo.csd" Type="Layer" />
         <Project Name="CCS_publish_taskSet.csd" Type="Layer" />
+        <Project Name="CCS_grab.csd" Type="Layer" />
+        <Folder Name="grab">
+          <Image Name="btn_shaoxuan1.png" />
+          <Image Name="btn_shaoxuan2.png" />
+          <Image Name="grabList0.png" />
+          <Image Name="grabList1.png" />
+          <Image Name="grabList2.png" />
+          <Image Name="bg_grabInfo1.png" />
+          <Image Name="bg_grabInfo2.png" />
+          <Image Name="btn_tijiao1.png" />
+          <Image Name="btn_tijiao2.png" />
+          <Image Name="grabInfoModel0.png" />
+          <Image Name="grabInfoModel1.png" />
+          <Image Name="grabInfoModel2.png" />
+          <Image Name="grabInfoModel3.png" />
+          <Image Name="grabInfoModel4.png" />
+          <Image Name="grabInfoModel5.png" />
+          <Image Name="grabInfoModel6.png" />
+          <Image Name="grabInfo_select.png" />
+          <Image Name="model0.png" />
+          <Image Name="model1.png" />
+          <Image Name="model2.png" />
+          <Image Name="model3.png" />
+          <Image Name="model4.png" />
+          <Image Name="model5.png" />
+          <Image Name="modelSelect.png" />
+        </Folder>
+        <Project Name="CCS_grabInfo.csd" Type="Layer" />
+        <Project Name="CCS_grabModelInfo.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

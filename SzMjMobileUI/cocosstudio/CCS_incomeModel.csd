@@ -174,57 +174,35 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Panel_fabu" ActionTag="-1816463444" Tag="46" IconVisible="False" RightMargin="542.0000" TopMargin="1762.0000" TouchEnable="True" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
-            <Size X="538.0000" Y="158.0000" />
-            <Children>
-              <AbstractNodeData Name="Text_3" ActionTag="-793943017" Tag="48" IconVisible="False" LeftMargin="170.0000" RightMargin="168.0000" TopMargin="49.5000" BottomMargin="51.5000" FontSize="50" LabelText="发布任务" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="200.0000" Y="57.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="270.0000" Y="80.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="26" G="26" B="26" />
-                <PrePosition X="0.5019" Y="0.5063" />
-                <PreSize X="0.0000" Y="0.0000" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-            </Children>
+          <AbstractNodeData Name="Button_faburenwu" ActionTag="-208048187" Tag="177" IconVisible="False" RightMargin="534.0000" TopMargin="1758.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="516" Scale9Height="140" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="546.0000" Y="162.0000" />
             <AnchorPoint />
             <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
-            <PreSize X="0.4981" Y="0.0823" />
-            <SingleColor A="255" R="230" G="230" B="230" />
-            <FirstColor A="255" R="150" G="200" B="255" />
-            <EndColor A="255" R="255" G="255" B="255" />
-            <ColorVector ScaleY="1.0000" />
+            <PreSize X="0.5056" Y="0.0844" />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="Normal" Path="income/btn_faburenwu2.png" Plist="" />
+            <NormalFileData Type="Normal" Path="income/btn_faburenwu1.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Panel_qiangdan" ActionTag="-1738575822" Tag="47" IconVisible="False" LeftMargin="540.0000" RightMargin="2.0000" TopMargin="1762.0000" TouchEnable="True" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-            <Size X="538.0000" Y="158.0000" />
-            <Children>
-              <AbstractNodeData Name="Text_3_0" ActionTag="515426800" Tag="49" IconVisible="False" LeftMargin="220.0000" RightMargin="218.0000" TopMargin="49.5000" BottomMargin="51.5000" FontSize="50" LabelText="抢单" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="100.0000" Y="57.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="270.0000" Y="80.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="26" G="26" B="26" />
-                <PrePosition X="0.5019" Y="0.5063" />
-                <PreSize X="0.0000" Y="0.0000" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-            </Children>
+          <AbstractNodeData Name="Button_qiangdan" ActionTag="1409158247" Tag="178" IconVisible="False" LeftMargin="534.0000" TopMargin="1758.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="516" Scale9Height="140" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="546.0000" Y="162.0000" />
             <AnchorPoint />
-            <Position X="540.0000" />
+            <Position X="534.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" />
-            <PreSize X="0.4981" Y="0.0823" />
-            <SingleColor A="255" R="230" G="230" B="230" />
-            <FirstColor A="255" R="150" G="200" B="255" />
-            <EndColor A="255" R="255" G="255" B="255" />
-            <ColorVector ScaleY="1.0000" />
+            <PrePosition X="0.4944" />
+            <PreSize X="0.5056" Y="0.0844" />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="Normal" Path="income/btn_qiangdan2.png" Plist="" />
+            <NormalFileData Type="Normal" Path="income/btn_qiangdan1.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
