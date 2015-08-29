@@ -58,6 +58,21 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
+              <AbstractNodeData Name="BtnReturn" ActionTag="-411154333" Tag="189" IconVisible="False" LeftMargin="-500.0000" RightMargin="295.0000" TopMargin="105.0000" BottomMargin="-200.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="176" Scale9Height="74" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="206.0000" Y="96.0000" />
+                <AnchorPoint />
+                <Position X="-500.0000" Y="-200.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="-500.0000" Y="-200.0000" />
+                <PreSize X="206.0000" Y="96.0000" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="addModel/Return_1.png" Plist="" />
+                <NormalFileData Type="Normal" Path="addModel/Return_0.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position X="540.0000" Y="1920.0000" />

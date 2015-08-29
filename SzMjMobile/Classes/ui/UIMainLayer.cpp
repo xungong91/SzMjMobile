@@ -105,6 +105,10 @@ void UIMainLayer::intoMain()
     mMainLayer->addChild(mUIIncomeMainLayer);
     mLayers.push_back(mUIIncomeMainLayer);
     
+    mUIGrabMainLayer = UIGrabMainLayer::create();
+    mMainLayer->addChild(mUIGrabMainLayer);
+    mLayers.push_back(mUIGrabMainLayer);
+    
     for (auto it : mLayers)
     {
         it->setVisible(false);
@@ -152,6 +156,25 @@ void UIMainLayer::intoPublishLayer()
 void UIMainLayer::intoIncomeLayer()
 {
     UIBaseCenterLayer *temp = mUIIncomeMainLayer;
+    if (mCurrentLayer == temp)
+    {
+        return;
+    }
+    
+    if (mCurrentLayer)
+    {
+        changeAction(temp);
+    }
+    else
+    {
+        temp->setVisible(true);
+        mCurrentLayer = temp;
+    }
+}
+
+void UIMainLayer::intoGrabLayer()
+{
+    UIBaseCenterLayer *temp = mUIGrabMainLayer;
     if (mCurrentLayer == temp)
     {
         return;
@@ -280,6 +303,7 @@ void UIMainLayer::CallbackMenu(cocos2d::Ref *sender, Widget::TouchEventType type
         {
             mBtnGrab->loadTextures("hall/Grab_1.png", "hall/Grab_1.png");
             mBtnGrab->setPressedActionEnabled(false);
+            intoGrabLayer();
         }
         else if (sender == mBtnUpdate)
         {

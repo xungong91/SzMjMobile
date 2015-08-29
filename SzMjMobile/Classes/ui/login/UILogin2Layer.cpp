@@ -9,6 +9,7 @@
 #include "UILogin2Layer.h"
 #include "UIMainLayer.h"
 #include "UILogin3Layer.h"
+#include "UIWidgetMsgSprite.h"
 
 bool UILogin2Layer::init()
 {
@@ -24,6 +25,12 @@ bool UILogin2Layer::init()
      {
          if (type == Widget::TouchEventType::ENDED)
          {
+             if (static_cast<TextField*>(CocosHelper::getNodeByName(mLayout, "TextField_phoneNum"))->getString().size() != 6)
+             {
+                 UIWidgetMsgSprite::setMsg("验证码有误，请重新输入");
+                 return;
+             }
+             
              UIMainLayer::gUIMainLayer->removeChild(this);
              UIMainLayer::gUIMainLayer->addChild(UILogin3Layer::create());
          }
