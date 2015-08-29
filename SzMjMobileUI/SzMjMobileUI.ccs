@@ -279,6 +279,8 @@
           <Image Name="Chat_InputBg.png" />
           <Image Name="Chat_JiLu_0.png" />
           <Image Name="Chat_JiLu_1.png" />
+          <Image Name="Chat_JianPan.png" />
+          <Image Name="Chat_TalkBg.png" />
         </Folder>
         <Folder Name="grab">
           <Image Name="bg_grabInfo1.png" />
@@ -328,6 +330,8 @@
         <Project Name="CCS_manageEdit.csd" Type="Layer" />
         <Project Name="CCS_manageModel.csd" Type="Layer" />
         <Project Name="CCS_manageModelEdit.csd" Type="Layer" />
+        <Project Name="CCS_chat.csd" Type="Layer" />
+        <Project Name="CCS_chat_info.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
