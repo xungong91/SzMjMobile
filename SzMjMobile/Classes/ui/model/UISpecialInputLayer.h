@@ -38,7 +38,7 @@ public:
     virtual void editBoxReturn(EditBox* editBox);
     
 public:
-    void InitUI(string titleStr, string placeHolderStr, ui::EditBox::InputMode inputMode, InputType inputType);
+    void InitUI(string titleStr, string placeHolderStr, string errorStr, ui::EditBox::InputMode inputMode, InputType inputType);
     
 private:
     void SetString(string str);
@@ -53,6 +53,7 @@ private:
     string mTitleStr;
     string mPlaceHolderStr;
     string mStr;
+    string mErrorStr;
     
     InputType mInputType;
 };

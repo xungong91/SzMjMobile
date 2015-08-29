@@ -81,27 +81,27 @@ void UIModelAddLayer::InitUI()
     Layout *modelBaseInfo = (Layout*)CocosHelper::getNodeByName(mLayout, "PanelModelBaseInfo");
     
     UISpecialInputLayer *nickname = UISpecialInputLayer::create();
-    nickname->InitUI("昵称", "请输入6-16位昵称", ui::EditBox::InputMode::ANY, UISpecialInputLayer::InputType::ANY);
+    nickname->InitUI("昵称", "请输入6-16位昵称", "昵称非法", ui::EditBox::InputMode::ANY, UISpecialInputLayer::InputType::ANY);
     nickname->setPosition(Vec2(268.5, 268 + 64));
     modelBaseInfo->addChild((Node*)nickname);
     
     UISpecialInputLayer *birthday = UISpecialInputLayer::create();
-    birthday->InitUI("生日", "1993/01/03", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::BIRTHDAY);
+    birthday->InitUI("生日", "1993/01/03", "必须为8位数字", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::BIRTHDAY);
     birthday->setPosition(Vec2(810, 268 + 64));
     modelBaseInfo->addChild((Node*)birthday);
     
     UISpecialInputLayer *height = UISpecialInputLayer::create();
-    height->InitUI("身高", "170cm", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::HEIGHT);
+    height->InitUI("身高", "170cm", "身高非法", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::HEIGHT);
     height->setPosition(Vec2(268.5, 136 + 64));
     modelBaseInfo->addChild((Node*)height);
     
     UISpecialInputLayer *bhw = UISpecialInputLayer::create();
-    bhw->InitUI("三围", "90B/70/90", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::BHW);
+    bhw->InitUI("三围", "90B/70/90", "必须为6位数字", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::BHW);
     bhw->setPosition(Vec2(810, 136 + 64));
     modelBaseInfo->addChild((Node*)bhw);
     
     UISpecialInputLayer *tel = UISpecialInputLayer::create();
-    tel->InitUI("电话", "111-1111-1111", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::TEL);
+    tel->InitUI("电话", "111-1111-1111", "必须为11位数字", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::TEL);
     tel->setPosition(Vec2(1080 * 0.5, 130 * 0.5));
     modelBaseInfo->addChild((Node*)tel);
 }

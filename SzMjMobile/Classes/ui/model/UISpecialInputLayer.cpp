@@ -21,7 +21,7 @@ bool UISpecialInputLayer::init()
 }
 
 //初始化UI
-void UISpecialInputLayer::InitUI(string titleStr, string placeHolderStr, ui::EditBox::InputMode inputMode, InputType inputType)
+void UISpecialInputLayer::InitUI(string titleStr, string placeHolderStr, string errorStr, ui::EditBox::InputMode inputMode, InputType inputType)
 {
     mTitleStr = titleStr;
     mPlaceHolderStr = placeHolderStr;
@@ -46,7 +46,7 @@ void UISpecialInputLayer::InitUI(string titleStr, string placeHolderStr, ui::Edi
     mTitleLabel->setVisible(false);
     addChild(mTitleLabel);
     
-    mContentLabel = ui::Text::create("XXXXX", "微软雅黑", 45);
+    mContentLabel = ui::Text::create(errorStr, "微软雅黑", 45);
     mContentLabel->setColor(Color3B(240, 162, 26));
     mContentLabel->setPositionY(-20);
     mContentLabel->setVisible(false);
@@ -57,6 +57,11 @@ void UISpecialInputLayer::editBoxEditingDidBegin(cocos2d::ui::EditBox *editBox)
 {
     if(editBox == mInput)
     {
+        if(strcmp(mStr.c_str(), "") != 0)
+        {
+            mInput->setText(mStr.c_str());
+        }
+        
         mInput->SetScale9Sprite(Size(537, 130), "addModel/InputBg_1.png");
         mInput->setPlaceHolder(mPlaceHolderStr.c_str());//设置输入框内的默认文本，且直到输入新内容前一直显示
         
@@ -81,6 +86,8 @@ void UISpecialInputLayer::editBoxEditingDidEnd(cocos2d::ui::EditBox *editBox)
             mStr = mInput->getText();
             
             mNullLabel->setVisible(true);
+            mTitleLabel->setVisible(false);
+            mContentLabel->setVisible(false);
         }
         
         mInput->SetScale9Sprite(Size(537, 130), "addModel/InputBg_0.png");
@@ -107,6 +114,9 @@ void UISpecialInputLayer::SetString(string str)
     }
     else if(mInputType == InputType::BIRTHDAY)
     {
+        if(tempStr.length() != 8)
+            return;
+        
         //只适用8位的生日19880219
         string year = tempStr.substr(0, 4);
         string month = tempStr.substr(4, 2);
@@ -126,12 +136,18 @@ void UISpecialInputLayer::SetString(string str)
     }
     else if(mInputType == InputType::BHW)
     {
+        if(tempStr.length() != 6)
+            return;
+        
         tempStr.insert(2, "B-");
         tempStr.insert(6, "-");
         mContentLabel->setString(tempStr);
     }
     else if(mInputType == InputType::TEL)
     {
+        if(tempStr.length() != 11)
+            return;
+        
         tempStr.insert(3, "-");
         tempStr.insert(8, "-");
         mContentLabel->setString(tempStr);
