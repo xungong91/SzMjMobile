@@ -2,7 +2,7 @@
   <PropertyGroup Type="Layer" Name="CCS_publish_taskSet" ID="e7cb82b8-5792-4464-b21b-cfdac0d2619d" Version="2.3.1.2" />
   <Content ctype="GameProjectContent">
     <Content>
-            <Animation Duration="0" Speed="1.0000" />
+      <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="87" ctype="GameLayerObjectData">
         <Size X="1080.0000" Y="1920.0000" />
         <Children>
@@ -69,35 +69,47 @@
               <AbstractNodeData Name="Panel_renWuDiDian" ActionTag="987716403" ZOrder="1" Tag="213" IconVisible="False" TopMargin="380.0000" BottomMargin="1022.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="1080.0000" Y="135.0000" />
                 <Children>
-                  <AbstractNodeData Name="Button_1" ActionTag="-1135160082" Tag="33" IconVisible="False" RightMargin="543.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="507" Scale9Height="113" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="537.0000" Y="135.0000" />
+                  <AbstractNodeData Name="Image_base" ActionTag="-1984858698" Tag="100" IconVisible="False" ctype="ImageViewObjectData">
+                    <Size X="1080.0000" Y="135.0000" />
+                    <Children>
+                      <AbstractNodeData Name="Button_1" ActionTag="-1135160082" Tag="33" IconVisible="False" RightMargin="-491.0000" TopMargin="-89.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="507" Scale9Height="113" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                        <Size X="537.0000" Y="135.0000" />
+                        <AnchorPoint />
+                        <Position />
+                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                        <CColor A="255" R="255" G="255" B="255" />
+                        <PrePosition />
+                        <PreSize X="0.4972" Y="1.0000" />
+                        <TextColor A="255" R="65" G="65" B="70" />
+                        <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                        <PressedFileData Type="Normal" Path="publish/Publish_Task_1.png" Plist="" />
+                        <NormalFileData Type="Normal" Path="publish/Publish_Task_0.png" Plist="" />
+                        <OutlineColor A="255" R="255" G="0" B="0" />
+                        <ShadowColor A="255" R="110" G="110" B="110" />
+                      </AbstractNodeData>
+                      <AbstractNodeData Name="Button_2" ActionTag="-103900366" Tag="34" IconVisible="False" LeftMargin="542.0000" RightMargin="-1034.0000" TopMargin="-89.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="508" Scale9Height="113" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                        <Size X="538.0000" Y="135.0000" />
+                        <AnchorPoint />
+                        <Position X="542.0000" />
+                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                        <CColor A="255" R="255" G="255" B="255" />
+                        <PrePosition X="11.7826" />
+                        <PreSize X="0.4981" Y="1.0000" />
+                        <TextColor A="255" R="65" G="65" B="70" />
+                        <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                        <PressedFileData Type="Normal" Path="publish/Publish_Address_1.png" Plist="" />
+                        <NormalFileData Type="Normal" Path="publish/Publish_Address_0.png" Plist="" />
+                        <OutlineColor A="255" R="255" G="0" B="0" />
+                        <ShadowColor A="255" R="110" G="110" B="110" />
+                      </AbstractNodeData>
+                    </Children>
                     <AnchorPoint />
                     <Position />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
-                    <PreSize X="0.4972" Y="1.0000" />
-                    <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="publish/Publish_Task_1.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="publish/Publish_Task_0.png" Plist="" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="Button_2" ActionTag="-103900366" Tag="34" IconVisible="False" LeftMargin="542.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="508" Scale9Height="113" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="538.0000" Y="135.0000" />
-                    <AnchorPoint />
-                    <Position X="542.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5019" />
-                    <PreSize X="0.4981" Y="1.0000" />
-                    <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="publish/Publish_Address_1.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="publish/Publish_Address_0.png" Plist="" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
+                    <PreSize X="1.0000" Y="1.0000" />
+                    <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="Image_renWu" ActionTag="289903439" Tag="35" IconVisible="False" Scale9Width="1080" Scale9Height="135" ctype="ImageViewObjectData">
                     <Size X="1080.0000" Y="135.0000" />
@@ -336,6 +348,4 @@
       </ObjectData>
     </Content>
   </Content>
-
 </GameProjectFile>
-

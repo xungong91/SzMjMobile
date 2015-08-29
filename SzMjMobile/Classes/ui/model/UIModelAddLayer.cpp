@@ -147,7 +147,7 @@ void UIModelAddLayer::CallbackAvatarBtn(cocos2d::Ref *sender, Widget::TouchEvent
     if(type == Widget::TouchEventType::ENDED)
     {
         mState = 1;//添加头像
-        this->addChild(UIMediaSelectLayer::create());
+        UIMediaSelectLayer::create();
     }
 }
 
@@ -157,7 +157,7 @@ void UIModelAddLayer::CallbackImageBtn(cocos2d::Ref *sender, Widget::TouchEventT
     if(type == Widget::TouchEventType::ENDED)
     {
         mState = 0;//添加照片
-        this->addChild(UIMediaSelectLayer::create());
+        UIMediaSelectLayer::create();
     }
 }
 
@@ -167,7 +167,7 @@ void UIModelAddLayer::CallbackVideoBtn(cocos2d::Ref *sender, Widget::TouchEventT
     if(type == Widget::TouchEventType::ENDED)
     {
         mState = 2;//添加视频
-        this->addChild(UIMediaSelectLayer::create());
+        UIMediaSelectLayer::create();
     }
 }
 

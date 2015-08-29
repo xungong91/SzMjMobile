@@ -16,9 +16,31 @@ public:
 private:
     void InitUI();
     
+    void AddImage(string imagePath);
+    
+    void Open();
+    void Close();
+    void UpdateList(float dt);
+    
+    void CallbackBtnTask(Ref *sender, Widget::TouchEventType type);
+    
 private:
     //添加照片
-    ImageView *mImageAvatar;
+    ImageView *mImage;
+    
+    Button *mBtnTask;
+    Button *mBtnAddress;
+    Button *mBtnPerson;
+    Button *mBtnCommerce;
+    Button *mBtnWuChang;
+    Button *mBtnHanKou;
+    Button *mBtnHanYang;
+    
+    ListView *mListView;
+    Widget *mPanel;
+    Widget *mBase;
+    Widget *mTask;
+    Widget *mAddress;
 };
 
 #endif
