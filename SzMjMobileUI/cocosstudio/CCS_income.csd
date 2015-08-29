@@ -45,7 +45,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_2" ActionTag="487131290" Tag="14" IconVisible="False" LeftMargin="452.5000" RightMargin="452.5000" TopMargin="160.0000" BottomMargin="10.0000" FontSize="35" LabelText="10000MB" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="Text_2" ActionTag="487131290" Tag="14" IconVisible="False" LeftMargin="465.5000" RightMargin="465.5000" TopMargin="160.0000" BottomMargin="10.0000" FontSize="35" LabelText="10000MB" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="149.0000" Y="40.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="30.0000" />
@@ -68,7 +68,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ListView_model" ActionTag="-490691317" Tag="16" IconVisible="False" TopMargin="458.0000" BottomMargin="162.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" ScrollDirectionType="0" ItemMargin="10" DirectionType="Vertical" ctype="ListViewObjectData">
+          <AbstractNodeData Name="ListView_model" ActionTag="-490691317" Tag="16" IconVisible="False" TopMargin="458.0000" BottomMargin="162.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" ItemMargin="10" DirectionType="Vertical" ctype="ListViewObjectData">
             <Size X="1080.0000" Y="1300.0000" />
             <Children>
               <AbstractNodeData Name="Image_0" ActionTag="-1164198077" Tag="25" IconVisible="False" BottomMargin="850.0000" TouchEnable="True" Scale9Width="1080" Scale9Height="450" ctype="ImageViewObjectData">

@@ -26,18 +26,141 @@
             <PreSize X="1.0000" Y="0.1302" />
             <FileData Type="Normal" Path="income/shouyi12.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ListView_1" ActionTag="-79033708" Tag="28" IconVisible="False" TopMargin="461.0000" BottomMargin="159.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+          <AbstractNodeData Name="ListView_1" ActionTag="-79033708" Tag="28" IconVisible="False" TopMargin="461.0000" BottomMargin="159.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
             <Size X="1080.0000" Y="1300.0000" />
             <Children>
-              <AbstractNodeData Name="Image_main" ActionTag="1072405299" Tag="49" IconVisible="False" LeftMargin="-517.0000" RightMargin="-363.0000" TopMargin="-692.5000" BottomMargin="-538.5000" Scale9Width="1080" Scale9Height="1431" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Panel_main" ActionTag="1112576807" Tag="114" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1080" Scale9Height="1431" ctype="PanelObjectData">
                 <Size X="1080.0000" Y="1431.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="540.0000" Y="715.5000" />
+                <Children>
+                  <AbstractNodeData Name="Panel_0" ActionTag="-65311075" Tag="15" IconVisible="False" LeftMargin="5.0000" RightMargin="735.0000" TopMargin="85.0000" BottomMargin="1006.0000" TouchEnable="True" ColorAngle="90.0000" ctype="PanelObjectData">
+                    <Size X="340.0000" Y="340.0000" />
+                    <AnchorPoint />
+                    <Position X="5.0000" Y="1006.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.0046" Y="0.7030" />
+                    <PreSize X="0.3148" Y="0.2376" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_1" ActionTag="-519211602" Tag="16" IconVisible="False" LeftMargin="365.0000" RightMargin="375.0000" TopMargin="85.0000" BottomMargin="1006.0000" TouchEnable="True" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="340.0000" Y="340.0000" />
+                    <AnchorPoint />
+                    <Position X="365.0000" Y="1006.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.3380" Y="0.7030" />
+                    <PreSize X="0.3148" Y="0.2376" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_2" ActionTag="702479007" Tag="17" IconVisible="False" LeftMargin="725.0000" RightMargin="15.0000" TopMargin="85.0000" BottomMargin="1006.0000" TouchEnable="True" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="340.0000" Y="340.0000" />
+                    <AnchorPoint />
+                    <Position X="725.0000" Y="1006.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.6713" Y="0.7030" />
+                    <PreSize X="0.3148" Y="0.2376" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_3" ActionTag="-2035089963" Tag="18" IconVisible="False" LeftMargin="5.0000" RightMargin="735.0000" TopMargin="568.0000" BottomMargin="523.0000" TouchEnable="True" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="340.0000" Y="340.0000" />
+                    <AnchorPoint />
+                    <Position X="5.0000" Y="523.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.0046" Y="0.3655" />
+                    <PreSize X="0.3148" Y="0.2376" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_4" ActionTag="1690322187" Tag="19" IconVisible="False" LeftMargin="365.0000" RightMargin="375.0000" TopMargin="568.0000" BottomMargin="523.0000" TouchEnable="True" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="340.0000" Y="340.0000" />
+                    <AnchorPoint />
+                    <Position X="365.0000" Y="523.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.3380" Y="0.3655" />
+                    <PreSize X="0.3148" Y="0.2376" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_5" ActionTag="1083243604" Tag="20" IconVisible="False" LeftMargin="725.0000" RightMargin="15.0000" TopMargin="568.0000" BottomMargin="523.0000" TouchEnable="True" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="340.0000" Y="340.0000" />
+                    <AnchorPoint />
+                    <Position X="725.0000" Y="523.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.6713" Y="0.3655" />
+                    <PreSize X="0.3148" Y="0.2376" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_6" ActionTag="274125225" Tag="21" IconVisible="False" LeftMargin="5.0000" RightMargin="735.0000" TopMargin="1051.0000" BottomMargin="40.0000" TouchEnable="True" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="340.0000" Y="340.0000" />
+                    <AnchorPoint />
+                    <Position X="5.0000" Y="40.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.0046" Y="0.0280" />
+                    <PreSize X="0.3148" Y="0.2376" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_7" ActionTag="-199533068" Tag="22" IconVisible="False" LeftMargin="365.0000" RightMargin="375.0000" TopMargin="1051.0000" BottomMargin="40.0000" TouchEnable="True" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="340.0000" Y="340.0000" />
+                    <AnchorPoint />
+                    <Position X="365.0000" Y="40.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.3380" Y="0.0280" />
+                    <PreSize X="0.3148" Y="0.2376" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_8" ActionTag="-670251630" Tag="23" IconVisible="False" LeftMargin="725.0000" RightMargin="15.0000" TopMargin="1051.0000" BottomMargin="40.0000" TouchEnable="True" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="340.0000" Y="340.0000" />
+                    <AnchorPoint />
+                    <Position X="725.0000" Y="40.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.6713" Y="0.0280" />
+                    <PreSize X="0.3148" Y="0.2376" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                </Children>
+                <AnchorPoint />
+                <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1150" Y="0.8850" />
-                <PreSize X="5.4000" Y="7.1550" />
+                <PrePosition />
+                <PreSize X="1.0000" Y="0.8774" />
                 <FileData Type="Normal" Path="income/incomeModel_bg.png" Plist="" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleY="1.0000" />

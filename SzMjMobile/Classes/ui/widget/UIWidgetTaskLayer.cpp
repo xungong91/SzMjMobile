@@ -7,6 +7,8 @@
 //
 
 #include "UIWidgetTaskLayer.h"
+#include "UITaskInfoLayer.h"
+#include "UIMainLayer.h"
 
 bool UIWidgetTaskLayer::init()
 {
@@ -20,6 +22,12 @@ bool UIWidgetTaskLayer::init()
     Image_2 = static_cast<ImageView*>(CocosHelper::getNodeByName(mLayout, "Image_2"));
     
     mActionIndex = 0;
+    
+//    this->addChild(Menu::create(MenuItemImage::create("taskList/Task_0_0.png", "taskList/Task_0_0.png",
+//                                                      [](Ref *sender)
+//                                                      {
+//                                                          UIMainLayer::gUIMainLayer->pushLayer(UITaskInfoLayer::create());
+//                                                      }), NULL));
     return true;
 }
 

@@ -248,11 +248,16 @@
           <Image Name="btn_shouqi2.png" />
           <Image Name="btn_zhangdan1.png" />
           <Image Name="btn_zhangdan2.png" />
+          <Image Name="task_inconme0.png" />
+          <Image Name="task_inconme1.png" />
+          <Image Name="task_inconme2.png" />
         </Folder>
         <Project Name="CCS_incomeModel.csd" Type="Layer" />
         <Project Name="CCS_incomePickReg.csd" Type="Layer" />
         <Project Name="CCS_incomePick.csd" Type="Layer" />
         <Project Name="CCS_WIDGET_Task.csd" Type="Layer" />
+        <Project Name="CCS_publish_taskInfo.csd" Type="Layer" />
+        <Project Name="CCS_publish_taskSet.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -8,6 +8,9 @@
 
 #include "UIIncomeModelLayer.h"
 #include "UIWidgetTaskLayer.h"
+#include "UITaskInfoLayer.h"
+#include "UIMainLayer.h"
+#include "UIWidgetMsgSprite.h"
 
 bool UIIncomeModelLayer::init()
 {
@@ -66,16 +69,17 @@ void UIIncomeModelLayer::setTask()
         725.0f,
     };
     
+    auto it = CocosHelper::getWidgetByName(mLayout, "Panel_main");
     
     for (int i = 0; i < 9; ++i)
     {
-        string img1 = __String::createWithFormat("income/task_inconme%d.png", i % 3)->getCString();
-        Point p(xs[i % 3], ys[i / 3]);
+        auto panel = CocosHelper::getWidgetByName(it, __String::createWithFormat("Panel_%d", i)->getCString());
+        panel->addTouchEventListener(CC_CALLBACK_2(UIIncomeModelLayer::onTaskTouch, this));
         
+        string img1 = __String::createWithFormat("income/task_inconme%d.png", i % 3)->getCString();
         UIWidgetTaskLayer *temp = UIWidgetTaskLayer::create();
         temp->setImage(img1, imageFiles[i]);
-        temp->setPosition(p);
-        Image_main->addChild(temp);
+        panel->addChild(temp);
         
         mTaskLayers.push_back(temp);
     }
@@ -89,6 +93,38 @@ void UIIncomeModelLayer::runTaskAction()
                                                                              runTaskAction();
                                                                          });
 }
+
+void UIIncomeModelLayer::onTaskTouch(Ref *sender, Widget::TouchEventType type)
+{
+    if (type == Widget::TouchEventType::ENDED)
+    {
+        UIMainLayer::gUIMainLayer->pushLayer(UITaskInfoLayer::create());
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

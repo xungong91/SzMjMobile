@@ -27,6 +27,7 @@ private:
     
     void addTask();
     void sethanldAction();
+    void onTaskTouch(Ref *sender, Widget::TouchEventType type);
 };
 
 #endif /* defined(__SzMjMobile__UIIncomePickLayer__) */

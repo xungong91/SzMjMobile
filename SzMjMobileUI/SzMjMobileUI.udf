@@ -28,5 +28,17 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="CCS_WIDGET_Task.csd" />
+          <FilePathData Path="CCS_incomeModel.csd" />
+          <FilePathData Path="CCS_incomePick.csd" />
+          <FilePathData Path="CCS_incomePickReg.csd" />
+          <FilePathData Path="CCS_income.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="CCS_incomePick.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
