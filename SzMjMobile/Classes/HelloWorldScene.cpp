@@ -22,7 +22,8 @@ Scene* HelloWorld::createScene()
 
     // add layer as a child to scene
     scene->addChild(layer);
-
+    scene->setAnchorPoint(Point(0.5, 0));
+//    scene->setScaleY(1.025f);
     // return the scene
     return scene;
 }
