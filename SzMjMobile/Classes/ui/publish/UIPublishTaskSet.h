@@ -22,7 +22,8 @@ private:
     void Close();
     void UpdateList(float dt);
     
-    void CallbackBtnTask(Ref *sender, Widget::TouchEventType type);
+    void CallbackBtn1(Ref *sender, Widget::TouchEventType type);
+    void CallbackBtn2(Ref *sender, Widget::TouchEventType type);
     
 private:
     //添加照片
@@ -38,6 +39,7 @@ private:
     
     ListView *mListView;
     Widget *mPanel;
+    Widget *mPanelMove;
     Widget *mBase;
     Widget *mTask;
     Widget *mAddress;

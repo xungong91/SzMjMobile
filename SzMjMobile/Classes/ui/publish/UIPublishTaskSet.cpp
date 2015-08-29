@@ -5,6 +5,10 @@
 #include "UIPublishTaskSet.h"
 #include "UIMediaSelectLayer.h"
 
+//0为初始状态（未按下），1为按下，2为已选择
+static int mTastBtnState = 0;
+static int mAddressBtnState = 0;
+
 bool UIPublishTaskSet::init()
 {
     if(!UIBaseTopLayer::init())
@@ -55,22 +59,30 @@ void UIPublishTaskSet::InitUI()
     
     //动画处的按钮
     mBtnTask = (Button*)CocosHelper::getNodeByName(mLayout, "Button_1");
-    mBtnTask->addTouchEventListener(CC_CALLBACK_2(UIPublishTaskSet::CallbackBtnTask, this));
+    mBtnTask->addTouchEventListener(CC_CALLBACK_2(UIPublishTaskSet::CallbackBtn1, this));
     mBtnAddress = (Button*)CocosHelper::getNodeByName(mLayout, "Button_2");
+    mBtnAddress->addTouchEventListener(CC_CALLBACK_2(UIPublishTaskSet::CallbackBtn1, this));
     mBtnPerson = (Button*)CocosHelper::getNodeByName(mLayout, "Button_3");
+    mBtnPerson->addTouchEventListener(CC_CALLBACK_2(UIPublishTaskSet::CallbackBtn2, this));
     mBtnCommerce = (Button*)CocosHelper::getNodeByName(mLayout, "Button_4");
+    mBtnCommerce->addTouchEventListener(CC_CALLBACK_2(UIPublishTaskSet::CallbackBtn2, this));
     mBtnWuChang = (Button*)CocosHelper::getNodeByName(mLayout, "Button_5");
+    mBtnWuChang->addTouchEventListener(CC_CALLBACK_2(UIPublishTaskSet::CallbackBtn2, this));
     mBtnHanKou = (Button*)CocosHelper::getNodeByName(mLayout, "Button_6");
+    mBtnHanKou->addTouchEventListener(CC_CALLBACK_2(UIPublishTaskSet::CallbackBtn2, this));
     mBtnHanYang = (Button*)CocosHelper::getNodeByName(mLayout, "Button_7");
+    mBtnHanYang->addTouchEventListener(CC_CALLBACK_2(UIPublishTaskSet::CallbackBtn2, this));
     
     //列表动画
     mListView = static_cast<ListView*>(CocosHelper::getNodeByName(mLayout, "ListView_main"));
     mPanel = CocosHelper::getWidgetByName(mLayout, "Panel_renWuDiDian");
-    mBase = CocosHelper::getWidgetByName(mLayout, "Image_base");
+    mPanelMove = CocosHelper::getWidgetByName(mLayout, "Panel_Move");
+    mPanelMove->setScaleY(0);
+    mBase = CocosHelper::getWidgetByName(mLayout, "Panel_base");
     mTask = CocosHelper::getWidgetByName(mLayout, "Image_renWu");
-    mTask->setScaleY(0);
+    mTask->setVisible(false);
     mAddress = CocosHelper::getWidgetByName(mLayout, "Image_diDian");
-    mAddress->setScaleY(0);
+    mAddress->setVisible(false);
     
     this->schedule(CC_CALLBACK_1(UIPublishTaskSet::UpdateList, this), "updateList");
 }
@@ -88,30 +100,113 @@ void UIPublishTaskSet::AddImage(string imagePath)
 //展开动画
 void UIPublishTaskSet::Open()
 {
-    mTask->stopAllActions();
-    mTask->runAction(Sequence::create(ScaleTo::create(0.3, 1, 1), NULL));
+    mPanelMove->stopAllActions();
+    mPanelMove->runAction(Sequence::create(ScaleTo::create(0.3, 1, 1), NULL));
 }
 
 //收起动画
 void UIPublishTaskSet::Close()
 {
-    mTask->stopAllActions();
-    mTask->runAction(Sequence::create(ScaleTo::create(0.3, 1, 0), NULL));
+    mPanelMove->stopAllActions();
+    mPanelMove->runAction(Sequence::create(ScaleTo::create(0.3, 1, 0), NULL));
 }
 
 void UIPublishTaskSet::UpdateList(float dt)
 {
-    float height = 135 * mTask->getScaleY();
+    float height = 135 * mPanelMove->getScaleY();
     mPanel->setContentSize(Size(1080, 135 + height));
     mBase->setPosition(Point(0, height));
     mListView->refreshView();
 }
 
-//任务按钮事件
-void UIPublishTaskSet::CallbackBtnTask(cocos2d::Ref *sender, Widget::TouchEventType type)
+//2级按钮事件
+void UIPublishTaskSet::CallbackBtn2(cocos2d::Ref *sender, Widget::TouchEventType type)
 {
     if(type == Widget::TouchEventType::ENDED)
     {
-        Open();
+        if(sender == mBtnPerson)
+        {
+            mTastBtnState = 2;
+            mBtnTask->loadTextures("publish/Publish_Person.png", "publish/Publish_Person.png");
+            mBtnTask->setPressedActionEnabled(true);
+            
+            Close();
+        }
+        else if(sender == mBtnCommerce)
+        {
+            mTastBtnState = 2;
+            mBtnTask->loadTextures("publish/Publish_Commerce.png", "publish/Publish_Commerce.png");
+            mBtnTask->setPressedActionEnabled(true);
+            
+            Close();
+        }
+        else if(sender == mBtnWuChang)
+        {
+            mAddressBtnState = 2;
+            mBtnAddress->loadTextures("publish/Publish_WuChang.png", "publish/Publish_WuChang.png");
+            mBtnAddress->setPressedActionEnabled(true);
+            
+            Close();
+        }
+        else if(sender == mBtnHanKou)
+        {
+            mAddressBtnState = 2;
+            mBtnAddress->loadTextures("publish/Publish_HanKou.png", "publish/Publish_HanKou.png");
+            mBtnAddress->setPressedActionEnabled(true);
+            
+            Close();
+        }
+        else if(sender == mBtnHanYang)
+        {
+            mAddressBtnState = 2;
+            mBtnAddress->loadTextures("publish/Publish_HanYang.png", "publish/Publish_HanYang.png");
+            mBtnAddress->setPressedActionEnabled(true);
+            
+            Close();
+        }
+    }
+}
+
+//1级按钮事件
+void UIPublishTaskSet::CallbackBtn1(cocos2d::Ref *sender, Widget::TouchEventType type)
+{
+    if(type == Widget::TouchEventType::ENDED)
+    {
+        if(sender == mBtnTask)
+        {
+            mTastBtnState = 1;
+            mTask->setVisible(true);
+            mAddress->setVisible(false);
+            mBtnTask->loadTextures("publish/Publish_Task_1.png", "publish/Publish_Task_1.png");
+            mBtnTask->setPressedActionEnabled(false);
+            
+            //如果此时地点按钮也是按下状态，则弹起
+            if(mAddressBtnState == 1)
+            {
+                mAddressBtnState = 0;
+                mBtnAddress->loadTextures("publish/Publish_Address_0.png", "publish/Publish_Address_0.png");
+                mBtnAddress->setPressedActionEnabled(true);
+            }
+            else
+                Open();
+        }
+        else if(sender == mBtnAddress)
+        {
+            mAddressBtnState = 1;
+            mTask->setVisible(false);
+            mAddress->setVisible(true);
+            mBtnAddress->loadTextures("publish/Publish_Address_1.png", "publish/Publish_Address_1.png");
+            mBtnAddress->setPressedActionEnabled(false);
+            
+            //如果此时任务按钮也是按下状态，则弹起
+            if(mTastBtnState == 1)
+            {
+                mTastBtnState = 0;
+                mBtnTask->loadTextures("publish/Publish_Task_0.png", "publish/Publish_Task_0.png");
+                mBtnTask->setPressedActionEnabled(true);
+            }
+            else
+                Open();
+        }
     }
 }
