@@ -11,6 +11,7 @@
 #include "UITaskInfoLayer.h"
 #include "UIMainLayer.h"
 #include "UIWidgetMsgSprite.h"
+#include "UIGrabInfoLayer.h"
 
 bool UIIncomeModelLayer::init()
 {
@@ -22,6 +23,15 @@ bool UIIncomeModelLayer::init()
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_incomeModel.csb", this);
     
     Image_main = static_cast<ImageView*>(CocosHelper::getNodeByName(mLayout, "Image_main"));
+    
+    CocosHelper::getWidgetByName(mLayout, "Button_qiangdan")->addTouchEventListener
+    ([](Ref *sender, Widget::TouchEventType type)
+     {
+         if ( type == Widget::TouchEventType::ENDED)
+         {
+             UIMainLayer::gUIMainLayer->pushLayer(UIGrabInfoLayer::create());
+         }
+     });
     
     setTask();
     runTaskAction();

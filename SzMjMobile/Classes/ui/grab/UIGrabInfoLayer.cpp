@@ -7,6 +7,7 @@
 //
 
 #include "UIGrabInfoLayer.h"
+#include "UIMainLayer.h"
 
 bool UIGrabInfoLayer::init()
 {
@@ -16,6 +17,15 @@ bool UIGrabInfoLayer::init()
     }
     
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_grabInfo.csb", this);
+    
+    CocosHelper::getWidgetByName(mLayout, "Button_tijiao")->addTouchEventListener
+    ([](Ref *sender, Widget::TouchEventType type)
+     {
+         if ( type == Widget::TouchEventType::ENDED)
+         {
+             UIMainLayer::gUIMainLayer->popLayer();
+         }
+     });
     
     mSelects.assign(7, false);
     
