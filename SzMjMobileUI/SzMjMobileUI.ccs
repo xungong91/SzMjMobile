@@ -227,6 +227,8 @@
           <Image Name="Publish_Person.png" />
           <Image Name="Publish_QiTa_3.png" />
           <Image Name="Publish_WuChang.png" />
+          <Image Name="Publish_QiTa_6.png" />
+          <Image Name="Publish_QiTa_7.png" />
         </Folder>
         <Project Name="CCS_publish_taskSet.csd" Type="Layer" />
         <Project Name="CCS_publish_taskInfo.csd" Type="Layer" />
