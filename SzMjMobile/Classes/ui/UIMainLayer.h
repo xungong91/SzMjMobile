@@ -17,6 +17,7 @@
 #include "UIPublishMainLayer.h"
 #include "UIIncomeMainLayer.h"
 #include "UIGrabMainLayer.h"
+#include "UIManageMainLayer.h"
 #include "UIBaseTopLayer.h"
 
 USING_NS_CC;
@@ -45,6 +46,7 @@ private:
     void intoPublishLayer();
     void intoIncomeLayer();
     void intoGrabLayer();
+    void intoManageLayer();
     
     void CallbackMenu(Ref *sender, Widget::TouchEventType type);
     
@@ -65,6 +67,7 @@ private:
     UIPublishMainLayer *mUIPublishMainLayer;
     UIIncomeMainLayer *mUIIncomeMainLayer;
     UIGrabMainLayer *mUIGrabMainLayer;
+    UIManageMainLayer *mUIManageMainLayer;
     vector<UIBaseCenterLayer*> mLayers;
 };
 

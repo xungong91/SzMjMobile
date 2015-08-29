@@ -106,6 +106,10 @@
 		EA9DD09F1B9158D9006FE005 /* UIGrabMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD09D1B9158D9006FE005 /* UIGrabMainLayer.cpp */; };
 		EA9DD0A21B91593E006FE005 /* UIGrabInfoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD0A01B91593E006FE005 /* UIGrabInfoLayer.cpp */; };
 		EA9DD0A51B915951006FE005 /* UIGrabModelInfoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD0A31B915951006FE005 /* UIGrabModelInfoLayer.cpp */; };
+		EA9DD0A91B91A254006FE005 /* UIManageMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD0A71B91A254006FE005 /* UIManageMainLayer.cpp */; };
+		EA9DD0AC1B91A332006FE005 /* UIManageModelLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD0AA1B91A332006FE005 /* UIManageModelLayer.cpp */; };
+		EA9DD0AF1B91A33E006FE005 /* UIManageEditlLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD0AD1B91A33E006FE005 /* UIManageEditlLayer.cpp */; };
+		EA9DD0B21B91A5B4006FE005 /* UIManageModelEditLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD0B01B91A5B4006FE005 /* UIManageModelEditLayer.cpp */; };
 		EAA48DE31B7DBED50081DC45 /* MetroImageSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */; };
 		EAA48DE71B7DC5420081DC45 /* Metro in Resources */ = {isa = PBXBuildFile; fileRef = EAA48DE61B7DC5420081DC45 /* Metro */; };
 		EAAA544C1B8174A200CDB595 /* MetroNullSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAA544A1B8174A200CDB595 /* MetroNullSprite.cpp */; };
@@ -301,6 +305,14 @@
 		EA9DD0A11B91593E006FE005 /* UIGrabInfoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGrabInfoLayer.h; sourceTree = "<group>"; };
 		EA9DD0A31B915951006FE005 /* UIGrabModelInfoLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIGrabModelInfoLayer.cpp; sourceTree = "<group>"; };
 		EA9DD0A41B915951006FE005 /* UIGrabModelInfoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGrabModelInfoLayer.h; sourceTree = "<group>"; };
+		EA9DD0A71B91A254006FE005 /* UIManageMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIManageMainLayer.cpp; sourceTree = "<group>"; };
+		EA9DD0A81B91A254006FE005 /* UIManageMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIManageMainLayer.h; sourceTree = "<group>"; };
+		EA9DD0AA1B91A332006FE005 /* UIManageModelLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIManageModelLayer.cpp; sourceTree = "<group>"; };
+		EA9DD0AB1B91A332006FE005 /* UIManageModelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIManageModelLayer.h; sourceTree = "<group>"; };
+		EA9DD0AD1B91A33E006FE005 /* UIManageEditlLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIManageEditlLayer.cpp; sourceTree = "<group>"; };
+		EA9DD0AE1B91A33E006FE005 /* UIManageEditlLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIManageEditlLayer.h; sourceTree = "<group>"; };
+		EA9DD0B01B91A5B4006FE005 /* UIManageModelEditLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIManageModelEditLayer.cpp; sourceTree = "<group>"; };
+		EA9DD0B11B91A5B4006FE005 /* UIManageModelEditLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIManageModelEditLayer.h; sourceTree = "<group>"; };
 		EAA48DE11B7DBED50081DC45 /* MetroImageSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroImageSprite.cpp; sourceTree = "<group>"; };
 		EAA48DE21B7DBED50081DC45 /* MetroImageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroImageSprite.h; sourceTree = "<group>"; };
 		EAA48DE61B7DC5420081DC45 /* Metro */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Metro; sourceTree = "<group>"; };
@@ -691,9 +703,25 @@
 			path = grab;
 			sourceTree = "<group>";
 		};
+		EA9DD0A61B91A012006FE005 /* manage */ = {
+			isa = PBXGroup;
+			children = (
+				EA9DD0A71B91A254006FE005 /* UIManageMainLayer.cpp */,
+				EA9DD0A81B91A254006FE005 /* UIManageMainLayer.h */,
+				EA9DD0AA1B91A332006FE005 /* UIManageModelLayer.cpp */,
+				EA9DD0AB1B91A332006FE005 /* UIManageModelLayer.h */,
+				EA9DD0AD1B91A33E006FE005 /* UIManageEditlLayer.cpp */,
+				EA9DD0AE1B91A33E006FE005 /* UIManageEditlLayer.h */,
+				EA9DD0B01B91A5B4006FE005 /* UIManageModelEditLayer.cpp */,
+				EA9DD0B11B91A5B4006FE005 /* UIManageModelEditLayer.h */,
+			);
+			path = manage;
+			sourceTree = "<group>";
+		};
 		EAAA54561B81C7FE00CDB595 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				EA9DD0A61B91A012006FE005 /* manage */,
 				EA9DD09C1B9158C3006FE005 /* grab */,
 				EA4C875F1B903F3100E9D847 /* widget */,
 				EA7881FD1B8FFC0C009E887F /* income */,
@@ -944,6 +972,7 @@
 				EA7882001B8FFC0C009E887F /* UIIncomeMainLayer.cpp in Sources */,
 				EAAA54631B81DAFE00CDB595 /* UILogin2Layer.cpp in Sources */,
 				EA89003E1B86F9E80022C278 /* UIModelListLayer.cpp in Sources */,
+				EA9DD0B21B91A5B4006FE005 /* UIManageModelEditLayer.cpp in Sources */,
 				EA4C87621B903F6600E9D847 /* UIWidgetTaskLayer.cpp in Sources */,
 				EAB4D8501B7C404E00C1B093 /* JsonHelper.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
@@ -965,6 +994,7 @@
 				EAACAE541B7B45050047CA77 /* ShareHelper.cpp in Sources */,
 				9D0455AF1B8FFDF70053E920 /* UIPublishMetroChild.cpp in Sources */,
 				EAB9E2961B7CF74F005370B7 /* MetroTextSprite.cpp in Sources */,
+				EA9DD0AF1B91A33E006FE005 /* UIManageEditlLayer.cpp in Sources */,
 				EAAA544C1B8174A200CDB595 /* MetroNullSprite.cpp in Sources */,
 				9DC3A9D91B90488000E2A735 /* UIPublishTaskInfo.cpp in Sources */,
 				EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */,
@@ -984,6 +1014,7 @@
 				EAAA54661B81DB0700CDB595 /* UILogin3Layer.cpp in Sources */,
 				9DFAE1721B91449500EC2543 /* UIPublishTaskSet.cpp in Sources */,
 				EAB9E28E1B7CE898005370B7 /* BaseLayer.cpp in Sources */,
+				EA9DD0AC1B91A332006FE005 /* UIManageModelLayer.cpp in Sources */,
 				EA8900391B86C44C0022C278 /* UIPublishMainLayer.cpp in Sources */,
 				9DF9843A1B8D942D00818401 /* UISpecialInputLayer.cpp in Sources */,
 				9D0FCA0C1B8C1AFA001788EE /* UITaskMetroLayer.cpp in Sources */,
@@ -993,6 +1024,7 @@
 				EAAA545D1B81D90900CDB595 /* UILogin1Layer.cpp in Sources */,
 				9DF984361B8D4D0B00818401 /* UIModelAddLayer.cpp in Sources */,
 				EA1F705E1B84782900669B9D /* UIMediaLayer.cpp in Sources */,
+				EA9DD0A91B91A254006FE005 /* UIManageMainLayer.cpp in Sources */,
 				EAB4D8571B7C898100C1B093 /* ShareHelper.mm in Sources */,
 				EAAA54601B81D91800CDB595 /* UIBaseLayer.cpp in Sources */,
 				EA17FFBA1B7DF13B0011179D /* MetroSpriteManage.cpp in Sources */,

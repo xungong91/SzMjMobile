@@ -291,6 +291,25 @@
         </Folder>
         <Project Name="CCS_grabInfo.csd" Type="Layer" />
         <Project Name="CCS_grabModelInfo.csd" Type="Layer" />
+        <Project Name="CCS_manageModel.csd" Type="Layer" />
+        <Project Name="CCS_manageEdit.csd" Type="Layer" />
+        <Project Name="CCS_manageModelEdit.csd" Type="Layer" />
+        <Folder Name="manage">
+          <Image Name="bg_model0.png" />
+          <Image Name="bg_model1.png" />
+          <Image Name="btn_manage1.png" />
+          <Image Name="btn_manage2.png" />
+          <Image Name="btn_model1.png" />
+          <Image Name="btn_model2.png" />
+          <Image Name="bg_manageEdit.png" />
+          <Image Name="btn_save1.png" />
+          <Image Name="btn_save2.png" />
+          <Image Name="model0.png" />
+          <Image Name="model1.png" />
+          <Image Name="model_bg0.png" />
+          <Image Name="model_bg1.png" />
+          <Image Name="model_bg2.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -109,6 +109,10 @@ void UIMainLayer::intoMain()
     mMainLayer->addChild(mUIGrabMainLayer);
     mLayers.push_back(mUIGrabMainLayer);
     
+    mUIManageMainLayer = UIManageMainLayer::create();
+    mMainLayer->addChild(mUIManageMainLayer);
+    mLayers.push_back(mUIManageMainLayer);
+    
     for (auto it : mLayers)
     {
         it->setVisible(false);
@@ -175,6 +179,25 @@ void UIMainLayer::intoIncomeLayer()
 void UIMainLayer::intoGrabLayer()
 {
     UIBaseCenterLayer *temp = mUIGrabMainLayer;
+    if (mCurrentLayer == temp)
+    {
+        return;
+    }
+    
+    if (mCurrentLayer)
+    {
+        changeAction(temp);
+    }
+    else
+    {
+        temp->setVisible(true);
+        mCurrentLayer = temp;
+    }
+}
+
+void UIMainLayer::intoManageLayer()
+{
+    UIBaseCenterLayer *temp = mUIManageMainLayer;
     if (mCurrentLayer == temp)
     {
         return;
@@ -309,6 +332,7 @@ void UIMainLayer::CallbackMenu(cocos2d::Ref *sender, Widget::TouchEventType type
         {
             mBtnUpdate->loadTextures("hall/Update_1.png", "hall/Update_1.png");
             mBtnUpdate->setPressedActionEnabled(false);
+            intoManageLayer();
         }
     }
 }
