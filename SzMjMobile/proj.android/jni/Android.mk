@@ -21,6 +21,10 @@ FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/demo/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/ui/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/ui/media/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/ui/login/*.cpp)
+FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/ui/widget/*.cpp)
+FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/ui/income/*.cpp)
+FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/ui/publish/*.cpp)
+FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/ui/model/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/tools/*.cpp)
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes

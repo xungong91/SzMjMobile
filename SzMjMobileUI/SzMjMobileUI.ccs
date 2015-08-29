@@ -221,51 +221,43 @@
           <Image Name="Publish_WuChang_0.png" />
           <Image Name="Publish_WuChang_1.png" />
           <File Name="Thumbs.db" />
-          <Image Name="Publish_Commerce.png" />
-          <Image Name="Publish_HanKou.png" />
-          <Image Name="Publish_HanYang.png" />
-          <Image Name="Publish_Person.png" />
-          <Image Name="Publish_QiTa_3.png" />
-          <Image Name="Publish_WuChang.png" />
-          <Image Name="Publish_QiTa_6.png" />
-          <Image Name="Publish_QiTa_7.png" />
         </Folder>
-        <Project Name="CCS_publish_taskSet.csd" Type="Layer" />
-        <Project Name="CCS_publish_taskInfo.csd" Type="Layer" />
+        <Project Name="CCS_income.csd" Type="Layer" />
         <Folder Name="income">
-          <Image Name="btn_all1.png" />
-          <Image Name="btn_all2.png" />
-          <Image Name="btn_qianbao1.png" />
-          <Image Name="btn_qianbao2.png" />
-          <Image Name="btn_reg1.png" />
-          <Image Name="btn_reg2.png" />
-          <Image Name="btn_shouqi1.png" />
-          <Image Name="btn_shouqi2.png" />
-          <Image Name="btn_zhangdan1.png" />
-          <Image Name="btn_zhangdan2.png" />
-          <Image Name="button_tixian1.png" />
-          <Image Name="button_tixian2.png" />
-          <Image Name="incomeModel_bg.png" />
           <Image Name="main_model1.png" />
           <Image Name="main_model2.png" />
           <Image Name="main_model3.png" />
-          <Image Name="pick_bg.png" />
+          <Image Name="shouyi1.png" />
+          <Image Name="shouyi12.png" />
+          <Image Name="zhangdan.png" />
+          <Image Name="button_tixian1.png" />
+          <Image Name="button_tixian2.png" />
+          <Image Name="btn_qianbao1.png" />
           <Image Name="qianbao1.png" />
           <Image Name="qianbao2.png" />
           <Image Name="qianbao3.png" />
           <Image Name="qianbao4.png" />
-          <Image Name="shouyi1.png" />
-          <Image Name="shouyi12.png" />
+          <Image Name="btn_qianbao2.png" />
+          <Image Name="btn_reg1.png" />
+          <Image Name="btn_reg2.png" />
+          <Image Name="incomeModel_bg.png" />
+          <Image Name="pick_bg.png" />
+          <Image Name="btn_all1.png" />
+          <Image Name="btn_all2.png" />
+          <Image Name="btn_shouqi1.png" />
+          <Image Name="btn_shouqi2.png" />
+          <Image Name="btn_zhangdan1.png" />
+          <Image Name="btn_zhangdan2.png" />
           <Image Name="task_inconme0.png" />
           <Image Name="task_inconme1.png" />
           <Image Name="task_inconme2.png" />
-          <Image Name="zhangdan.png" />
         </Folder>
-        <Project Name="CCS_income.csd" Type="Layer" />
         <Project Name="CCS_incomeModel.csd" Type="Layer" />
-        <Project Name="CCS_incomePick.csd" Type="Layer" />
         <Project Name="CCS_incomePickReg.csd" Type="Layer" />
+        <Project Name="CCS_incomePick.csd" Type="Layer" />
         <Project Name="CCS_WIDGET_Task.csd" Type="Layer" />
+        <Project Name="CCS_publish_taskInfo.csd" Type="Layer" />
+        <Project Name="CCS_publish_taskSet.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

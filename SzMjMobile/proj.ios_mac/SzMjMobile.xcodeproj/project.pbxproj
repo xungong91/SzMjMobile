@@ -87,6 +87,7 @@
 		EA2C15A91B85C858001D9ADF /* CatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2C15A51B85C858001D9ADF /* CatchCrash.m */; };
 		EA2C15AA1B85C858001D9ADF /* CrashHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2C15A61B85C858001D9ADF /* CrashHelper.mm */; };
 		EA44C31E1B83105200B94A5A /* UIInfoManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA44C31C1B83105200B94A5A /* UIInfoManage.cpp */; };
+		EA4AC2371B90A50B000E56AB /* UIWidgetMsgSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA4AC2351B90A50B000E56AB /* UIWidgetMsgSprite.cpp */; };
 		EA4C87621B903F6600E9D847 /* UIWidgetTaskLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA4C87601B903F6600E9D847 /* UIWidgetTaskLayer.cpp */; };
 		EA6805131B80C655008034EE /* MetroTouchManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA6805111B80C655008034EE /* MetroTouchManage.cpp */; };
 		EA7882001B8FFC0C009E887F /* UIIncomeMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7881FE1B8FFC0C009E887F /* UIIncomeMainLayer.cpp */; };
@@ -259,6 +260,8 @@
 		EA2C15A61B85C858001D9ADF /* CrashHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CrashHelper.mm; sourceTree = "<group>"; };
 		EA44C31C1B83105200B94A5A /* UIInfoManage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIInfoManage.cpp; sourceTree = "<group>"; };
 		EA44C31D1B83105200B94A5A /* UIInfoManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInfoManage.h; sourceTree = "<group>"; };
+		EA4AC2351B90A50B000E56AB /* UIWidgetMsgSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIWidgetMsgSprite.cpp; sourceTree = "<group>"; };
+		EA4AC2361B90A50B000E56AB /* UIWidgetMsgSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWidgetMsgSprite.h; sourceTree = "<group>"; };
 		EA4C87601B903F6600E9D847 /* UIWidgetTaskLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIWidgetTaskLayer.cpp; sourceTree = "<group>"; };
 		EA4C87611B903F6600E9D847 /* UIWidgetTaskLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWidgetTaskLayer.h; sourceTree = "<group>"; };
 		EA6805111B80C655008034EE /* MetroTouchManage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetroTouchManage.cpp; sourceTree = "<group>"; };
@@ -590,6 +593,8 @@
 			children = (
 				EA4C87601B903F6600E9D847 /* UIWidgetTaskLayer.cpp */,
 				EA4C87611B903F6600E9D847 /* UIWidgetTaskLayer.h */,
+				EA4AC2351B90A50B000E56AB /* UIWidgetMsgSprite.cpp */,
+				EA4AC2361B90A50B000E56AB /* UIWidgetMsgSprite.h */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -919,6 +924,7 @@
 				EA4C87621B903F6600E9D847 /* UIWidgetTaskLayer.cpp in Sources */,
 				EAB4D8501B7C404E00C1B093 /* JsonHelper.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				EA4AC2371B90A50B000E56AB /* UIWidgetMsgSprite.cpp in Sources */,
 				EA44C31E1B83105200B94A5A /* UIInfoManage.cpp in Sources */,
 				EAA48DE31B7DBED50081DC45 /* MetroImageSprite.cpp in Sources */,
 				EA1F70641B84814900669B9D /* UIMediaSelectItemLayer.cpp in Sources */,
