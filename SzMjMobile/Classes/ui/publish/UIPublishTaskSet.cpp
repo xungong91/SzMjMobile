@@ -25,6 +25,21 @@ void UIPublishTaskSet::InitUI()
     //加载UI
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_publish_taskSet.csb", this);
     
+    //价格文本
+    Layout *pricePanle = (Layout*)CocosHelper::getNodeByName(mLayout, "Panel_price");
+    
+    mPriceLabel = Text::create();
+    mPriceLabel->setFontSize(48);
+    mPriceLabel->setColor(Color3B(0, 0, 0));
+    mPriceLabel->setString("预设底价为1000MB");
+    mPriceLabel->setPosition(Vec2(1080*0.5, 100));
+    pricePanle->addChild(mPriceLabel);
+    
+    mBtnJia = (Button*)CocosHelper::getNodeByName(mLayout, "Button_jia");
+    mBtnJia->addTouchEventListener(CC_CALLBACK_2(UIPublishTaskSet::CallbackBtnJiaJian, this));
+    mBtnJian = (Button*)CocosHelper::getNodeByName(mLayout, "Button_jian");
+    mBtnJian->addTouchEventListener(CC_CALLBACK_2(UIPublishTaskSet::CallbackBtnJiaJian, this));
+    
     //模特照片
     Layout *modelImagePanel = (Layout*)CocosHelper::getNodeByName(mLayout, "Panel_image");
     
@@ -117,6 +132,28 @@ void UIPublishTaskSet::UpdateList(float dt)
     mPanel->setContentSize(Size(1080, 135 + height));
     mBase->setPosition(Point(0, height));
     mListView->refreshView();
+}
+
+//加减按钮事件
+void UIPublishTaskSet::CallbackBtnJiaJian(cocos2d::Ref *sender, Widget::TouchEventType type)
+{
+    if(type == Widget::TouchEventType::ENDED)
+    {
+        if(sender == mBtnJia)
+        {
+            mPrice += 100;
+        }
+        else if(sender == mBtnJian)
+        {
+            if(mPrice>=100)
+                mPrice -= 100;
+        }
+        string temp;
+        stringstream ss;
+        ss<<mPrice;
+        ss>>temp;
+        mPriceLabel->setString(temp + "MB");
+    }
 }
 
 //2级按钮事件

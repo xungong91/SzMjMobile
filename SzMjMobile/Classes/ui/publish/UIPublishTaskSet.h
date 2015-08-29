@@ -24,10 +24,17 @@ private:
     
     void CallbackBtn1(Ref *sender, Widget::TouchEventType type);
     void CallbackBtn2(Ref *sender, Widget::TouchEventType type);
+    void CallbackBtnJiaJian(Ref *sender, Widget::TouchEventType type);
     
 private:
     //添加照片
     ImageView *mImage;
+    
+    //价格文本
+    Text *mPriceLabel;
+    int mPrice = 1000;
+    Button *mBtnJia;
+    Button *mBtnJian;
     
     Button *mBtnTask;
     Button *mBtnAddress;
