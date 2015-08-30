@@ -282,6 +282,12 @@
           <Image Name="Chat_JianPan.png" />
           <Image Name="Chat_TalkBg_0.png" />
           <Image Name="Chat_TalkBg_1.png" />
+          <Image Name="Chat_JiLu_2.png" />
+          <Image Name="Chat_JiLu_3.png" />
+          <Image Name="Chat_JiLu_4.png" />
+          <Image Name="Chat_JiLu_5.png" />
+          <Image Name="Chat_JiLu_6.png" />
+          <Image Name="Chat_JiLu_7.png" />
         </Folder>
         <Folder Name="grab">
           <Image Name="bg_grabInfo1.png" />
