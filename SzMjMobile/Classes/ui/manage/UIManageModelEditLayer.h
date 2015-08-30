@@ -22,6 +22,7 @@ public:
     
 private:
     Widget *Panel_model;
+    Text *Text_pageCount;
     Point mTouchBeganPoint;
     Point mPanelModelStartPoint;
     EventListenerTouchOneByOne *mEventListenerChange;
