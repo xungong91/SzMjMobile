@@ -18,6 +18,15 @@ bool UIManageModelEditLayer::init()
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_manageModelEdit.csb", this);
     
     Panel_model = CocosHelper::getWidgetByName(mLayout, "Panel_model");
+    Text_pageCount = static_cast<Text*>(CocosHelper::getNodeByName(mLayout, "Text_pageCount"));
+    
+    PageView *PageView_model = static_cast<PageView*>(CocosHelper::getNodeByName(mLayout, "PageView_model"));
+    PageView_model->addEventListener
+    (
+     [PageView_model, this](Ref* sender, PageView::EventType type)
+     {
+         Text_pageCount->setString(__String::createWithFormat("%zd/%zd", PageView_model->getCurPageIndex() + 1, PageView_model->getPages().size())->getCString());
+     });
     
     return true;
 }
