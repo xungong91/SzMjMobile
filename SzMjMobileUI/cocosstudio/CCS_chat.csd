@@ -45,85 +45,110 @@
           <AbstractNodeData Name="ListChat" ActionTag="-231457950" Tag="201" IconVisible="False" TopMargin="220.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" ItemMargin="5" DirectionType="Vertical" ctype="ListViewObjectData">
             <Size X="1080.0000" Y="1700.0000" />
             <Children>
-              <AbstractNodeData Name="Image_13" ActionTag="-2141998161" Tag="250" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="-102.0000" BottomMargin="1552.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
-                <Size X="1080.0000" Y="250.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="540.0000" Y="1910.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0213" Y="0.9865" />
-                <PreSize X="1.0000" Y="0.1471" />
-                <FileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="Image_14" ActionTag="900473259" ZOrder="1" Tag="251" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="148.0000" BottomMargin="1302.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Button_4" ActionTag="-102121500" Tag="34" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="-107.0000" BottomMargin="1557.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1050" Scale9Height="228" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="1080.0000" Y="250.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="1655.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0213" Y="0.9594" />
+                <PrePosition X="0.0213" Y="0.9894" />
                 <PreSize X="1.0000" Y="0.1471" />
-                <FileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="chat/Chat_JiLu_1.png" Plist="" />
+                <NormalFileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_15" ActionTag="-1228034071" ZOrder="2" Tag="252" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="398.0000" BottomMargin="1052.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Button_5" ActionTag="354778274" ZOrder="1" Tag="35" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="148.0000" BottomMargin="1302.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1050" Scale9Height="228" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="1080.0000" Y="250.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="1400.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0213" Y="0.9324" />
+                <PrePosition X="0.0213" Y="0.9653" />
                 <PreSize X="1.0000" Y="0.1471" />
-                <FileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="chat/Chat_JiLu_1.png" Plist="" />
+                <NormalFileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_16" ActionTag="-423299417" ZOrder="3" Tag="253" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="648.0000" BottomMargin="802.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Button_6" ActionTag="471526115" ZOrder="2" Tag="36" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="403.0000" BottomMargin="1047.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1050" Scale9Height="228" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="1080.0000" Y="250.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="1145.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0213" Y="0.9053" />
+                <PrePosition X="0.0213" Y="0.9412" />
                 <PreSize X="1.0000" Y="0.1471" />
-                <FileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="chat/Chat_JiLu_1.png" Plist="" />
+                <NormalFileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_17" ActionTag="-999769440" ZOrder="4" Tag="254" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="898.0000" BottomMargin="552.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Button_7" ActionTag="468346942" ZOrder="3" Tag="37" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="658.0000" BottomMargin="792.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1050" Scale9Height="228" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="1080.0000" Y="250.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="890.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0213" Y="0.8782" />
+                <PrePosition X="0.0213" Y="0.9171" />
                 <PreSize X="1.0000" Y="0.1471" />
-                <FileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="chat/Chat_JiLu_1.png" Plist="" />
+                <NormalFileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_18" ActionTag="1170592889" ZOrder="5" Tag="255" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="1148.0000" BottomMargin="302.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Button_8" ActionTag="1196332114" ZOrder="4" Tag="38" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="913.0000" BottomMargin="537.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1050" Scale9Height="228" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="1080.0000" Y="250.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="635.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0213" Y="0.8512" />
+                <PrePosition X="0.0213" Y="0.8929" />
                 <PreSize X="1.0000" Y="0.1471" />
-                <FileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="chat/Chat_JiLu_1.png" Plist="" />
+                <NormalFileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_19" ActionTag="-701276103" ZOrder="6" Tag="256" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="1398.0000" BottomMargin="52.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Button_9" ActionTag="260841801" ZOrder="5" Tag="39" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="1168.0000" BottomMargin="282.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1050" Scale9Height="228" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="1080.0000" Y="250.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="380.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0213" Y="0.8241" />
+                <PrePosition X="0.0213" Y="0.8688" />
                 <PreSize X="1.0000" Y="0.1471" />
-                <FileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="chat/Chat_JiLu_1.png" Plist="" />
+                <NormalFileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_20" ActionTag="-1240171732" ZOrder="7" Tag="257" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="1648.0000" BottomMargin="-102.0000" Scale9Width="1080" Scale9Height="250" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Button_10" ActionTag="-170288001" ZOrder="6" Tag="40" IconVisible="False" LeftMargin="-517.0000" RightMargin="517.0000" TopMargin="1423.0000" BottomMargin="27.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1050" Scale9Height="228" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="1080.0000" Y="250.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="125.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0213" Y="0.7971" />
-                <PreSize X="1.0000" Y="0.1392" />
-                <FileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <PrePosition X="0.0213" Y="0.0894" />
+                <PreSize X="1.0000" Y="0.1471" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="chat/Chat_JiLu_1.png" Plist="" />
+                <NormalFileData Type="Normal" Path="chat/Chat_JiLu_0.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
