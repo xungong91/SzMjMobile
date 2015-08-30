@@ -221,7 +221,7 @@
             <PreSize X="1.0000" Y="0.2505" />
             <FileData Type="Normal" Path="manage/bg_manageEdit.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Button_save" ActionTag="651098948" Tag="85" IconVisible="False" LeftMargin="421.5000" RightMargin="421.5000" TopMargin="805.0000" BottomMargin="985.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="207" Scale9Height="108" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="Button_save" ActionTag="651098948" Tag="85" VisibleForFrame="False" IconVisible="False" LeftMargin="421.5000" RightMargin="421.5000" TopMargin="805.0000" BottomMargin="985.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="207" Scale9Height="108" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="237.0000" Y="130.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="540.0000" Y="1050.0000" />

@@ -51,6 +51,7 @@ bool UIManageEditlLayer::init()
         tempEdit->setPlaceholderFontColor(Color3B::WHITE);
         tempEdit->setReturnType(ui::EditBox::KeyboardReturnType::DONE);
         tempEdit->setDelegate(this);
+        tempEdit->setTag(i);
         tempEdit->setInputMode(EditBox::InputMode::NUMERIC);
         
         layout->addChild(tempEdit);
@@ -70,6 +71,16 @@ bool UIManageEditlLayer::init()
     
     
     setInput();
+    
+    if (getIsRightBankNum("6228480402564890018"))
+    {
+        CCLOG("银行卡");
+    }
+    else
+    {
+        CCLOG("不是银行卡");
+    }
+    
     return true;
 }
 
@@ -101,7 +112,23 @@ void UIManageEditlLayer::editBoxEditingDidEnd(cocos2d::ui::EditBox* editBox)
             onChange();
         }
         mEditInputs[index] = editBox->getText();
+        string showMsg = mEditInputs[index];
         editBox->setText("");
+        
+        if (editBox->getTag() == 0)
+        {
+            if (!getIsRightPhone(showMsg))
+            {
+                showMsg = "请输入正确的手机号";
+            }
+        }
+        else if (editBox->getTag() == 2)
+        {
+            if (!getIsRightBankNum(showMsg))
+            {
+                showMsg = "请输入正确的银行卡号";
+            }
+        }
         
         mLayouts[index]->setBackGroundColorType(Layout::BackGroundColorType::NONE);
         
@@ -109,8 +136,8 @@ void UIManageEditlLayer::editBoxEditingDidEnd(cocos2d::ui::EditBox* editBox)
         auto Text_value = static_cast<Text*>(mLayouts[index]->getChildByName("Text_value"));
         Text_title->setVisible(true);
         Text_value->setVisible(true);
-        Text_value->setString(mEditInputs[index]);
-        if (mEditInputs[index] == "")
+        Text_value->setString(showMsg);
+        if (showMsg == "")
         {
             Text_title->setPosition(getPointHalf(mLayouts[index]->getContentSize()));
             Text_value->setVisible(false);
