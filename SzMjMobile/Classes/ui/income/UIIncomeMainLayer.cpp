@@ -10,6 +10,7 @@
 #include "UIIncomeModelLayer.h"
 #include "UIMainLayer.h"
 #include "UIIncomePickLayer.h"
+#include "UIWidgetSearchLayer.h"
 
 bool UIIncomeMainLayer::init()
 {
@@ -67,6 +68,27 @@ bool UIIncomeMainLayer::init()
          }
      }
      );
+    
+    auto mUIWidgetSearchLayer = UIWidgetSearchLayer::create();
+    mUIWidgetSearchLayer->setPosition(Point(0, 1575));
+    this->addChild(mUIWidgetSearchLayer);
+    mUIWidgetSearchLayer->setVisible(false);
+    mUIWidgetSearchLayer->setHandldAction([](string text)
+                                          {
+                                              
+                                          });
+    
+    CocosHelper::getWidgetByName(mLayout, "Button_Search")->addTouchEventListener
+    (
+     [mUIWidgetSearchLayer](Ref *sender, Widget::TouchEventType type)
+     {
+         if (type == Widget::TouchEventType::ENDED)
+         {
+             mUIWidgetSearchLayer->setVisible(!mUIWidgetSearchLayer->isVisible());
+         }
+     }
+     );
+    
     
     return true;
 }

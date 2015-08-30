@@ -25,6 +25,7 @@
           <Image Name="btn_select1.png" />
           <Image Name="btn_select2.png" />
           <Image Name="selectBg.png" />
+          <Image Name="search_bg.png" />
         </Folder>
         <Project Name="CCS_login2.csd" Type="Layer" />
         <Project Name="CCS_login3.csd" Type="Layer" />
@@ -335,6 +336,7 @@
           <Image Name="Chat_JiLu_1.png" />
         </Folder>
         <Project Name="CCS_incomeSubmit.csd" Type="Layer" />
+        <Project Name="CCS_WIDGET_Search.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

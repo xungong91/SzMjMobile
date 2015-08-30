@@ -99,6 +99,7 @@
 		EA7882181B90099F009E887F /* CocosHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882141B90099F009E887F /* CocosHelper.cpp */; };
 		EA7882191B90099F009E887F /* XHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882161B90099F009E887F /* XHelper.cpp */; };
 		EA7CA12F1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7CA12D1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp */; };
+		EA7CA1341B9307AD00AD6C87 /* UIWidgetSearchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7CA1321B9307AD00AD6C87 /* UIWidgetSearchLayer.cpp */; };
 		EA89002C1B86BE440022C278 /* UIBaseTopLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */; };
 		EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */; };
 		EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */; };
@@ -295,6 +296,8 @@
 		EA7882171B90099F009E887F /* XHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHelper.h; sourceTree = "<group>"; };
 		EA7CA12D1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIIncomeSubmitLayer.cpp; sourceTree = "<group>"; };
 		EA7CA12E1B92E38C00AD6C87 /* UIIncomeSubmitLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIIncomeSubmitLayer.h; sourceTree = "<group>"; };
+		EA7CA1321B9307AD00AD6C87 /* UIWidgetSearchLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIWidgetSearchLayer.cpp; sourceTree = "<group>"; };
+		EA7CA1331B9307AD00AD6C87 /* UIWidgetSearchLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWidgetSearchLayer.h; sourceTree = "<group>"; };
 		EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseTopLayer.cpp; sourceTree = "<group>"; };
 		EA89002B1B86BE440022C278 /* UIBaseTopLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseTopLayer.h; sourceTree = "<group>"; };
 		EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseCenterLayer.cpp; sourceTree = "<group>"; };
@@ -639,6 +642,8 @@
 				EA4C87611B903F6600E9D847 /* UIWidgetTaskLayer.h */,
 				EA4AC2351B90A50B000E56AB /* UIWidgetMsgSprite.cpp */,
 				EA4AC2361B90A50B000E56AB /* UIWidgetMsgSprite.h */,
+				EA7CA1321B9307AD00AD6C87 /* UIWidgetSearchLayer.cpp */,
+				EA7CA1331B9307AD00AD6C87 /* UIWidgetSearchLayer.h */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -1050,6 +1055,7 @@
 				EAB9E2911B7CE921005370B7 /* BaseMetroSprite.cpp in Sources */,
 				EA7882061B8FFD1C009E887F /* UIIncomePickLayer.cpp in Sources */,
 				EADA70991B496B5E002878AA /* CTestDrawLayer.cpp in Sources */,
+				EA7CA1341B9307AD00AD6C87 /* UIWidgetSearchLayer.cpp in Sources */,
 				EAAA545D1B81D90900CDB595 /* UILogin1Layer.cpp in Sources */,
 				9DF984361B8D4D0B00818401 /* UIModelAddLayer.cpp in Sources */,
 				EA1F705E1B84782900669B9D /* UIMediaLayer.cpp in Sources */,

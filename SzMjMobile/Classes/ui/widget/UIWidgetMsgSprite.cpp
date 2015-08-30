@@ -25,6 +25,7 @@ bool UIWidgetMsgSprite::init()
     {
         return false;
     }
+    Sprite::setOpacity(200);
     Size size = CCDirector::getInstance()->getWinSize();
     this->setPosition(Point(size.width/2, size.height/2));
     mLabel = Label::create();
