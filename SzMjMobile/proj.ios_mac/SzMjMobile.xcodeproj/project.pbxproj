@@ -70,6 +70,8 @@
 		9DF9843A1B8D942D00818401 /* UISpecialInputLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DF984381B8D942D00818401 /* UISpecialInputLayer.cpp */; };
 		9DF9843D1B8DB9AF00818401 /* UIInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9843B1B8DB9AF00818401 /* UIInput.cpp */; };
 		9DFAE1721B91449500EC2543 /* UIPublishTaskSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAE1701B91449500EC2543 /* UIPublishTaskSet.cpp */; };
+		9DFAE1791B91BC5F00EC2543 /* UIChatMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAE1771B91BC5F00EC2543 /* UIChatMainLayer.cpp */; };
+		9DFAE17C1B91BD5B00EC2543 /* UIChatLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAE17A1B91BD5B00EC2543 /* UIChatLayer.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -242,6 +244,10 @@
 		9DF9843C1B8DB9AF00818401 /* UIInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInput.h; sourceTree = "<group>"; };
 		9DFAE1701B91449500EC2543 /* UIPublishTaskSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIPublishTaskSet.cpp; sourceTree = "<group>"; };
 		9DFAE1711B91449500EC2543 /* UIPublishTaskSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPublishTaskSet.h; sourceTree = "<group>"; };
+		9DFAE1771B91BC5F00EC2543 /* UIChatMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIChatMainLayer.cpp; sourceTree = "<group>"; };
+		9DFAE1781B91BC5F00EC2543 /* UIChatMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIChatMainLayer.h; sourceTree = "<group>"; };
+		9DFAE17A1B91BD5B00EC2543 /* UIChatLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIChatLayer.cpp; sourceTree = "<group>"; };
+		9DFAE17B1B91BD5B00EC2543 /* UIChatLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIChatLayer.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -567,6 +573,17 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		9DFAE1761B91BC2500EC2543 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				9DFAE1771B91BC5F00EC2543 /* UIChatMainLayer.cpp */,
+				9DFAE1781B91BC5F00EC2543 /* UIChatMainLayer.h */,
+				9DFAE17A1B91BD5B00EC2543 /* UIChatLayer.cpp */,
+				9DFAE17B1B91BD5B00EC2543 /* UIChatLayer.h */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
 		EA1F70221B8425AB00669B9D /* demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -721,6 +738,7 @@
 		EAAA54561B81C7FE00CDB595 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9DFAE1761B91BC2500EC2543 /* chat */,
 				EA9DD0A61B91A012006FE005 /* manage */,
 				EA9DD09C1B9158C3006FE005 /* grab */,
 				EA4C875F1B903F3100E9D847 /* widget */,
@@ -989,11 +1007,13 @@
 				EA7882091B8FFD2D009E887F /* UIIncomePickRegLayer.cpp in Sources */,
 				EA9DD09F1B9158D9006FE005 /* UIGrabMainLayer.cpp in Sources */,
 				9D29DD6D1B8C550700F1EFEE /* TaskMetroChild.cpp in Sources */,
+				9DFAE17C1B91BD5B00EC2543 /* UIChatLayer.cpp in Sources */,
 				9D29DD6A1B8C3CE900F1EFEE /* TaskMetroChildManager.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				EAACAE541B7B45050047CA77 /* ShareHelper.cpp in Sources */,
 				9D0455AF1B8FFDF70053E920 /* UIPublishMetroChild.cpp in Sources */,
 				EAB9E2961B7CF74F005370B7 /* MetroTextSprite.cpp in Sources */,
+				9DFAE1791B91BC5F00EC2543 /* UIChatMainLayer.cpp in Sources */,
 				EA9DD0AF1B91A33E006FE005 /* UIManageEditlLayer.cpp in Sources */,
 				EAAA544C1B8174A200CDB595 /* MetroNullSprite.cpp in Sources */,
 				9DC3A9D91B90488000E2A735 /* UIPublishTaskInfo.cpp in Sources */,
