@@ -99,6 +99,7 @@
 		EA7882091B8FFD2D009E887F /* UIIncomePickRegLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882071B8FFD2D009E887F /* UIIncomePickRegLayer.cpp */; };
 		EA7882181B90099F009E887F /* CocosHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882141B90099F009E887F /* CocosHelper.cpp */; };
 		EA7882191B90099F009E887F /* XHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882161B90099F009E887F /* XHelper.cpp */; };
+		EA7CA12F1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7CA12D1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp */; };
 		EA89002C1B86BE440022C278 /* UIBaseTopLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */; };
 		EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */; };
 		EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */; };
@@ -130,6 +131,7 @@
 		EAACAE4A1B7B41CE0047CA77 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAE491B7B41CE0047CA77 /* libsqlite3.0.dylib */; };
 		EAACAE4C1B7B41D60047CA77 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAE4B1B7B41D60047CA77 /* libc++.dylib */; };
 		EAACAE541B7B45050047CA77 /* ShareHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAACAE521B7B45050047CA77 /* ShareHelper.cpp */; };
+		EAAD44BF1B92A19300CA99DF /* Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAD44BE1B92A19300CA99DF /* Transparent.png */; };
 		EAB4D8501B7C404E00C1B093 /* JsonHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB4D84E1B7C404E00C1B093 /* JsonHelper.cpp */; };
 		EAB4D8531B7C77DC00C1B093 /* logo_sinaweibo.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB4D8511B7C77DC00C1B093 /* logo_sinaweibo.png */; };
 		EAB4D8541B7C77DC00C1B093 /* logo_wechat.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB4D8521B7C77DC00C1B093 /* logo_wechat.png */; };
@@ -294,6 +296,8 @@
 		EA7882151B90099F009E887F /* CocosHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosHelper.h; sourceTree = "<group>"; };
 		EA7882161B90099F009E887F /* XHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XHelper.cpp; sourceTree = "<group>"; };
 		EA7882171B90099F009E887F /* XHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHelper.h; sourceTree = "<group>"; };
+		EA7CA12D1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIIncomeSubmitLayer.cpp; sourceTree = "<group>"; };
+		EA7CA12E1B92E38C00AD6C87 /* UIIncomeSubmitLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIIncomeSubmitLayer.h; sourceTree = "<group>"; };
 		EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseTopLayer.cpp; sourceTree = "<group>"; };
 		EA89002B1B86BE440022C278 /* UIBaseTopLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseTopLayer.h; sourceTree = "<group>"; };
 		EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseCenterLayer.cpp; sourceTree = "<group>"; };
@@ -351,6 +355,7 @@
 		EAACAE4B1B7B41D60047CA77 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libc++.dylib"; sourceTree = DEVELOPER_DIR; };
 		EAACAE521B7B45050047CA77 /* ShareHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShareHelper.cpp; sourceTree = "<group>"; };
 		EAACAE531B7B45050047CA77 /* ShareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareHelper.h; sourceTree = "<group>"; };
+		EAAD44BE1B92A19300CA99DF /* Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Transparent.png; sourceTree = "<group>"; };
 		EAB4D84E1B7C404E00C1B093 /* JsonHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonHelper.cpp; sourceTree = "<group>"; };
 		EAB4D84F1B7C404E00C1B093 /* JsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonHelper.h; sourceTree = "<group>"; };
 		EAB4D8511B7C77DC00C1B093 /* logo_sinaweibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_sinaweibo.png; sourceTree = "<group>"; };
@@ -493,6 +498,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EAAD44BE1B92A19300CA99DF /* Transparent.png */,
 				EA1F70651B84891A00669B9D /* card */,
 				EAA48DE61B7DC5420081DC45 /* Metro */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
@@ -653,6 +659,8 @@
 				EA7882051B8FFD1C009E887F /* UIIncomePickLayer.h */,
 				EA7882071B8FFD2D009E887F /* UIIncomePickRegLayer.cpp */,
 				EA7882081B8FFD2D009E887F /* UIIncomePickRegLayer.h */,
+				EA7CA12D1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp */,
+				EA7CA12E1B92E38C00AD6C87 /* UIIncomeSubmitLayer.h */,
 			);
 			path = income;
 			sourceTree = "<group>";
@@ -961,6 +969,7 @@
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
+				EAAD44BF1B92A19300CA99DF /* Transparent.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
 				EAB4D8531B7C77DC00C1B093 /* logo_sinaweibo.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
@@ -1054,6 +1063,7 @@
 				EAB4D8571B7C898100C1B093 /* ShareHelper.mm in Sources */,
 				EAAA54601B81D91800CDB595 /* UIBaseLayer.cpp in Sources */,
 				EA17FFBA1B7DF13B0011179D /* MetroSpriteManage.cpp in Sources */,
+				EA7CA12F1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp in Sources */,
 				EA1F70611B84811A00669B9D /* UIMediaSelectLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

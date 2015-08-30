@@ -7,6 +7,8 @@
 //
 
 #include "UIManageModelEditLayer.h"
+#include "UIWidgetMsgSprite.h"
+#include "UIMediaSelectLayer.h"
 
 bool UIManageModelEditLayer::init()
 {
@@ -26,7 +28,38 @@ bool UIManageModelEditLayer::init()
      [PageView_model, this](Ref* sender, PageView::EventType type)
      {
          Text_pageCount->setString(__String::createWithFormat("%zd/%zd", PageView_model->getCurPageIndex() + 1, PageView_model->getPages().size())->getCString());
+         if (Panel_model->getPosition().y != -500)
+         {
+             Panel_model->stopAllActions();
+             Panel_model->runAction(Sequence::create(MoveTo::create(0.3f, Point(0, -500)), NULL));
+         }
      });
+    
+    CocosHelper::getWidgetByName(mLayout, "Panel_media0")->addTouchEventListener
+    ([](Ref *sender, Widget::TouchEventType type)
+     {
+         if (type == Widget::TouchEventType::ENDED)
+         {
+             auto it = UIMediaSelectLayer::create();
+             it->setSelectCallFunc
+             ([sender](vector<UIImageStruct> files)
+              {
+                  ImageView *image = static_cast<ImageView*>(static_cast<Widget*>(sender)->getChildByName("Image"));
+                  CocosHelper::loadTexture(image, files[0].file);
+                  image->setScale(205 / image->getContentSize().width, 205 / image->getContentSize().height);
+                  image->setVisible(true);
+              });
+         }
+     });
+    
+    for (int i = 0; i < 6; ++i)
+    {
+        Widget *temp = CocosHelper::getWidgetByName(mLayout, __String::createWithFormat("Panel_media%d", i)->getCString());
+        temp->addTouchEventListener(CC_CALLBACK_2(UIManageModelEditLayer::onPanelMediasImageTouch, this));
+        
+        CocosHelper::getWidgetByName(temp, "Button_close")->addTouchEventListener(CC_CALLBACK_2(UIManageModelEditLayer::onPanelMediasCloseTouch, this));
+        mPanelMedias.push_back(temp);
+    }
     
     return true;
 }
@@ -97,6 +130,69 @@ void UIManageModelEditLayer::onPanelModelEnd()
     }
 }
 
+void UIManageModelEditLayer::onPanelMediasImageTouch(Ref *sender, Widget::TouchEventType type)
+{
+    if ( type == Widget::TouchEventType::ENDED)
+    {
+        Widget *temp = static_cast<Widget*>(sender);
+        ImageView *image = static_cast<ImageView*>(temp->getChildByName("Image"));
+        Widget *Button_close = static_cast<ImageView*>(temp->getChildByName("Button_close"));
+        Text *text = static_cast<Text*>(temp->getChildByName("Text"));
+        
+        if (!image->isVisible())
+        {
+            auto it = UIMediaSelectLayer::create();
+            it->setSelectCallFunc
+            ([image, Button_close, text](vector<UIImageStruct> files)
+             {
+                 string fileName;
+                 if (files.size() > 0)
+                 {
+                     if (files[0].type == UIMediaType::image)
+                     {
+                         fileName = files[0].file;
+                     }
+                     else if (files[0].type == UIMediaType::video)
+                     {
+                         fileName = files[0].file.substr(0, files[0].file.find(".")) + ".jpg";
+                     }
+                 }
+                 else
+                 {
+                     return;
+                 }
+                 
+                 CocosHelper::loadTexture(image, fileName);
+                 image->setScale(200 / image->getContentSize().width, 200 / image->getContentSize().height);
+                 image->setVisible(true);
+                 
+                 Button_close->setVisible(true);
+                 text->setString("待审核");
+                 text->setVisible(true);
+                 text->setColor(Color3B(34, 34, 34));
+             });
+        }
+    }
+}
+
+void UIManageModelEditLayer::onPanelMediasVideoTouch(Ref *sender, Widget::TouchEventType type)
+{
+    if ( type == Widget::TouchEventType::ENDED)
+    {
+        
+    }
+}
+
+void UIManageModelEditLayer::onPanelMediasCloseTouch(Ref *sender, Widget::TouchEventType type)
+{
+    if ( type == Widget::TouchEventType::ENDED)
+    {
+        Widget *temp = static_cast<Widget*>(sender);
+        CocosHelper::getWidgetByName(temp->getParent(), "Image")->setVisible(false);
+        CocosHelper::getWidgetByName(temp->getParent(), "Text")->setVisible(false);
+        temp->setVisible(false);
+    }
+}
 
 
 

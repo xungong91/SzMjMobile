@@ -40,6 +40,36 @@ inline bool getIsRightPhone( const string &phone )
     return true;
 }
 
+inline bool getIsRightBankNum( const string &cardNum )
+{
+    if (cardNum.size() != 16 || cardNum.size() != 18 || cardNum.size() != 19 || cardNum.size() != 15)
+    {
+        return false;
+    }
+    
+    for (const char &it : cardNum)
+    {
+        if (it < 48 && it > 57)
+        {
+            return false;
+        }
+    }
+    
+    string snum6 = cardNum.substr(0, 6);
+    stringstream ss;
+    int num6;
+    ss<<snum6;
+    ss>>num6;
+    if (num6 < 622126 || num6 > 622925)
+    {
+        return false;
+    }
+    
+    //TODO 16位校验码
+    
+    return true;
+}
+
 inline bool getIsUserName( const string &name )
 {
     //ºÏ≤È≥§∂»

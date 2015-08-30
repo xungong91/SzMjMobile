@@ -68,7 +68,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ListView_model" ActionTag="-490691317" Tag="16" IconVisible="False" TopMargin="458.0000" BottomMargin="162.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" ItemMargin="10" DirectionType="Vertical" ctype="ListViewObjectData">
+          <AbstractNodeData Name="ListView_model" ActionTag="-490691317" Tag="16" IconVisible="False" TopMargin="458.0000" BottomMargin="162.0000" TouchEnable="True" ClipAble="True" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" ItemMargin="10" DirectionType="Vertical" ctype="ListViewObjectData">
             <Size X="1080.0000" Y="1300.0000" />
             <Children>
               <AbstractNodeData Name="Image_0" ActionTag="-1164198077" Tag="25" IconVisible="False" BottomMargin="850.0000" TouchEnable="True" Scale9Width="1080" Scale9Height="450" ctype="ImageViewObjectData">

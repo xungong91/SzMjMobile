@@ -12,6 +12,7 @@
 #include "UIWidgetTaskLayer.h"
 #include "UITaskInfoLayer.h"
 #include "UIWidgetMsgSprite.h"
+#include "UIIncomeSubmitLayer.h"
 
 bool UIIncomePickLayer::init()
 {
@@ -29,6 +30,17 @@ bool UIIncomePickLayer::init()
          if (type == Widget::TouchEventType::ENDED)
          {
              UIMainLayer::gUIMainLayer->pushLayer(UIIncomePickRegLayer::create());
+         }
+     }
+     );
+    
+    CocosHelper::getWidgetByName(mLayout, "Button_tixian")->addTouchEventListener
+    (
+     [](Ref *sender, Widget::TouchEventType type)
+     {
+         if (type == Widget::TouchEventType::ENDED)
+         {
+             UIMainLayer::gUIMainLayer->pushLayer(UIIncomeSubmitLayer::create());
          }
      }
      );

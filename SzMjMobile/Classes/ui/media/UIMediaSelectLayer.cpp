@@ -12,6 +12,7 @@
 #include "UIMediaLayer.h"
 #include "UIInfoManage.h"
 #include "UIMainLayer.h"
+#include "UIWidgetMsgSprite.h"
 
 UIMediaSelectLayer::UIMediaSelectLayer()
 : mSelectMediaItem(nullptr)
@@ -33,14 +34,14 @@ bool UIMediaSelectLayer::init()
     }
     
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_mediaSelect.csb", this);
-    CocosHelper::getNodeByName(mLayout, "Panel_center")->setZOrder(1);
+    CocosHelper::getNodeByName(mLayout, "Image_bg")->setZOrder(1);
     
-    addPanelTouch(static_cast<Layout*>(CocosHelper::getNodeByName(mLayout, "Panel_cancel")), [this]()
+    addPanelTouch(static_cast<Layout*>(CocosHelper::getNodeByName(mLayout, "Button_cencel")), [this]()
                   {
                       this->getParent()->removeChild(this);
                   });
     
-    addPanelTouch(static_cast<Layout*>(CocosHelper::getNodeByName(mLayout, "Panel_ok")), [this]()
+    addPanelTouch(static_cast<Layout*>(CocosHelper::getNodeByName(mLayout, "Button_ok")), [this]()
                   {
                       vector<UIImageStruct> types;
                       for (int i = 0; i < mSelectSprites.size(); ++i)
@@ -74,28 +75,28 @@ bool UIMediaSelectLayer::init()
     
     mMoveLayer = Layer::create();
     mMoveLayer->setAnchorPoint(Point(0, 1));
-    mMoveLayer->setPosition(Point(0, getSizeWin().height));
+    mMoveLayer->setPosition(Point(0, getSizeWin().height - 215));
     CocosHelper::getNodeByName(mLayout, "Panel")->addChild(mMoveLayer);
     
-    int cardCount = 13;
+    int cardCount = 37;
     
-    mMoveLayer->setContentSize(Size(0, (cardCount / 2) * 540 + (cardCount % 2 == 0 ? 0 : 540)));
+    mMoveLayer->setContentSize(Size(0, (cardCount / 3) * 360 + (cardCount % 3 == 0 ? 0 : 360)));
     
     for (int i = 0; i < cardCount; ++i)
     {
-        if (i <= 0)
+        if (i == cardCount - 1)
         {
             auto video = UIMediaSelectItemLayer::create();
-            video->setResInfo(__String::createWithFormat("card/vdo%d.mp4", i)->getCString(), UIMediaType::video);
-            Point p = Point(i % 2 * 540, -(int)(i / 2) * 540 - 540);
+            video->setResInfo(__String::createWithFormat("card/vdo%d.mp4", 0)->getCString(), UIMediaType::video);
+            Point p = Point(i % 3 * 360, -(int)(i / 3) * 360 - 360);
             video->setPosition(p);
             mMoveLayer->addChild(video);
         }
         else
         {
             auto item = UIMediaSelectItemLayer::create();
-            item->setResInfo(__String::createWithFormat("card/img%d.jpg", i - 1)->getCString(), UIMediaType::image);
-            Point p = Point(i % 2 * 540, -(int)(i / 2) * 540 - 540);
+            item->setResInfo(__String::createWithFormat("card/img%d.jpg", i)->getCString(), UIMediaType::image);
+            Point p = Point(i % 3 * 360, -(int)(i / 3) *360 - 360);
             item->setPosition(p);
             mMoveLayer->addChild(item);
         }
@@ -120,7 +121,7 @@ void UIMediaSelectLayer::onEnter()
 {
     UIBaseLayer::onEnter();
     
-    auto mEventListenerMove = EventListenerTouchOneByOne::create();
+    mEventListenerMove = EventListenerTouchOneByOne::create();
     mEventListenerMove->onTouchBegan = [this](Touch* touch, Event  *event)
     {
         mTouchStartPoint = touch->getLocation();
@@ -151,7 +152,13 @@ void UIMediaSelectLayer::onEnter()
         onSelectEnd(touch->getLocation());
     };
     
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(mEventListenerMove, this);
+    _eventDispatcher->addEventListenerWithFixedPriority(mEventListenerMove, -1);
+}
+
+void UIMediaSelectLayer::onExit()
+{
+    _eventDispatcher->removeEventListener(mEventListenerMove);
+    UIBaseLayer::onExit();
 }
 
 void UIMediaSelectLayer::onSelectBegan(Point p)
@@ -204,9 +211,17 @@ void UIMediaSelectLayer::onSelectEnd(Point p)
         }
         
         sprite->onSelectLeave();
+    
         if (mIsSelect)
         {
-            sprite->selectThis();
+            if (mSelectSprites.size() >= 9 && !sprite->mIsSelect)
+            {
+                UIWidgetMsgSprite::setMsg("最多选择9张照片");
+            }
+            else
+            {
+                sprite->selectThis();
+            }
         }
     }
     mSelectMediaItem = nullptr;
@@ -219,9 +234,9 @@ void UIMediaSelectLayer::onTouchEnd()
     Point p = mMoveLayer->getPosition();
     
     float time = 0.3f;
-    if (p.y < getSizeWin().height || size.height < getSizeWin().height)
+    if (p.y < getSizeWin().height - 215 || size.height < getSizeWin().height - 215)
     {
-        mMoveLayer->runAction(Sequence::create(MoveTo::create(time, Point(0, getSizeWin().height)), NULL));
+        mMoveLayer->runAction(Sequence::create(MoveTo::create(time, Point(0, getSizeWin().height - 215)), NULL));
     }
     else if (p.y > size.height + 200)
     {
@@ -260,15 +275,15 @@ void UIMediaSelectLayer::setOkButtonStatas()
         }
     }
     
+    static_cast<Text*>(CocosHelper::getNodeByName(mLayout, "Text_count"))->setString(__String::createWithFormat("%lu", mSelectSprites.size())->getCString());
+    
     if (mSelectSprites.size() > 0)
     {
-        CocosHelper::getWidgetByName(mLayout, "Panel_ok")->setTouchEnabled(true);
-        CocosHelper::getWidgetByName(mLayout, "Panel_ok")->setColor(Color3B::GREEN);
+        CocosHelper::getWidgetByName(mLayout, "Button_ok")->setTouchEnabled(true);
     }
     else
     {
-        CocosHelper::getWidgetByName(mLayout, "Panel_ok")->setTouchEnabled(false);
-        CocosHelper::getWidgetByName(mLayout, "Panel_ok")->setColor(Color3B::RED);
+        CocosHelper::getWidgetByName(mLayout, "Button_ok")->setTouchEnabled(false);
     }
 }
 

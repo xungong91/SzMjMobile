@@ -18,7 +18,7 @@ USING_NS_CC_EXT;
 using namespace ui;
 using namespace std;
 
-class UIWidgetMsgSprite : public ui::Scale9Sprite
+class UIWidgetMsgSprite : public Sprite
 {
 public:
     static void setMsg(const string &msg);

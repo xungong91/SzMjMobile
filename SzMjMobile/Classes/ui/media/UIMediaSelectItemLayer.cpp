@@ -27,12 +27,10 @@ bool UIMediaSelectItemLayer::init()
     {
         return false;
     }
-    this->setContentSize(Size(520, 520));
+    this->setContentSize(Size(350, 350));
     
-    mSelectSprite = Sprite::create("CloseNormal.png");
-    mSelectSprite->setPosition(Point(500, 500));
-    mSelectSprite->setScale(2.0f);
-    mSelectSprite->setVisible(mIsSelect);
+    mSelectSprite = Sprite::create("ui/select0.png");
+    mSelectSprite->setPosition(Point(310, 310));
     this->addChild(mSelectSprite, 1);
     
     
@@ -74,7 +72,14 @@ void UIMediaSelectItemLayer::onSelectLeave()
 void UIMediaSelectItemLayer::selectThis()
 {
     mIsSelect = !mIsSelect;
-    mSelectSprite->setVisible(mIsSelect);
+    if (mIsSelect)
+    {
+        mSelectSprite->initWithFile("ui/select1.png");
+    }
+    else
+    {
+        mSelectSprite->initWithFile("ui/select0.png");
+    }
 }
 
 UIImageStruct UIMediaSelectItemLayer::getType()

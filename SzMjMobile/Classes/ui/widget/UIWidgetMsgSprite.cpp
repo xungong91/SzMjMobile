@@ -21,15 +21,16 @@ UIWidgetMsgSprite::~UIWidgetMsgSprite()
 
 bool UIWidgetMsgSprite::init()
 {
-    if (!ui::Scale9Sprite::initWithFile("Metro/moveto_msg.png", Rect(0, 0, 682 , 55), Rect(0, 0, 682, 55)))
+    if (!Sprite::initWithFile("Metro/msgBoxBg.png"))
     {
         return false;
     }
     Size size = CCDirector::getInstance()->getWinSize();
     this->setPosition(Point(size.width/2, size.height/2));
     mLabel = Label::create();
-    mLabel->setSystemFontSize(24);
+    mLabel->setSystemFontSize(45);
     mLabel->setAnchorPoint(Point(0, 0));
+    mLabel->setColor(Color3B::WHITE);
     this->addChild(mLabel);
     
     return true;
@@ -42,7 +43,7 @@ UIWidgetMsgSprite * UIWidgetMsgSprite::getRichCB()
     
     sprite->runAction(Sequence::create(
                                        DelayTime::create(1.6f),
-                                       MoveBy::create(0.3f, Point(0, 150)),
+                                       MoveBy::create(0.3f, Point(0, 350)),
                                        DelayTime::create(0.8f),
                                        CallFunc::create([sprite]()
                                                         {
@@ -64,7 +65,7 @@ void UIWidgetMsgSprite::setMsg(const string &msg)
 
 void UIWidgetMsgSprite::setSize()
 {
-    mLabel->setPosition((Point(this->getContentSize().width/2, this->getContentSize().height/2)) +
+    mLabel->setPosition((Point(this->getContentSize().width/2, this->getContentSize().height/2 - 70)) +
                         (Point(-mLabel->getContentSize().width/2, -mLabel->getContentSize().height/2)));
 }
 
