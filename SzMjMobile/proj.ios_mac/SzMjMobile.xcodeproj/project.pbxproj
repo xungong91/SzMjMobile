@@ -129,6 +129,7 @@
 		EAACAE4A1B7B41CE0047CA77 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAE491B7B41CE0047CA77 /* libsqlite3.0.dylib */; };
 		EAACAE4C1B7B41D60047CA77 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAE4B1B7B41D60047CA77 /* libc++.dylib */; };
 		EAACAE541B7B45050047CA77 /* ShareHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAACAE521B7B45050047CA77 /* ShareHelper.cpp */; };
+		EAAD44BF1B92A19300CA99DF /* Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAD44BE1B92A19300CA99DF /* Transparent.png */; };
 		EAB4D8501B7C404E00C1B093 /* JsonHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAB4D84E1B7C404E00C1B093 /* JsonHelper.cpp */; };
 		EAB4D8531B7C77DC00C1B093 /* logo_sinaweibo.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB4D8511B7C77DC00C1B093 /* logo_sinaweibo.png */; };
 		EAB4D8541B7C77DC00C1B093 /* logo_wechat.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB4D8521B7C77DC00C1B093 /* logo_wechat.png */; };
@@ -348,6 +349,7 @@
 		EAACAE4B1B7B41D60047CA77 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libc++.dylib"; sourceTree = DEVELOPER_DIR; };
 		EAACAE521B7B45050047CA77 /* ShareHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShareHelper.cpp; sourceTree = "<group>"; };
 		EAACAE531B7B45050047CA77 /* ShareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareHelper.h; sourceTree = "<group>"; };
+		EAAD44BE1B92A19300CA99DF /* Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Transparent.png; sourceTree = "<group>"; };
 		EAB4D84E1B7C404E00C1B093 /* JsonHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonHelper.cpp; sourceTree = "<group>"; };
 		EAB4D84F1B7C404E00C1B093 /* JsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonHelper.h; sourceTree = "<group>"; };
 		EAB4D8511B7C77DC00C1B093 /* logo_sinaweibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_sinaweibo.png; sourceTree = "<group>"; };
@@ -490,6 +492,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EAAD44BE1B92A19300CA99DF /* Transparent.png */,
 				EA1F70651B84891A00669B9D /* card */,
 				EAA48DE61B7DC5420081DC45 /* Metro */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
@@ -956,6 +959,7 @@
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
+				EAAD44BF1B92A19300CA99DF /* Transparent.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
 				EAB4D8531B7C77DC00C1B093 /* logo_sinaweibo.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,

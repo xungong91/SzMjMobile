@@ -10,6 +10,9 @@
 #define __SzMjMobile__UIManageModelEditLayer__
 
 #include "UIBaseTopLayer.h"
+#include <vector>
+
+using namespace std;
 
 class UIManageModelEditLayer : public UIBaseTopLayer
 {
@@ -28,6 +31,12 @@ private:
     EventListenerTouchOneByOne *mEventListenerChange;
     
     void onPanelModelEnd();
+    
+    //选择视频和图片
+    vector<Widget*> mPanelMedias;
+    void onPanelMediasImageTouch(Ref *sender, Widget::TouchEventType type);
+    void onPanelMediasVideoTouch(Ref *sender, Widget::TouchEventType type);
+    void onPanelMediasCloseTouch(Ref *sender, Widget::TouchEventType type);
 };
 
 #endif /* defined(__SzMjMobile__UIManageModelEditLayer__) */

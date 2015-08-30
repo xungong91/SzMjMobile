@@ -22,6 +22,7 @@ public:
     CREATE_FUNC(UIMediaSelectLayer);
     bool init();
     void onEnter();
+    void onExit();
     
     void setSelectCallFunc(function<void (vector<UIImageStruct> files)> func);
 private:
@@ -34,6 +35,7 @@ private:
     Point mTouchSelectPoint;
     bool mIsSelect;
     vector<UIMediaSelectItemLayer*> mSelectSprites;
+    EventListenerTouchOneByOne *mEventListenerMove;
     
     void onSelectBegan(Point p);
     void onSelectMove(Point p);

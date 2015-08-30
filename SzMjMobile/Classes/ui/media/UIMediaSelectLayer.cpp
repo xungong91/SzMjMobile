@@ -120,7 +120,7 @@ void UIMediaSelectLayer::onEnter()
 {
     UIBaseLayer::onEnter();
     
-    auto mEventListenerMove = EventListenerTouchOneByOne::create();
+    mEventListenerMove = EventListenerTouchOneByOne::create();
     mEventListenerMove->onTouchBegan = [this](Touch* touch, Event  *event)
     {
         mTouchStartPoint = touch->getLocation();
@@ -151,7 +151,13 @@ void UIMediaSelectLayer::onEnter()
         onSelectEnd(touch->getLocation());
     };
     
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(mEventListenerMove, this);
+    _eventDispatcher->addEventListenerWithFixedPriority(mEventListenerMove, -1);
+}
+
+void UIMediaSelectLayer::onExit()
+{
+    _eventDispatcher->removeEventListener(mEventListenerMove);
+    UIBaseLayer::onExit();
 }
 
 void UIMediaSelectLayer::onSelectBegan(Point p)
