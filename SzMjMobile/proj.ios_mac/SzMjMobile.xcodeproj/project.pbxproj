@@ -98,6 +98,7 @@
 		EA7882091B8FFD2D009E887F /* UIIncomePickRegLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882071B8FFD2D009E887F /* UIIncomePickRegLayer.cpp */; };
 		EA7882181B90099F009E887F /* CocosHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882141B90099F009E887F /* CocosHelper.cpp */; };
 		EA7882191B90099F009E887F /* XHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7882161B90099F009E887F /* XHelper.cpp */; };
+		EA7CA12F1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7CA12D1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp */; };
 		EA89002C1B86BE440022C278 /* UIBaseTopLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */; };
 		EA8900321B86C03A0022C278 /* UIBaseCenterLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */; };
 		EA8900351B86C0850022C278 /* UIModelMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8900331B86C0850022C278 /* UIModelMainLayer.cpp */; };
@@ -292,6 +293,8 @@
 		EA7882151B90099F009E887F /* CocosHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosHelper.h; sourceTree = "<group>"; };
 		EA7882161B90099F009E887F /* XHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XHelper.cpp; sourceTree = "<group>"; };
 		EA7882171B90099F009E887F /* XHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHelper.h; sourceTree = "<group>"; };
+		EA7CA12D1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIIncomeSubmitLayer.cpp; sourceTree = "<group>"; };
+		EA7CA12E1B92E38C00AD6C87 /* UIIncomeSubmitLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIIncomeSubmitLayer.h; sourceTree = "<group>"; };
 		EA89002A1B86BE440022C278 /* UIBaseTopLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseTopLayer.cpp; sourceTree = "<group>"; };
 		EA89002B1B86BE440022C278 /* UIBaseTopLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseTopLayer.h; sourceTree = "<group>"; };
 		EA8900301B86C03A0022C278 /* UIBaseCenterLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseCenterLayer.cpp; sourceTree = "<group>"; };
@@ -651,6 +654,8 @@
 				EA7882051B8FFD1C009E887F /* UIIncomePickLayer.h */,
 				EA7882071B8FFD2D009E887F /* UIIncomePickRegLayer.cpp */,
 				EA7882081B8FFD2D009E887F /* UIIncomePickRegLayer.h */,
+				EA7CA12D1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp */,
+				EA7CA12E1B92E38C00AD6C87 /* UIIncomeSubmitLayer.h */,
 			);
 			path = income;
 			sourceTree = "<group>";
@@ -1052,6 +1057,7 @@
 				EAB4D8571B7C898100C1B093 /* ShareHelper.mm in Sources */,
 				EAAA54601B81D91800CDB595 /* UIBaseLayer.cpp in Sources */,
 				EA17FFBA1B7DF13B0011179D /* MetroSpriteManage.cpp in Sources */,
+				EA7CA12F1B92E38C00AD6C87 /* UIIncomeSubmitLayer.cpp in Sources */,
 				EA1F70611B84811A00669B9D /* UIMediaSelectLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

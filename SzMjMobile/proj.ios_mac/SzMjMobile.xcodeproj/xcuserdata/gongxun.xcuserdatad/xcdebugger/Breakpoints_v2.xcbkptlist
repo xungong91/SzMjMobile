@@ -551,11 +551,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/ui/media/UIMediaSelectLayer.cpp"
-            timestampString = "462444287.769675"
+            timestampString = "462614486.529401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "UIMediaSelectLayer::init()"
             landmarkType = "5">
          </BreakpointContent>
@@ -567,11 +567,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/ui/media/UIMediaSelectLayer.cpp"
-            timestampString = "462593622.590793"
+            timestampString = "462614486.529401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
             landmarkName = "UIMediaSelectLayer::onSelectEnd(Point p)"
             landmarkType = "5">
          </BreakpointContent>
@@ -583,27 +583,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/ui/media/UIMediaSelectLayer.cpp"
-            timestampString = "462593622.590793"
+            timestampString = "462614486.529401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
-            landmarkName = "UIMediaSelectLayer::onSelectEnd(Point p)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Classes/ui/media/UIMediaSelectLayer.cpp"
-            timestampString = "462593622.590793"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "UIMediaSelectLayer::onSelectMove(Point p)"
             landmarkType = "5">
          </BreakpointContent>
@@ -615,11 +599,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/ui/media/UIMediaSelectItemLayer.cpp"
-            timestampString = "461750113.983268"
+            timestampString = "462613951.649404"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "UIMediaSelectItemLayer::selectThis()"
             landmarkType = "5">
          </BreakpointContent>
@@ -631,11 +615,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/ui/media/UIMediaSelectLayer.cpp"
-            timestampString = "462444287.769675"
+            timestampString = "462614486.529401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "UIMediaSelectLayer::onEnter()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1365,11 +1349,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/ui/income/UIIncomePickLayer.cpp"
-            timestampString = "462467486.461048"
+            timestampString = "462611616.866679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "UIIncomePickLayer::init()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1381,11 +1365,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/ui/income/UIIncomePickLayer.cpp"
-            timestampString = "462467486.461048"
+            timestampString = "462611616.866679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "UIIncomePickLayer::init()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1514,6 +1498,22 @@
             endingLineNumber = "45"
             landmarkName = "getIsRightBankNum( const string &amp;cardNum )"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/ui/media/UIMediaLayer.cpp"
+            timestampString = "462614100.173564"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "UIMediaLayer::setMediaInfo(const vector&lt;UIImageStruct&gt; &amp;medias)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

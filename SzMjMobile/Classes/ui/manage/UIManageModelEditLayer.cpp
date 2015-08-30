@@ -145,7 +145,24 @@ void UIManageModelEditLayer::onPanelMediasImageTouch(Ref *sender, Widget::TouchE
             it->setSelectCallFunc
             ([image, Button_close, text](vector<UIImageStruct> files)
              {
-                 CocosHelper::loadTexture(image, files[0].file);
+                 string fileName;
+                 if (files.size() > 0)
+                 {
+                     if (files[0].type == UIMediaType::image)
+                     {
+                         fileName = files[0].file;
+                     }
+                     else if (files[0].type == UIMediaType::video)
+                     {
+                         fileName = files[0].file.substr(0, files[0].file.find(".")) + ".jpg";
+                     }
+                 }
+                 else
+                 {
+                     return;
+                 }
+                 
+                 CocosHelper::loadTexture(image, fileName);
                  image->setScale(200 / image->getContentSize().width, 200 / image->getContentSize().height);
                  image->setVisible(true);
                  

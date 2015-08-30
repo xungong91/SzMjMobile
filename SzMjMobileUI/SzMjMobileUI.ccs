@@ -22,6 +22,9 @@
           <Image Name="button_denglu1.png" />
           <Image Name="button_huoquyanzhengma1.png" />
           <Image Name="button_queding1.png" />
+          <Image Name="btn_select1.png" />
+          <Image Name="btn_select2.png" />
+          <Image Name="selectBg.png" />
         </Folder>
         <Project Name="CCS_login2.csd" Type="Layer" />
         <Project Name="CCS_login3.csd" Type="Layer" />
@@ -263,6 +266,7 @@
           <Image Name="btn_faburenwu2.png" />
           <Image Name="btn_qiangdan1.png" />
           <Image Name="btn_qiangdan2.png" />
+          <Image Name="bg_tijiaoqueren.png" />
         </Folder>
         <Project Name="CCS_incomeModel.csd" Type="Layer" />
         <Project Name="CCS_incomePickReg.csd" Type="Layer" />
@@ -330,6 +334,7 @@
           <Image Name="Chat_JiLu_0.png" />
           <Image Name="Chat_JiLu_1.png" />
         </Folder>
+        <Project Name="CCS_incomeSubmit.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
