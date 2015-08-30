@@ -19,7 +19,7 @@
           <AbstractNodeData Name="Panel_Tools" ActionTag="1269858385" Tag="266" IconVisible="False" BottomMargin="1710.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="1080.0000" Y="210.0000" />
             <Children>
-              <AbstractNodeData Name="Title" ActionTag="437763983" Tag="267" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="492.0000" RightMargin="492.0000" TopMargin="93.0000" BottomMargin="63.0000" FontSize="48" LabelText="Drake" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="Title" ActionTag="437763983" Tag="267" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="476.0000" RightMargin="476.0000" TopMargin="93.0000" BottomMargin="63.0000" FontSize="48" LabelText="Drake" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="128.0000" Y="54.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="540.0000" Y="90.0000" />
@@ -78,7 +78,7 @@
                 <PreSize X="1.0056" Y="1.0000" />
                 <FileData Type="Normal" Path="chat/Chat_InputBg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="BtnBiaoQing" ActionTag="-1914122528" Tag="264" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="785.0000" RightMargin="209.0000" TopMargin="38.0000" BottomMargin="38.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="56" Scale9Height="64" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="BtnBiaoQing" ActionTag="-1914122528" Tag="264" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="785.0000" RightMargin="209.0000" TopMargin="38.0000" BottomMargin="38.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="56" Scale9Height="64" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="86.0000" Y="86.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="785.0000" Y="81.0000" />

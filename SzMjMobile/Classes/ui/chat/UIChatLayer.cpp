@@ -16,4 +16,6 @@ bool UIChatLayer::init()
 
 void UIChatLayer::InitUI()
 {
+    //加载UI
+    mLayout = CocosHelper::singleton()->getScaleLayout("CCS_chat_info.csb", this);
 }
