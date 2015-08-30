@@ -9,6 +9,8 @@
 #include "UIPublishMainLayer.h"
 #include "UIPublishMetroChild.h"
 #include "MetroSpriteManage.h"
+#include "UIMainLayer.h"
+#include "UIChatMainLayer.h"
 
 bool UIPublishMainLayer::init()
 {
@@ -75,4 +77,17 @@ void UIPublishMainLayer::InitUI()
     child23->setPosition(Vec2(725, 10));
     child23->setStyle(temp.style);
     model2Panel->addChild(child23);
+    
+    //聊天按钮
+    Button *btnTalk = (Button*)CocosHelper::getNodeByName(mLayout, "BtnTalk");
+    btnTalk->addTouchEventListener
+    (
+     [](Ref *sender, Widget::TouchEventType type)
+     {
+         if(type == Widget::TouchEventType::ENDED)
+         {
+             UIMainLayer::gUIMainLayer->pushLayer(UIChatMainLayer::create());
+         }
+     }
+    );
 }

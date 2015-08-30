@@ -78,13 +78,13 @@
                 <PreSize X="1.0056" Y="1.0000" />
                 <FileData Type="Normal" Path="chat/Chat_InputBg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="BtnBiaoQing" ActionTag="-1914122528" Tag="264" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="785.0000" RightMargin="209.0000" TopMargin="38.0000" BottomMargin="38.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="56" Scale9Height="64" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="BtnBiaoQing" ActionTag="1556206834" Tag="41" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="780.0000" RightMargin="214.0000" TopMargin="38.0000" BottomMargin="38.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="56" Scale9Height="64" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="86.0000" Y="86.0000" />
                 <AnchorPoint ScaleY="0.5000" />
-                <Position X="785.0000" Y="81.0000" />
+                <Position X="780.0000" Y="81.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7269" Y="0.5000" />
+                <PrePosition X="0.7222" Y="0.5000" />
                 <PreSize X="0.0796" Y="0.5309" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />

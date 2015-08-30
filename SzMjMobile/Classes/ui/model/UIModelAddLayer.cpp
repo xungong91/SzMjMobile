@@ -5,6 +5,7 @@
 #include "UIModelAddLayer.h"
 #include "UISpecialInputLayer.h"
 #include "UIMediaVideoLayer.h"
+#include "UIMainLayer.h"
 
 bool UIModelAddLayer::init()
 {
@@ -104,6 +105,19 @@ void UIModelAddLayer::InitUI()
     tel->InitUI("电话", "111-1111-1111", "必须为11位数字", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::TEL);
     tel->setPosition(Vec2(1080 * 0.5, 130 * 0.5));
     modelBaseInfo->addChild((Node*)tel);
+    
+    //提交按钮
+    Button *btnTiJiao = (Button*)CocosHelper::getNodeByName(mLayout, "Button_TiJiao");
+    btnTiJiao->addTouchEventListener
+    (
+     [](Ref *sender, Widget::TouchEventType type)
+     {
+         if(type == Widget::TouchEventType::ENDED)
+         {
+             UIMainLayer::gUIMainLayer->popLayer();
+         }
+     }
+    );
 }
 
 //添加照片
@@ -147,7 +161,18 @@ void UIModelAddLayer::CallbackAvatarBtn(cocos2d::Ref *sender, Widget::TouchEvent
     if(type == Widget::TouchEventType::ENDED)
     {
         mState = 1;//添加头像
-        UIMediaSelectLayer::create();
+        UIMediaSelectLayer *select =UIMediaSelectLayer::create();
+        select->setSelectCallFunc
+        (
+         [this](vector<UIImageStruct> files)
+         {
+             for(int i=0; i<files.size(); i++)
+             {
+                 UIImageStruct temp = files.at(i);
+                 this->AddImage(temp.file);
+             }
+         }
+         );
     }
 }
 
@@ -157,7 +182,18 @@ void UIModelAddLayer::CallbackImageBtn(cocos2d::Ref *sender, Widget::TouchEventT
     if(type == Widget::TouchEventType::ENDED)
     {
         mState = 0;//添加照片
-        UIMediaSelectLayer::create();
+        UIMediaSelectLayer *select =UIMediaSelectLayer::create();
+        select->setSelectCallFunc
+        (
+         [this](vector<UIImageStruct> files)
+         {
+             for(int i=0; i<files.size(); i++)
+             {
+                 UIImageStruct temp = files.at(i);
+                 this->AddImage(temp.file);
+             }
+         }
+         );
     }
 }
 
@@ -167,7 +203,18 @@ void UIModelAddLayer::CallbackVideoBtn(cocos2d::Ref *sender, Widget::TouchEventT
     if(type == Widget::TouchEventType::ENDED)
     {
         mState = 2;//添加视频
-        UIMediaSelectLayer::create();
+        UIMediaSelectLayer *select =UIMediaSelectLayer::create();
+        select->setSelectCallFunc
+        (
+         [this](vector<UIImageStruct> files)
+         {
+             for(int i=0; i<files.size(); i++)
+             {
+                 UIImageStruct temp = files.at(i);
+                 this->AddVideo(temp);
+             }
+         }
+         );
     }
 }
 
