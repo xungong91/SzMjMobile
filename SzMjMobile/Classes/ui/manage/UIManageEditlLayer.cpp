@@ -34,11 +34,11 @@ bool UIManageEditlLayer::init()
          }
      });
     
-    vector<string> layoutNames = {"Panel_phone", "Panel_user", "Panel_bank", "Panel_bankName"};
+    vector<string> layoutNames = {"Panel_phoneEdit", "Panel_bankEdit", "Panel_bankNameEdit"};
     
-    mEditHolders = {"请输入手机号", "请输入账号信息", "请输入银行账号", "请输入银行户名"};
+    mEditHolders = {"请输入手机号", "请输入银行账号", "请输入银行户名"};
     
-    for (int i = 0; i < 4; ++i)
+    for (int i = 0; i < 3; ++i)
     {
         Layout *layout = static_cast<Layout*>(CocosHelper::getNodeByName(mLayout, layoutNames[i]));
         Size size = layout->getContentSize();
@@ -46,18 +46,21 @@ bool UIManageEditlLayer::init()
         tempEdit->setPosition(Point::ZERO);
         tempEdit->setAnchorPoint(Point::ZERO);
         tempEdit->setFontSize(60);
-        tempEdit->setFontColor(Color3B::RED);
-        tempEdit->setPlaceHolder("");
-        tempEdit->setPlaceholderFontColor(Color3B::WHITE);
+        tempEdit->setFontColor(Color3B::BLACK);
+        tempEdit->setPlaceHolder(mEditHolders[i].c_str());
+        tempEdit->setPlaceholderFontColor(Color3B(100, 100, 100));
         tempEdit->setReturnType(ui::EditBox::KeyboardReturnType::DONE);
         tempEdit->setDelegate(this);
         tempEdit->setTag(i);
-        tempEdit->setInputMode(EditBox::InputMode::NUMERIC);
+        if (i == 0)
+        {
+            tempEdit->setInputMode(EditBox::InputMode::NUMERIC);
+        }
         
         layout->addChild(tempEdit);
         
-        mEdits.push_back(tempEdit);
-        mLayouts.push_back(layout);
+//        mEdits.push_back(tempEdit);
+//        mLayouts.push_back(layout);
     }
     
     CocosHelper::getWidgetByName(mLayout, "Button_save")->addTouchEventListener
@@ -70,16 +73,7 @@ bool UIManageEditlLayer::init()
      });
     
     
-    setInput();
-    
-    if (getIsRightBankNum("6228480402564890018"))
-    {
-        CCLOG("银行卡");
-    }
-    else
-    {
-        CCLOG("不是银行卡");
-    }
+//    setInput();
     
     return true;
 }
@@ -87,6 +81,8 @@ bool UIManageEditlLayer::init()
 void UIManageEditlLayer::editBoxEditingDidBegin(cocos2d::ui::EditBox* editBox)
 {
     CCLOG("editBoxEditingDidBegin");
+    
+    return;
     auto index =  std::find(mEdits.begin(), mEdits.end(), editBox) - mEdits.begin();
     if (index < mEdits.size())
     {
@@ -103,6 +99,9 @@ void UIManageEditlLayer::editBoxEditingDidBegin(cocos2d::ui::EditBox* editBox)
 void UIManageEditlLayer::editBoxEditingDidEnd(cocos2d::ui::EditBox* editBox)
 {
     CCLOG("editBoxEditingDidEnd");
+    
+    CocosHelper::getWidgetByName(mLayout, "Button_save")->setVisible(true);
+    return;
     auto index =  std::find(mEdits.begin(), mEdits.end(), editBox) - mEdits.begin();
     if (index < mEdits.size())
     {

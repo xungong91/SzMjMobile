@@ -22,6 +22,12 @@
           <Image Name="button_denglu1.png" />
           <Image Name="button_huoquyanzhengma1.png" />
           <Image Name="button_queding1.png" />
+          <Image Name="btn_select1.png" />
+          <Image Name="btn_select2.png" />
+          <Image Name="selectBg.png" />
+          <Image Name="search_bg.png" />
+          <Image Name="bg_daojishi.png" />
+          <Image Name="image_gantan.png" />
         </Folder>
         <Project Name="CCS_login2.csd" Type="Layer" />
         <Project Name="CCS_login3.csd" Type="Layer" />
@@ -123,11 +129,14 @@
           <Image Name="TaskInfo_Progress_0.png" />
           <Image Name="TaskInfo_Progress_1.png" />
           <Image Name="TaskInfo_Progress_2.png" />
+          <File Name="Thumbs.db" />
         </Folder>
         <Folder Name="addModel">
           <Image Name="AddModel_AddPicture_0.png" />
           <Image Name="AddModel_AddPicture_1.png" />
           <Image Name="AddModel_AddVideo_0.png" />
+          <Image Name="AddModel_Add_0.png" />
+          <Image Name="AddModel_Add_1.png" />
           <Image Name="AddModel_AvatarBg.png" />
           <Image Name="AddModel_GaoGui_0.png" />
           <Image Name="AddModel_GaoGui_1.png" />
@@ -159,7 +168,6 @@
           <Image Name="TiJiao_1.png" />
           <Image Name="InputBg_1.png" />
           <Image Name="InputBg_0.png" />
-          <Image Name="AddModel_AddAvatar.png" />
         </Folder>
         <Project Name="CCS_task_info.csd" Type="Layer" />
         <Project Name="CCS_model_add.csd" Type="Layer" />
@@ -218,55 +226,111 @@
           <Image Name="Publish_Upload_1.png" />
           <Image Name="Publish_WuChang_0.png" />
           <Image Name="Publish_WuChang_1.png" />
+          <File Name="Thumbs.db" />
           <Image Name="Publish_Commerce.png" />
           <Image Name="Publish_HanKou.png" />
           <Image Name="Publish_HanYang.png" />
           <Image Name="Publish_Person.png" />
           <Image Name="Publish_QiTa_3.png" />
-          <Image Name="Publish_WuChang.png" />
           <Image Name="Publish_QiTa_6.png" />
           <Image Name="Publish_QiTa_7.png" />
+          <Image Name="Publish_WuChang.png" />
         </Folder>
-        <Project Name="CCS_publish_taskSet.csd" Type="Layer" />
-        <Project Name="CCS_publish_taskInfo.csd" Type="Layer" />
+        <Project Name="CCS_income.csd" Type="Layer" />
         <Folder Name="income">
-          <Image Name="btn_all1.png" />
-          <Image Name="btn_all2.png" />
-          <Image Name="btn_qianbao1.png" />
-          <Image Name="btn_qianbao2.png" />
-          <Image Name="btn_reg1.png" />
-          <Image Name="btn_reg2.png" />
-          <Image Name="btn_shouqi1.png" />
-          <Image Name="btn_shouqi2.png" />
-          <Image Name="btn_zhangdan1.png" />
-          <Image Name="btn_zhangdan2.png" />
-          <Image Name="button_tixian1.png" />
-          <Image Name="button_tixian2.png" />
-          <Image Name="incomeModel_bg.png" />
           <Image Name="main_model1.png" />
           <Image Name="main_model2.png" />
           <Image Name="main_model3.png" />
-          <Image Name="pick_bg.png" />
+          <Image Name="shouyi1.png" />
+          <Image Name="shouyi12.png" />
+          <Image Name="zhangdan.png" />
+          <Image Name="button_tixian1.png" />
+          <Image Name="button_tixian2.png" />
+          <Image Name="btn_qianbao1.png" />
           <Image Name="qianbao1.png" />
           <Image Name="qianbao2.png" />
           <Image Name="qianbao3.png" />
           <Image Name="qianbao4.png" />
-          <Image Name="shouyi1.png" />
-          <Image Name="shouyi12.png" />
+          <Image Name="btn_qianbao2.png" />
+          <Image Name="btn_reg1.png" />
+          <Image Name="btn_reg2.png" />
+          <Image Name="incomeModel_bg.png" />
+          <Image Name="pick_bg.png" />
+          <Image Name="btn_all1.png" />
+          <Image Name="btn_all2.png" />
+          <Image Name="btn_shouqi1.png" />
+          <Image Name="btn_shouqi2.png" />
+          <Image Name="btn_zhangdan1.png" />
+          <Image Name="btn_zhangdan2.png" />
           <Image Name="task_inconme0.png" />
           <Image Name="task_inconme1.png" />
           <Image Name="task_inconme2.png" />
-          <Image Name="zhangdan.png" />
           <Image Name="btn_faburenwu1.png" />
           <Image Name="btn_faburenwu2.png" />
           <Image Name="btn_qiangdan1.png" />
           <Image Name="btn_qiangdan2.png" />
+          <Image Name="bg_tijiaoqueren.png" />
+          <Image Name="bg_modelShouyi.png" />
+          <Image Name="btn_queding1.png" />
+          <Image Name="btn_queding2.png" />
+          <Image Name="btn_zhidaole1.png" />
+          <Image Name="btn_zhidaole2.png" />
         </Folder>
-        <Project Name="CCS_income.csd" Type="Layer" />
         <Project Name="CCS_incomeModel.csd" Type="Layer" />
-        <Project Name="CCS_incomePick.csd" Type="Layer" />
         <Project Name="CCS_incomePickReg.csd" Type="Layer" />
+        <Project Name="CCS_incomePick.csd" Type="Layer" />
         <Project Name="CCS_WIDGET_Task.csd" Type="Layer" />
+        <Project Name="CCS_publish_taskInfo.csd" Type="Layer" />
+        <Project Name="CCS_publish_taskSet.csd" Type="Layer" />
+        <Project Name="CCS_grab.csd" Type="Layer" />
+        <Folder Name="grab">
+          <Image Name="btn_shaoxuan1.png" />
+          <Image Name="btn_shaoxuan2.png" />
+          <Image Name="grabList0.png" />
+          <Image Name="grabList1.png" />
+          <Image Name="grabList2.png" />
+          <Image Name="bg_grabInfo1.png" />
+          <Image Name="bg_grabInfo2.png" />
+          <Image Name="btn_tijiao1.png" />
+          <Image Name="btn_tijiao2.png" />
+          <Image Name="grabInfoModel0.png" />
+          <Image Name="grabInfoModel1.png" />
+          <Image Name="grabInfoModel2.png" />
+          <Image Name="grabInfoModel3.png" />
+          <Image Name="grabInfoModel4.png" />
+          <Image Name="grabInfoModel5.png" />
+          <Image Name="grabInfoModel6.png" />
+          <Image Name="grabInfo_select.png" />
+          <Image Name="model0.png" />
+          <Image Name="model1.png" />
+          <Image Name="model2.png" />
+          <Image Name="model3.png" />
+          <Image Name="model4.png" />
+          <Image Name="model5.png" />
+          <Image Name="modelSelect.png" />
+        </Folder>
+        <Project Name="CCS_grabInfo.csd" Type="Layer" />
+        <Project Name="CCS_grabModelInfo.csd" Type="Layer" />
+        <Project Name="CCS_manageModel.csd" Type="Layer" />
+        <Project Name="CCS_manageEdit.csd" Type="Layer" />
+        <Project Name="CCS_manageModelEdit.csd" Type="Layer" />
+        <Folder Name="manage">
+          <Image Name="bg_model0.png" />
+          <Image Name="bg_model1.png" />
+          <Image Name="btn_manage1.png" />
+          <Image Name="btn_manage2.png" />
+          <Image Name="btn_model1.png" />
+          <Image Name="btn_model2.png" />
+          <Image Name="bg_manageEdit.png" />
+          <Image Name="btn_save1.png" />
+          <Image Name="btn_save2.png" />
+          <Image Name="model0.png" />
+          <Image Name="model1.png" />
+          <Image Name="model_bg0.png" />
+          <Image Name="model_bg1.png" />
+          <Image Name="model_bg2.png" />
+          <Image Name="btn_manage.png" />
+        </Folder>
         <Folder Name="chat">
           <Image Name="Chat_BiaoQing.png" />
           <Image Name="Chat_Btn_Send_0.png" />
@@ -278,66 +342,9 @@
           <Image Name="Chat_InputBg.png" />
           <Image Name="Chat_JiLu_0.png" />
           <Image Name="Chat_JiLu_1.png" />
-          <Image Name="Chat_JianPan.png" />
-          <Image Name="Chat_TalkBg_0.png" />
-          <Image Name="Chat_TalkBg_1.png" />
-          <Image Name="Chat_JiLu_2.png" />
-          <Image Name="Chat_JiLu_3.png" />
-          <Image Name="Chat_JiLu_4.png" />
-          <Image Name="Chat_JiLu_5.png" />
-          <Image Name="Chat_JiLu_6.png" />
-          <Image Name="Chat_JiLu_7.png" />
         </Folder>
-        <Folder Name="grab">
-          <Image Name="bg_grabInfo1.png" />
-          <Image Name="bg_grabInfo2.png" />
-          <Image Name="btn_shaoxuan1.png" />
-          <Image Name="btn_shaoxuan2.png" />
-          <Image Name="btn_tijiao1.png" />
-          <Image Name="btn_tijiao2.png" />
-          <Image Name="grabInfoModel0.png" />
-          <Image Name="grabInfoModel1.png" />
-          <Image Name="grabInfoModel2.png" />
-          <Image Name="grabInfoModel3.png" />
-          <Image Name="grabInfoModel4.png" />
-          <Image Name="grabInfoModel5.png" />
-          <Image Name="grabInfoModel6.png" />
-          <Image Name="grabInfo_select.png" />
-          <Image Name="grabList0.png" />
-          <Image Name="grabList1.png" />
-          <Image Name="grabList2.png" />
-          <Image Name="model0.png" />
-          <Image Name="model1.png" />
-          <Image Name="model2.png" />
-          <Image Name="model3.png" />
-          <Image Name="model4.png" />
-          <Image Name="model5.png" />
-          <Image Name="modelSelect.png" />
-        </Folder>
-        <Folder Name="manage">
-          <Image Name="bg_manageEdit.png" />
-          <Image Name="bg_model0.png" />
-          <Image Name="bg_model1.png" />
-          <Image Name="btn_manage1.png" />
-          <Image Name="btn_manage2.png" />
-          <Image Name="btn_model1.png" />
-          <Image Name="btn_model2.png" />
-          <Image Name="btn_save1.png" />
-          <Image Name="btn_save2.png" />
-          <Image Name="model0.png" />
-          <Image Name="model1.png" />
-          <Image Name="model_bg0.png" />
-          <Image Name="model_bg1.png" />
-          <Image Name="model_bg2.png" />
-        </Folder>
-        <Project Name="CCS_grab.csd" Type="Layer" />
-        <Project Name="CCS_grabInfo.csd" Type="Layer" />
-        <Project Name="CCS_grabModelInfo.csd" Type="Layer" />
-        <Project Name="CCS_manageEdit.csd" Type="Layer" />
-        <Project Name="CCS_manageModel.csd" Type="Layer" />
-        <Project Name="CCS_manageModelEdit.csd" Type="Layer" />
-        <Project Name="CCS_chat.csd" Type="Layer" />
-        <Project Name="CCS_chat_info.csd" Type="Layer" />
+        <Project Name="CCS_incomeSubmit.csd" Type="Layer" />
+        <Project Name="CCS_WIDGET_Search.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
