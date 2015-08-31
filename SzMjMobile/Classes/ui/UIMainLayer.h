@@ -46,6 +46,7 @@ public:
     void intoGrabLayer();
     void intoManageLayer();
     
+    void onKeyReturn();
 private:
     void changeAction(UIBaseCenterLayer *sender);
     void removeAllChiLayer();

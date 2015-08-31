@@ -384,12 +384,19 @@ void UIMainLayer::onKeyReleased(EventKeyboard::KeyCode keycode, cocos2d::Event *
 {
     if (keycode == EventKeyboard::KeyCode::KEY_BACK)  //返回
     {
-        if (UIMediaSelectLayer::gUIMediaSelectLayer)
-        {
-            this->removeChild(UIMediaSelectLayer::gUIMediaSelectLayer);
-            return;
-        }
-        
+        onKeyReturn();
+    }
+}
+
+void UIMainLayer::onKeyReturn()
+{
+    if (UIMediaSelectLayer::gUIMediaSelectLayer)
+    {
+//        UIMediaSelectLayer::gUIMediaSelectLayer->getParent()->removeChild(UIMediaSelectLayer::gUIMediaSelectLayer);
+        return;
+    }
+    else
+    {
         if (!mChildLayer)
         {
             Director::getInstance()->end();
