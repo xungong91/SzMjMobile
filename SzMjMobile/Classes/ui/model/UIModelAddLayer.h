@@ -28,6 +28,8 @@ private:
     void CallbackBiaoQianBtn(Ref *sender, Widget::TouchEventType type);
     //任务按钮响应事件
     void CallbackTaskBtn(Ref *sender, Widget::TouchEventType type);
+    void CallbackCloseBtn(Ref *sender, Widget::TouchEventType type);
+    void CallbackSetBtn(Ref *sender, Widget::TouchEventType type);
     //添加多媒体按钮响应事件
     void CallbackAvatarBtn(Ref *sender, Widget::TouchEventType type);
     void CallbackImageBtn(Ref *sender, Widget::TouchEventType type);
@@ -55,6 +57,9 @@ private:
     Widget *mPanelMoveFather;
     Widget *mPanelBase;
     Widget *mPanelMove;
+    Button *mBtnOk;
+    ImageView *mBtnPersonSet;
+    ImageView *mBtnCommerceSet;
     
     //添加多媒体按钮
     int mState;

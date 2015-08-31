@@ -4,7 +4,7 @@
 
 #include "UITaskInfoLayer.h"
 #include "UIMainLayer.h"
-#include "UIChatMainLayer.h"
+#include "UIChatLayer.h"
 
 bool UITaskInfoLayer::init()
 {
@@ -30,7 +30,7 @@ void UITaskInfoLayer::InitUI()
      {
          if(type == Widget::TouchEventType::ENDED)
          {
-             UIMainLayer::gUIMainLayer->pushLayer(UIChatMainLayer::create());
+             UIMainLayer::gUIMainLayer->pushLayer(UIChatLayer::create());
          }
      }
     );
