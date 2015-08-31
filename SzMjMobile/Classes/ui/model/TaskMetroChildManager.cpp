@@ -233,7 +233,8 @@ void TaskMetroChildManager::SetChildPosition(int holdIndex, Node *sprite)
 {
 #if METRO_ORIENTATION_HOR
     //竖版
-    Point p(holdIndex % gColumnCount * gWidth, -(holdIndex / gColumnCount + 1) * gHeight);
+    //括弧里面的10是每两个之间的间距，外面的10是调整整体的X位置
+    Point p(holdIndex % gColumnCount * (gWidth + 10) + 10, -(holdIndex / gColumnCount + 1) * gHeight);
     sprite->setPosition(p);
 #else
     //横版

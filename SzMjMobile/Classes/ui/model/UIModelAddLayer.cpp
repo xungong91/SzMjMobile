@@ -7,6 +7,12 @@
 #include "UIMediaVideoLayer.h"
 #include "UIMainLayer.h"
 
+static bool sbOpen = false;//动画是否打开
+static bool sbPlay = false;  //动画是否正在进行
+//static bool sbPersonSet = false;       //私人宴会是否已经设置
+//static bool sbCommerceSet = false; //商务宴请是否已经设置
+static int sOpen = 0;//0都没有打开，1打开的私人聚会，2打开的商务宴请
+
 bool UIModelAddLayer::init()
 {
     if(!UIBaseTopLayer::init())
@@ -40,12 +46,31 @@ void UIModelAddLayer::InitUI()
     mBtnGaoGui->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackBiaoQianBtn, this));
     
     //任务按钮
-    mBtnPerson  = (Button*)CocosHelper::getNodeByName(mLayout, "BtnPerson");
+    mBtnPerson  = (ImageView*)CocosHelper::getNodeByName(mLayout, "ImagePerson");
     mBtnPerson->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackTaskBtn, this));
-    mBtnPerson->setPressedActionEnabled(false);
     
-    mBtnCommerce  = (Button*)CocosHelper::getNodeByName(mLayout, "BtnCommerce");
+    mBtnCommerce  = (ImageView*)CocosHelper::getNodeByName(mLayout, "ImageCommerce");
     mBtnCommerce->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackTaskBtn, this));
+    
+    //列表动画
+    mListView = static_cast<ListView*>(CocosHelper::getNodeByName(mLayout, "ListModelInfo"));
+    mPanelMoveFather = CocosHelper::getWidgetByName(mLayout, "PanelModelTask");
+    mPanelBase = CocosHelper::getWidgetByName(mLayout, "PanelBase");
+    mPanelMove = CocosHelper::getWidgetByName(mLayout, "PanelMove");
+    mPanelMove->setScaleY(0);
+    
+    this->schedule(CC_CALLBACK_1(UIModelAddLayer::UpdateList, this), "updateList");
+    
+    mBtnOk = (Button*)CocosHelper::getNodeByName(mLayout, "BtnOk");
+    mBtnOk->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackCloseBtn, this));
+    
+    mBtnPersonSet  = (ImageView*)CocosHelper::getNodeByName(mLayout, "ModelTaskSiRenSetting");
+    mBtnPersonSet->setEnabled(false);
+    mBtnPersonSet->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackSetBtn, this));
+    
+    mBtnCommerceSet  = (ImageView*)CocosHelper::getNodeByName(mLayout, "ModelTaskShangWuSetting");
+    mBtnCommerceSet->setEnabled(false);
+    mBtnCommerceSet->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackSetBtn, this));
     
     //模特头像
     mImageAvatar = ImageView::create();
@@ -118,6 +143,40 @@ void UIModelAddLayer::InitUI()
          }
      }
     );
+}
+
+//展开动画
+void UIModelAddLayer::Open()
+{
+    sbOpen = true;
+    
+    mPanelMove->stopAllActions();
+    mPanelMove->runAction(Sequence::create(ScaleTo::create(0.3, 1, 1), NULL));
+}
+
+//收起动画
+void UIModelAddLayer::Close()
+{
+    sbOpen = false;
+    
+    mPanelMove->stopAllActions();
+    mPanelMove->runAction(Sequence::create(ScaleTo::create(0.3, 1, 0), NULL));
+}
+
+void UIModelAddLayer::UpdateList(float dt)
+{
+    float height = 225 * mPanelMove->getScaleY();
+    mPanelMoveFather->setContentSize(Size(1080, 300 + height));
+    mPanelBase->setPosition(Point(0, height));
+    mListView->refreshView();
+    if(sbPlay)
+        mListView->jumpToBottom();
+   
+    if(height != 225 && height != 0)
+        sbPlay = true;
+    
+//    if(height == 225 || height == 0)
+//        this->unschedule("updateList");
 }
 
 //添加照片
@@ -218,26 +277,85 @@ void UIModelAddLayer::CallbackVideoBtn(cocos2d::Ref *sender, Widget::TouchEventT
     }
 }
 
+//私人聚会和商务宴请的设置按钮
+void UIModelAddLayer::CallbackSetBtn(cocos2d::Ref *sender, Widget::TouchEventType type)
+{
+    if(type == Widget::TouchEventType::ENDED)
+    {
+        if(sender == mBtnPersonSet)
+        {
+            mBtnPersonSet->loadTexture("addModel/AddModel_No_1.png");
+            mBtnPersonSet->setEnabled(false);
+        }
+        else if(sender == mBtnCommerceSet)
+        {
+            mBtnCommerceSet->loadTexture("addModel/AddModel_No_1.png");
+            mBtnCommerceSet->setEnabled(false);
+        }
+    }
+}
+
+//任务收起按钮的事件
+void UIModelAddLayer::CallbackCloseBtn(cocos2d::Ref *sender, Widget::TouchEventType type)
+{
+    if(type == Widget::TouchEventType::ENDED)
+    {
+        mBtnPerson->loadTexture("addModel/SiRen_0.png");
+        mBtnCommerce->loadTexture("addModel/ShangWu_0.png");
+        
+        if(sOpen == 1)
+        {
+            mBtnPersonSet->loadTexture("addModel/AddModel_Ok_1.png");
+            mBtnPersonSet->setEnabled(true);
+        }
+        else if(sOpen == 2)
+        {
+            mBtnCommerceSet->loadTexture("addModel/AddModel_Ok_1.png");
+            mBtnCommerceSet->setEnabled(true);
+        }
+        
+        sOpen = 0;
+        
+        Close();
+    }
+}
+
 //任务按钮的事件
 void UIModelAddLayer::CallbackTaskBtn(cocos2d::Ref *sender, Widget::TouchEventType type)
 {
     if(type == Widget::TouchEventType::ENDED)
     {
-        mBtnPerson->loadTextures("addModel/SiRen_0.png", "addModel/SiRen_0.png");
-        mBtnPerson->setPressedActionEnabled(true);
-        
-        mBtnCommerce->loadTextures("addModel/ShangWu_0.png", "addModel/ShangWu_0.png");
-        mBtnCommerce->setPressedActionEnabled(true);
-        
         if(sender == mBtnPerson)
         {
-            mBtnPerson->loadTextures("addModel/SiRen_1.png", "addModel/SiRen_1.png");
-            mBtnPerson->setPressedActionEnabled(false);
+            mBtnPerson->loadTexture("addModel/SiRen_1.png");
+            mBtnCommerce->loadTexture("addModel/ShangWu_0.png");
+            
+            sOpen = 1;
+            
+            //面板是否已经打开
+            if(sbOpen)
+            {
+            }
+            else
+            {
+                Open();
+            }
         }
         else if(sender == mBtnCommerce)
         {
-            mBtnCommerce->loadTextures("addModel/ShangWu_1.png", "addModel/ShangWu_1.png");
-            mBtnCommerce->setPressedActionEnabled(false);
+            mBtnPerson->loadTexture("addModel/SiRen_0.png");
+            mBtnCommerce->loadTexture("addModel/ShangWu_1.png");
+            
+            sOpen = 2;
+            
+            //面板是否已经打开
+            if(sbOpen)
+            {
+            }
+            else
+            {
+                Open();
+            }
         }
     }
 }
