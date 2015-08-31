@@ -51,6 +51,18 @@ void UISpecialInputLayer::InitUI(string titleStr, string placeHolderStr, string 
     mContentLabel->setPositionY(-20);
     mContentLabel->setVisible(false);
     addChild(mContentLabel);
+    
+    //设置最大的输入位数
+    if(mInputType == InputType::ANY)
+        mInput->setMaxLength(16);
+    else if(mInputType == InputType::BIRTHDAY)
+        mInput->setMaxLength(8);
+    else if(mInputType == InputType::HEIGHT)
+        mInput->setMaxLength(3);
+    else if(mInputType == InputType::BHW)
+        mInput->setMaxLength(7);
+    else if(mInputType == InputType::TEL)
+        mInput->setMaxLength(11);
 }
 
 void UISpecialInputLayer::editBoxEditingDidBegin(cocos2d::ui::EditBox *editBox)
@@ -139,7 +151,7 @@ void UISpecialInputLayer::SetString(string str)
         if(tempStr.length() != 6)
             return;
         
-        tempStr.insert(2, "B-");
+        tempStr.insert(3, "-");
         tempStr.insert(6, "-");
         mContentLabel->setString(tempStr);
     }

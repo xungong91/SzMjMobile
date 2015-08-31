@@ -122,7 +122,7 @@ void UIModelAddLayer::InitUI()
     modelBaseInfo->addChild((Node*)height);
     
     UISpecialInputLayer *bhw = UISpecialInputLayer::create();
-    bhw->InitUI("三围", "90B/70/90", "必须为6位数字", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::BHW);
+    bhw->InitUI("三围", "90B/70/90", "必须90B7090格式", ui::EditBox::InputMode::NUMERIC, UISpecialInputLayer::InputType::BHW);
     bhw->setPosition(Vec2(810, 136 + 64));
     modelBaseInfo->addChild((Node*)bhw);
     
