@@ -40,13 +40,15 @@ public:
     void pushLayer(Node *layer);
     void popLayer();
     
-private:
-    void changeAction(UIBaseCenterLayer *sender);
     void intoModelLayer();
     void intoPublishLayer();
     void intoIncomeLayer();
     void intoGrabLayer();
     void intoManageLayer();
+    
+private:
+    void changeAction(UIBaseCenterLayer *sender);
+    void removeAllChiLayer();
     
     void CallbackMenu(Ref *sender, Widget::TouchEventType type);
     
@@ -69,6 +71,10 @@ private:
     UIGrabMainLayer *mUIGrabMainLayer;
     UIManageMainLayer *mUIManageMainLayer;
     vector<UIBaseCenterLayer*> mLayers;
+    
+    //监听按键
+    EventListenerKeyboard *mListenerkeyPad;
+    void onKeyReleased(EventKeyboard::KeyCode keycode, cocos2d::Event *event);
 };
 
 #endif /* defined(__SzMjMobile__UIMainLayer__) */

@@ -17,6 +17,7 @@
 class UIMediaSelectLayer : public UIBaseLayer
 {
 public:
+    static UIMediaSelectLayer *gUIMediaSelectLayer;
     UIMediaSelectLayer();
     ~UIMediaSelectLayer();
     CREATE_FUNC(UIMediaSelectLayer);
@@ -25,12 +26,15 @@ public:
     void onExit();
     
     void setSelectCallFunc(function<void (vector<UIImageStruct> files)> func);
+    void setMaxSelectCount(int count ) {mMaxSelectCount = count;}
 private:
     Layer *mMoveLayer;
     Point mTouchStartPoint;
     Point mMoveLayerStartPoint;
     UIMediaSelectItemLayer *mSelectMediaItem;
     function<void (vector<UIImageStruct> files)> mSelectCallFunc;
+    //最多选择
+    int mMaxSelectCount;
     //选中用的
     Point mTouchSelectPoint;
     bool mIsSelect;

@@ -10,6 +10,7 @@
 #include "UIGrabInfoLayer.h"
 #include "UIGrabModelInfoLayer.h"
 #include "UIMainLayer.h"
+#include "UIChatMainLayer.h"
 
 bool UIGrabMainLayer::init()
 {
@@ -26,6 +27,15 @@ bool UIGrabMainLayer::init()
         
         CocosHelper::getWidgetByName(mLayout, __String::createWithFormat("Panel_model%d", i)->getCString())->addTouchEventListener(CC_CALLBACK_2(UIGrabMainLayer::onModelInfoTouch, this));
     }
+    
+    CocosHelper::getWidgetByName(mLayout, "BtnTalk")->addTouchEventListener
+    ([](Ref *sender, Widget::TouchEventType type)
+     {
+         if (type == Widget::TouchEventType::ENDED)
+         {
+             UIMainLayer::gUIMainLayer->pushLayer(UIChatMainLayer::create());
+         }
+     });
     
     return true;
 }

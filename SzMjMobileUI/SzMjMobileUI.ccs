@@ -26,6 +26,8 @@
           <Image Name="btn_select2.png" />
           <Image Name="selectBg.png" />
           <Image Name="search_bg.png" />
+          <Image Name="bg_daojishi.png" />
+          <Image Name="image_gantan.png" />
         </Folder>
         <Project Name="CCS_login2.csd" Type="Layer" />
         <Project Name="CCS_login3.csd" Type="Layer" />

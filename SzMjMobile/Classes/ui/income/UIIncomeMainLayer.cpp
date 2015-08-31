@@ -73,9 +73,15 @@ bool UIIncomeMainLayer::init()
     mUIWidgetSearchLayer->setPosition(Point(0, 1575));
     this->addChild(mUIWidgetSearchLayer);
     mUIWidgetSearchLayer->setVisible(false);
-    mUIWidgetSearchLayer->setHandldAction([](string text)
+    vector<string> modelNicks = {"Eva小公举", "奈奈", "娃娃"};
+    mUIWidgetSearchLayer->setHandldAction([modelNicks](string text)
                                           {
-                                              
+                                              if (find(modelNicks.begin(), modelNicks.end(), text) != modelNicks.end())
+                                              {
+                                                  auto temp = UIIncomeModelLayer::create();
+                                                  temp->setTitle("text");
+                                                  UIMainLayer::gUIMainLayer->pushLayer(temp);
+                                              }
                                           });
     
     CocosHelper::getWidgetByName(mLayout, "Button_Search")->addTouchEventListener

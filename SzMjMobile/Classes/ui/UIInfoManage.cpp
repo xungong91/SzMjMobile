@@ -13,7 +13,8 @@ UIInfoManage *UIInfoManage::mUIInfoManage = nullptr;
 UIInfoManage::CGarbo UIInfoManage::mGarbo;
 
 UIInfoManage::UIInfoManage()
-: mIsShowPwd(false)
+: mIsShowPwd(true)
+, mPhoneNum("")
 {
     
 }
@@ -32,26 +33,25 @@ UIInfoManage *UIInfoManage::singleton()
     return mUIInfoManage;
 }
 
-void UIInfoManage::setShowPwd(Button *button, TextField *textFied)
+void UIInfoManage::setShowPwd(Button *button, EditBox *textFied)
 {
     auto setShowPwdFunc = [this, button, textFied]()
     {
-        string text = textFied->getString();
-        textFied->setString("");
+        string text = textFied->getText();
+        textFied->setText("");
         if (mIsShowPwd)
         {
             button->loadTextureNormal("ui/button_look0.png");
             button->loadTexturePressed("ui/button_look0.png");
-            textFied->setPasswordEnabled(false);
+            textFied->setInputFlag(EditBox::InputFlag::INTIAL_CAPS_ALL_CHARACTERS);
         }
         else
         {
             button->loadTextureNormal("ui/button_look1.png");
             button->loadTexturePressed("ui/button_look1.png");
-            textFied->setPasswordEnabled(true);
-            textFied->setPasswordStyleText("*");
+            textFied->setInputFlag(EditBox::InputFlag::PASSWORD);
         }
-        textFied->setString(text);
+        textFied->setText(text.c_str());
     };
     setShowPwdFunc();
     

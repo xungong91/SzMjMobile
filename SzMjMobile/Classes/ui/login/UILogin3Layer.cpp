@@ -13,6 +13,7 @@
 #include <functional>
 #include "UIWidgetMsgSprite.h"
 #include "XHelper.h"
+#include "UILogin1Layer.h"
 
 bool UILogin3Layer::init()
 {
@@ -24,17 +25,29 @@ bool UILogin3Layer::init()
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_login3.csb", this);
     
     Button *Button_close = static_cast<Button*>(CocosHelper::getWidgetByName(mLayout, "Button_close"));
-    TextField *TextField_phoneNum = static_cast<TextField*>(CocosHelper::getWidgetByName(mLayout, "TextField_phoneNum"));
-    UIInfoManage::singleton()->setShowPwd(Button_close, TextField_phoneNum);
+    
+    Layout *layout = static_cast<Layout*>(CocosHelper::getNodeByName(mLayout, "Panel_edit"));
+    Size size = layout->getContentSize();
+    UserEditBox* mSearchEdit = UserEditBox::create(size, Scale9Sprite::create("Transparent.png"));
+    mSearchEdit->setPosition(Point::ZERO);
+    mSearchEdit->setAnchorPoint(Point::ZERO);
+    mSearchEdit->setFontSize(60);
+    mSearchEdit->setFontColor(Color3B::BLACK);
+    mSearchEdit->setPlaceHolder("请输入6-16位密码");
+    mSearchEdit->setPlaceholderFontColor(Color3B(100, 100, 100));
+    mSearchEdit->setReturnType(ui::EditBox::KeyboardReturnType::DONE);
+    mSearchEdit->setDelegate(mSearchEdit);
+    layout->addChild(mSearchEdit);
+    
+    UIInfoManage::singleton()->setShowPwd(Button_close, mSearchEdit);
     
     CocosHelper::getWidgetByName(mLayout, "Button_next")->addTouchEventListener
-    ([this, TextField_phoneNum](Ref *sender, Widget::TouchEventType type)
+    ([this, mSearchEdit](Ref *sender, Widget::TouchEventType type)
      {
          if (type == Widget::TouchEventType::ENDED)
          {
-             if (!getIsUserName(TextField_phoneNum->getString()))
+             if (!getIsUserName(mSearchEdit->getText()))
              {
-                 UIWidgetMsgSprite::setMsg("您输入的密码有误，请重新输入");
                  return;
              }
              
@@ -54,5 +67,27 @@ bool UILogin3Layer::init()
      });
     
     
+    Widget *Image_warring = CocosHelper::getWidgetByName(mLayout, "Image_warring");
+    
+    mSearchEdit->setDidEndFunc([Image_warring](string s)
+                               {
+                                   Image_warring->setVisible(!getIsUserName(s));
+                                   if (s == "")
+                                   {
+                                       Image_warring->setVisible(false);
+                                   }
+                               });
+    
+    
     return true;
 }
+
+
+
+
+
+
+
+
+
+

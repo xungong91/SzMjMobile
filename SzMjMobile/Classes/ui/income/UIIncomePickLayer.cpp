@@ -79,8 +79,14 @@ bool UIIncomePickLayer::init()
                  Button_help->loadTextureNormal("income/btn_qianbao2.png");
                  Button_help->loadTexturePressed("income/btn_qianbao2.png");
                  openFunc();
-                 gIsOpenHelp = !gIsOpenHelp;
              }
+             else
+             {
+                 Button_help->loadTextureNormal("income/btn_qianbao1.png");
+                 Button_help->loadTexturePressed("income/btn_qianbao1.png");
+                 closeFunc();
+             }
+             gIsOpenHelp = !gIsOpenHelp;
          }
      }
      );
