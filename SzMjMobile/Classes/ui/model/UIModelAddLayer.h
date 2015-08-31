@@ -33,6 +33,11 @@ private:
     void CallbackImageBtn(Ref *sender, Widget::TouchEventType type);
     void CallbackVideoBtn(Ref *sender, Widget::TouchEventType type);
     
+    //列表动画
+    void Open();
+    void Close();
+    void UpdateList(float dt);
+    
 private:
     //标签按钮
     Button *mBtnQingChun;
@@ -42,8 +47,14 @@ private:
     Button *mBtnGaoGui;
 
     //任务按钮
-    Button *mBtnPerson;
-    Button *mBtnCommerce;
+    ImageView *mBtnPerson;
+    ImageView *mBtnCommerce;
+    
+    //列表动画
+    ListView *mListView;
+    Widget *mPanelMoveFather;
+    Widget *mPanelBase;
+    Widget *mPanelMove;
     
     //添加多媒体按钮
     int mState;

@@ -7,6 +7,9 @@
 #include "UIMediaVideoLayer.h"
 #include "UIMainLayer.h"
 
+static bool sbOpen = false;//动画是否打开
+static bool sbPlay = false;  //动画是否正在进行
+
 bool UIModelAddLayer::init()
 {
     if(!UIBaseTopLayer::init())
@@ -40,12 +43,20 @@ void UIModelAddLayer::InitUI()
     mBtnGaoGui->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackBiaoQianBtn, this));
     
     //任务按钮
-    mBtnPerson  = (Button*)CocosHelper::getNodeByName(mLayout, "BtnPerson");
+    mBtnPerson  = (ImageView*)CocosHelper::getNodeByName(mLayout, "ImagePerson");
     mBtnPerson->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackTaskBtn, this));
-    mBtnPerson->setPressedActionEnabled(false);
     
-    mBtnCommerce  = (Button*)CocosHelper::getNodeByName(mLayout, "BtnCommerce");
+    mBtnCommerce  = (ImageView*)CocosHelper::getNodeByName(mLayout, "ImageCommerce");
     mBtnCommerce->addTouchEventListener(CC_CALLBACK_2(UIModelAddLayer::CallbackTaskBtn, this));
+    
+    //列表动画
+    mListView = static_cast<ListView*>(CocosHelper::getNodeByName(mLayout, "ListModelInfo"));
+    mPanelMoveFather = CocosHelper::getWidgetByName(mLayout, "PanelModelTask");
+    mPanelBase = CocosHelper::getWidgetByName(mLayout, "PanelBase");
+    mPanelMove = CocosHelper::getWidgetByName(mLayout, "PanelMove");
+    mPanelMove->setScaleY(0);
+    
+    this->schedule(CC_CALLBACK_1(UIModelAddLayer::UpdateList, this), "updateList");
     
     //模特头像
     mImageAvatar = ImageView::create();
@@ -118,6 +129,33 @@ void UIModelAddLayer::InitUI()
          }
      }
     );
+}
+
+//展开动画
+void UIModelAddLayer::Open()
+{
+    mPanelMove->stopAllActions();
+    mPanelMove->runAction(Sequence::create(ScaleTo::create(0.3, 1, 1), NULL));
+}
+
+//收起动画
+void UIModelAddLayer::Close()
+{
+    mPanelMove->stopAllActions();
+    mPanelMove->runAction(Sequence::create(ScaleTo::create(0.3, 1, 0), NULL));
+}
+
+void UIModelAddLayer::UpdateList(float dt)
+{
+    float height = 225 * mPanelMove->getScaleY();
+    mPanelMoveFather->setContentSize(Size(1080, 300 + height));
+    mPanelBase->setPosition(Point(0, height));
+    mListView->refreshView();
+   // if(height != 225 && height != 0)
+        mListView->jumpToBottom();
+    
+    if(height == 225 || height == 0)
+        this->unschedule("updateList");
 }
 
 //添加照片
@@ -223,21 +261,27 @@ void UIModelAddLayer::CallbackTaskBtn(cocos2d::Ref *sender, Widget::TouchEventTy
 {
     if(type == Widget::TouchEventType::ENDED)
     {
-        mBtnPerson->loadTextures("addModel/SiRen_0.png", "addModel/SiRen_0.png");
-        mBtnPerson->setPressedActionEnabled(true);
-        
-        mBtnCommerce->loadTextures("addModel/ShangWu_0.png", "addModel/ShangWu_0.png");
-        mBtnCommerce->setPressedActionEnabled(true);
-        
         if(sender == mBtnPerson)
         {
-            mBtnPerson->loadTextures("addModel/SiRen_1.png", "addModel/SiRen_1.png");
-            mBtnPerson->setPressedActionEnabled(false);
+            if(sbOpen)
+            {
+            }
+            else
+            {
+                sbOpen = true;
+                Open();
+            }
         }
         else if(sender == mBtnCommerce)
         {
-            mBtnCommerce->loadTextures("addModel/ShangWu_1.png", "addModel/ShangWu_1.png");
-            mBtnCommerce->setPressedActionEnabled(false);
+            if(sbOpen)
+            {
+            }
+            else
+            {
+                sbOpen = true;
+                Open();
+            }
         }
     }
 }

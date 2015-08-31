@@ -128,8 +128,6 @@
           <Image Name="AddModel_AddPicture_0.png" />
           <Image Name="AddModel_AddPicture_1.png" />
           <Image Name="AddModel_AddVideo_0.png" />
-          <Image Name="AddModel_Add_0.png" />
-          <Image Name="AddModel_Add_1.png" />
           <Image Name="AddModel_AvatarBg.png" />
           <Image Name="AddModel_GaoGui_0.png" />
           <Image Name="AddModel_GaoGui_1.png" />
@@ -161,6 +159,7 @@
           <Image Name="TiJiao_1.png" />
           <Image Name="InputBg_1.png" />
           <Image Name="InputBg_0.png" />
+          <Image Name="AddModel_AddAvatar.png" />
         </Folder>
         <Project Name="CCS_task_info.csd" Type="Layer" />
         <Project Name="CCS_model_add.csd" Type="Layer" />
