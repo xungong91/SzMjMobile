@@ -25,6 +25,7 @@ bool UIWidgetMsgSprite::init()
     {
         return false;
     }
+    Sprite::setOpacity(200);
     Size size = CCDirector::getInstance()->getWinSize();
     this->setPosition(Point(size.width/2, size.height/2));
     mLabel = Label::create();
@@ -42,9 +43,8 @@ UIWidgetMsgSprite * UIWidgetMsgSprite::getRichCB()
     UIMainLayer::gUIMainLayer->addChild(sprite, 10);
     
     sprite->runAction(Sequence::create(
-                                       DelayTime::create(1.6f),
-                                       MoveBy::create(0.3f, Point(0, 350)),
-                                       DelayTime::create(0.8f),
+                                       DelayTime::create(1.5f),
+                                       FadeOut::create(0.3f),
                                        CallFunc::create([sprite]()
                                                         {
                                                             sprite->getParent()->removeChild(sprite);

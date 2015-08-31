@@ -9,11 +9,13 @@
 #include "UIMainLayer.h"
 #include "CocosHelper.h"
 #include "UILogin1Layer.h"
+#include "UIMediaSelectLayer.h"
 
 UIMainLayer *UIMainLayer::gUIMainLayer = nullptr;
 
 UIMainLayer::UIMainLayer()
 : mCurrentLayer(nullptr)
+, mChildLayer(nullptr)
 {
     gUIMainLayer = this;
 }
@@ -32,6 +34,9 @@ bool UIMainLayer::init()
 //    this->addChild(UILogin1Layer::create());
     intoMain();
     
+    mListenerkeyPad = EventListenerKeyboard::create();
+    mListenerkeyPad->onKeyReleased = CC_CALLBACK_2(UIMainLayer::onKeyReleased, this);
+    _eventDispatcher->addEventListenerWithFixedPriority(mListenerkeyPad, -10);
     return true;
 }
 
@@ -123,6 +128,10 @@ void UIMainLayer::intoMain()
 
 void UIMainLayer::intoModelLayer()
 {
+    removeAllChiLayer();
+    mBtnModel->loadTextures("hall/Model_1.png", "hall/Model_1.png");
+    mBtnModel->setTouchEnabled(false);
+    
     if (mCurrentLayer == mUIModelMainLayer)
     {
         return;
@@ -141,6 +150,10 @@ void UIMainLayer::intoModelLayer()
 
 void UIMainLayer::intoPublishLayer()
 {
+    removeAllChiLayer();
+    mBtnPublish->loadTextures("hall/Publish_1.png", "hall/Publish_1.png");
+    mBtnPublish->setTouchEnabled(false);
+    
     if (mCurrentLayer == mUIPublishMainLayer)
     {
         return;
@@ -159,6 +172,10 @@ void UIMainLayer::intoPublishLayer()
 
 void UIMainLayer::intoIncomeLayer()
 {
+    removeAllChiLayer();
+    mBtnProfit->loadTextures("hall/Profit_1.png", "hall/Profit_1.png");
+    mBtnProfit->setTouchEnabled(false);
+    
     UIBaseCenterLayer *temp = mUIIncomeMainLayer;
     if (mCurrentLayer == temp)
     {
@@ -178,6 +195,10 @@ void UIMainLayer::intoIncomeLayer()
 
 void UIMainLayer::intoGrabLayer()
 {
+    removeAllChiLayer();
+    mBtnGrab->loadTextures("hall/Grab_1.png", "hall/Grab_1.png");
+    mBtnGrab->setTouchEnabled(false);
+    
     UIBaseCenterLayer *temp = mUIGrabMainLayer;
     if (mCurrentLayer == temp)
     {
@@ -197,6 +218,10 @@ void UIMainLayer::intoGrabLayer()
 
 void UIMainLayer::intoManageLayer()
 {
+    removeAllChiLayer();
+    mBtnUpdate->loadTextures("hall/Update_1.png", "hall/Update_1.png");
+    mBtnUpdate->setTouchEnabled(false);
+    
     UIBaseCenterLayer *temp = mUIManageMainLayer;
     if (mCurrentLayer == temp)
     {
@@ -211,6 +236,49 @@ void UIMainLayer::intoManageLayer()
     {
         temp->setVisible(true);
         mCurrentLayer = temp;
+    }
+}
+
+void UIMainLayer::removeAllChiLayer()
+{
+    mBtnModel->loadTextures("hall/Model_0.png", "hall/Model_0.png");
+    mBtnModel->setTouchEnabled(true);
+    
+    mBtnPublish->loadTextures("hall/Publish_0.png", "hall/Publish_0.png");
+    mBtnPublish->setTouchEnabled(true);
+    
+    mBtnProfit->loadTextures("hall/Profit_0.png", "hall/Profit_0.png");
+    mBtnProfit->setTouchEnabled(true);
+    
+    mBtnGrab->loadTextures("hall/Grab_0.png", "hall/Grab_0.png");
+    mBtnGrab->setTouchEnabled(true);
+    
+    mBtnUpdate->loadTextures("hall/Update_0.png", "hall/Update_0.png");
+    mBtnUpdate->setTouchEnabled(true);
+    
+    
+    bool isRemove(false);
+    
+    if (mChildLayers.size() != 1)
+    {
+        for (auto it = mChildLayers.begin(); it != mChildLayers.end(); )
+        {
+            if ((*it) == mMainLayer)
+            {
+                ++it;
+            }
+            else
+            {
+                mChildLayer->removeChild(*it);
+                it = mChildLayers.erase(it);
+                isRemove = true;
+            }
+        }
+    }
+    
+    if (isRemove)
+    {
+        mMainLayer->setPosition(Point(0, 0));
     }
 }
 
@@ -257,7 +325,7 @@ void UIMainLayer::pushLayer(Node *layer)
         back->setPosition(Point(0, 0));
         layer->setPosition(Point(1080, 0));
         
-        back->runAction(Sequence::create(MoveTo::create(0.2, Point(-1080, 0)), NULL));
+        back->runAction(Sequence::create(MoveTo::create(0.2, Point(-540, 0)), NULL));
         layer->runAction(Sequence::create(MoveTo::create(0.2, Point(0, 0)), NULL));
     }
 }
@@ -289,54 +357,56 @@ void UIMainLayer::CallbackMenu(cocos2d::Ref *sender, Widget::TouchEventType type
 {
     if(type == Widget::TouchEventType::ENDED)
     {
-        mBtnModel->loadTextures("hall/Model_0.png", "hall/Model_0.png");
-        mBtnModel->setPressedActionEnabled(true);
-        
-        mBtnPublish->loadTextures("hall/Publish_0.png", "hall/Publish_0.png");
-        mBtnPublish->setPressedActionEnabled(true);
-        
-        mBtnProfit->loadTextures("hall/Profit_0.png", "hall/Profit_0.png");
-        mBtnProfit->setPressedActionEnabled(true);
-        
-        mBtnGrab->loadTextures("hall/Grab_0.png", "hall/Grab_0.png");
-        mBtnGrab->setPressedActionEnabled(true);
-        
-        mBtnUpdate->loadTextures("hall/Update_0.png", "hall/Update_0.png");
-        mBtnUpdate->setPressedActionEnabled(true);
-        
         if(sender == mBtnModel)
         {
-            mBtnModel->loadTextures("hall/Model_1.png", "hall/Model_1.png");
-            mBtnModel->setPressedActionEnabled(false);
             intoModelLayer();
         }
         else if(sender == mBtnPublish)
         {
-            mBtnPublish->loadTextures("hall/Publish_1.png", "hall/Publish_1.png");
-            mBtnPublish->setPressedActionEnabled(false);
             intoPublishLayer();
         }
         else if(sender == mBtnProfit)
         {
-            mBtnProfit->loadTextures("hall/Profit_1.png", "hall/Profit_1.png");
-            mBtnProfit->setPressedActionEnabled(false);
             intoIncomeLayer();
         }
         else if (sender == mBtnGrab)
         {
-            mBtnGrab->loadTextures("hall/Grab_1.png", "hall/Grab_1.png");
-            mBtnGrab->setPressedActionEnabled(false);
             intoGrabLayer();
         }
         else if (sender == mBtnUpdate)
         {
-            mBtnUpdate->loadTextures("hall/Update_1.png", "hall/Update_1.png");
-            mBtnUpdate->setPressedActionEnabled(false);
             intoManageLayer();
         }
     }
 }
 
+void UIMainLayer::onKeyReleased(EventKeyboard::KeyCode keycode, cocos2d::Event *event)
+{
+    if (keycode == EventKeyboard::KeyCode::KEY_BACK)  //返回
+    {
+        if (UIMediaSelectLayer::gUIMediaSelectLayer)
+        {
+            this->removeChild(UIMediaSelectLayer::gUIMediaSelectLayer);
+            return;
+        }
+        
+        if (!mChildLayer)
+        {
+            Director::getInstance()->end();
+        }
+        else
+        {
+            if (mChildLayer->getChildrenCount() > 1)
+            {
+                popLayer();
+            }
+            else
+            {
+                Director::getInstance()->end();
+            }
+        }
+    }
+}
 
 
 

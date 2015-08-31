@@ -24,6 +24,15 @@ inline cocos2d::Size getSizeWin()
     return cocos2d::Director::getInstance()->getWinSize();
 }
 
+inline string getString(int value)
+{
+    stringstream ss;
+    string s;
+    ss<<value;
+    ss>>s;
+    return s;
+}
+
 inline bool getIsRightPhone( const string &phone )
 {
     if (phone.size() != 11)
@@ -73,7 +82,7 @@ inline bool getIsRightBankNum( const string &cardNum )
 inline bool getIsUserName( const string &name )
 {
     //ºÏ≤È≥§∂»
-    if (name.size() > 16 || name.size() < 4 )
+    if (name.size() > 16 || name.size() < 6 )
     {
         return false;
     }

@@ -19,14 +19,18 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="bg/login_bg1.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="TextField_phoneNum" ActionTag="1107686603" Tag="7" IconVisible="False" LeftMargin="-310.0000" RightMargin="-229.0000" TopMargin="535.5000" BottomMargin="-589.5000" TouchEnable="True" FontSize="45" IsCustomSize="True" LabelText="" PlaceHolderText="请输入手机号" MaxLengthText="10" ctype="TextFieldObjectData">
-                <Size X="540.0000" Y="55.0000" />
-                <AnchorPoint ScaleY="0.5000" />
-                <Position X="-310.0000" Y="-562.0000" />
+              <AbstractNodeData Name="Panel_edit" ActionTag="-990966511" Tag="19" IconVisible="False" LeftMargin="-325.0000" RightMargin="-324.0000" TopMargin="530.0000" BottomMargin="-599.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+                <Size X="650.0000" Y="70.0000" />
+                <AnchorPoint />
+                <Position X="-325.0000" Y="-599.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="85" G="85" B="85" />
-                <PrePosition X="-310.0000" Y="-562.0000" />
-                <PreSize X="0.5000" Y="0.0286" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="-325.0000" Y="-599.0000" />
+                <PreSize X="650.0000" Y="70.0000" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
               <AbstractNodeData Name="Button_next" ActionTag="1045564728" Tag="5" IconVisible="False" LeftMargin="-350.0000" RightMargin="-349.0000" TopMargin="671.0000" BottomMargin="-770.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="670" Scale9Height="78" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="700.0000" Y="100.0000" />
@@ -57,6 +61,29 @@
                 <NormalFileData Type="Normal" Path="ui/button_close.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Image_warring" ActionTag="885936959" Tag="19" VisibleForFrame="False" IconVisible="False" LeftMargin="-344.0000" RightMargin="297.0000" TopMargin="827.0000" BottomMargin="-874.0000" Scale9Width="48" Scale9Height="48" ctype="ImageViewObjectData">
+                <Size X="48.0000" Y="48.0000" />
+                <Children>
+                  <AbstractNodeData Name="Text_1" ActionTag="1880077060" Tag="20" IconVisible="False" LeftMargin="70.0000" RightMargin="-422.0000" TopMargin="1.5000" BottomMargin="1.5000" FontSize="40" LabelText="您输入的手机号有误！" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="400.0000" Y="45.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="70.0000" Y="24.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="246" G="70" B="70" />
+                    <PrePosition X="1.4583" Y="0.5000" />
+                    <PreSize X="0.0000" Y="0.0000" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                </Children>
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="-320.0000" Y="-850.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="-320.0000" Y="-850.0000" />
+                <PreSize X="48.0000" Y="48.0000" />
+                <FileData Type="Normal" Path="ui/image_gantan.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

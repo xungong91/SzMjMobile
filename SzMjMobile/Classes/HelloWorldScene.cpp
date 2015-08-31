@@ -6,6 +6,8 @@
 #include "UIMainLayer.h"
 #include "CrashHelper.h"
 #include "UIMediaSelectLayer.h"
+#include "XHelper.h"
+#include "CocosHelper.h"
 
 USING_NS_CC;
 using namespace cocostudio::timeline;
@@ -114,10 +116,24 @@ bool HelloWorld::init()
                                       });
     item6->setPosition(Point(100, 300));
     
+    RichText *test = RichText::create();
     
-    auto menu = Menu::create(itme1, item2, item3, item4, item5, item6, NULL);
+    RichElementText* re1 = RichElementText::create(1, Color3B::YELLOW, 255, "asdfasdfsadfasdfasdfasdfasdfas工地是否广东省分公司的法国大使馆发的损公肥私的分公司的史蒂夫根深蒂固", "fonts/arial.ttf", 20);
+    test->pushBackElement(re1);
+    test->setPosition(getPointHalf(getSizeWin()));
+    this->addChild(test);
+    
+    auto item7 = MenuItemFont::create("测试按钮", [this, test](Ref *sender)
+                                      {
+                                          CocosHelper::changeRichTextSize(test, 200);
+                                      });
+    item7->setPosition(Point(100, 350));
+    
+    
+    auto menu = Menu::create(itme1, item2, item3, item4, item5, item6, item7, NULL);
     menu->setPosition(Point(0, 0));
     this->addChild(menu);
+    
     
 
     return true;

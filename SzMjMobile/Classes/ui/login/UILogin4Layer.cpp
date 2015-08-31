@@ -12,6 +12,7 @@
 #include "XHelper.h"
 #include "UILogin3Layer.h"
 #include "UIMainLayer.h"
+#include "UILogin1Layer.h"
 
 bool UILogin4Layer::init()
 {
@@ -22,25 +23,36 @@ bool UILogin4Layer::init()
     
     mLayout = CocosHelper::singleton()->getScaleLayout("CCS_login4.csb", this);
     
-    TextField *TextField_phoneNum = static_cast<TextField*>(CocosHelper::getWidgetByName(mLayout, "TextField_phoneNum"));
+    Layout *layout = static_cast<Layout*>(CocosHelper::getNodeByName(mLayout, "Panel_edit"));
+    Size size = layout->getContentSize();
+    UserEditBox* mSearchEdit = UserEditBox::create(size, Scale9Sprite::create("Transparent.png"));
+    mSearchEdit->setPosition(Point::ZERO);
+    mSearchEdit->setAnchorPoint(Point::ZERO);
+    mSearchEdit->setFontSize(60);
+    mSearchEdit->setFontColor(Color3B::BLACK);
+    mSearchEdit->setPlaceHolder("请输入6-16位密码");
+    mSearchEdit->setPlaceholderFontColor(Color3B(100, 100, 100));
+    mSearchEdit->setReturnType(ui::EditBox::KeyboardReturnType::DONE);
+    mSearchEdit->setDelegate(mSearchEdit);
+    layout->addChild(mSearchEdit);
     
     CocosHelper::getWidgetByName(mLayout, "Button_next")->addTouchEventListener
-    ([this, TextField_phoneNum](Ref *sender, Widget::TouchEventType type)
+    ([this, mSearchEdit](Ref *sender, Widget::TouchEventType type)
      {
          if (type == Widget::TouchEventType::ENDED)
          {
-             if (!getIsUserName(TextField_phoneNum->getString()))
+             if (!getIsUserName(mSearchEdit->getText()))
              {
-                 UIWidgetMsgSprite::setMsg("您输入的密码有误，请重新输入");
                  return;
              }
-             
-             MessageBox("设置密码成功", "tiitle");
+             UIWidgetMsgSprite::setMsg("设置登录密码成功");
+             UIMainLayer::gUIMainLayer->removeChild(this);
+             UIMainLayer::gUIMainLayer->intoMain();
          }
      });
     
     CocosHelper::getWidgetByName(mLayout, "BtnReturn")->addTouchEventListener
-    ([this, TextField_phoneNum](Ref *sender, Widget::TouchEventType type)
+    ([this](Ref *sender, Widget::TouchEventType type)
      {
          if (type == Widget::TouchEventType::ENDED)
          {
@@ -50,7 +62,18 @@ bool UILogin4Layer::init()
      });
     
     Button *Button_close = static_cast<Button*>(CocosHelper::getWidgetByName(mLayout, "Button_close"));
-    UIInfoManage::singleton()->setShowPwd(Button_close, TextField_phoneNum);
+    UIInfoManage::singleton()->setShowPwd(Button_close, mSearchEdit);
+    
+    Widget *Image_warring = CocosHelper::getWidgetByName(mLayout, "Image_warring");
+    
+    mSearchEdit->setDidEndFunc([Image_warring](string s)
+                               {
+                                   Image_warring->setVisible(!getIsUserName(s));
+                                   if (s == "")
+                                   {
+                                       Image_warring->setVisible(false);
+                                   }
+                               });
     
     return true;
 }

@@ -29,7 +29,7 @@ bool UIIncomeModelLayer::init()
      {
          if ( type == Widget::TouchEventType::ENDED)
          {
-             UIMainLayer::gUIMainLayer->pushLayer(UIGrabInfoLayer::create());
+             UIMainLayer::gUIMainLayer->intoGrabLayer();
          }
      });
     

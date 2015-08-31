@@ -14,16 +14,19 @@
 #include "UIMainLayer.h"
 #include "UIWidgetMsgSprite.h"
 
+UIMediaSelectLayer *UIMediaSelectLayer::gUIMediaSelectLayer = nullptr;
+
 UIMediaSelectLayer::UIMediaSelectLayer()
 : mSelectMediaItem(nullptr)
 , mSelectCallFunc(nullptr)
+, mMaxSelectCount(9)
 {
-    
+    gUIMediaSelectLayer = this;
 }
 
 UIMediaSelectLayer::~UIMediaSelectLayer()
 {
-    
+    gUIMediaSelectLayer = nullptr;
 }
 
 bool UIMediaSelectLayer::init()
@@ -125,6 +128,11 @@ void UIMediaSelectLayer::onEnter()
     mEventListenerMove->onTouchBegan = [this](Touch* touch, Event  *event)
     {
         mTouchStartPoint = touch->getLocation();
+        if (mTouchStartPoint.y > 1705)
+        {
+            return false;
+        }
+        
         mMoveLayerStartPoint = mMoveLayer->getPosition();
         
         onSelectBegan(mTouchStartPoint);
@@ -214,9 +222,9 @@ void UIMediaSelectLayer::onSelectEnd(Point p)
     
         if (mIsSelect)
         {
-            if (mSelectSprites.size() >= 9 && !sprite->mIsSelect)
+            if (mSelectSprites.size() >= mMaxSelectCount && !sprite->mIsSelect)
             {
-                UIWidgetMsgSprite::setMsg("最多选择9张照片");
+                UIWidgetMsgSprite::setMsg(__String::createWithFormat("最多选择%d张照片", mMaxSelectCount)->getCString());
             }
             else
             {

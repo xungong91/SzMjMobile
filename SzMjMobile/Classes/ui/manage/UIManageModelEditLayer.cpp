@@ -142,6 +142,7 @@ void UIManageModelEditLayer::onPanelMediasImageTouch(Ref *sender, Widget::TouchE
         if (!image->isVisible())
         {
             auto it = UIMediaSelectLayer::create();
+            it->setMaxSelectCount(1);
             it->setSelectCallFunc
             ([image, Button_close, text](vector<UIImageStruct> files)
              {

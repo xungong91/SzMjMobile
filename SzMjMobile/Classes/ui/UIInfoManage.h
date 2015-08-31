@@ -35,8 +35,9 @@ class UIInfoManage
 public:
     static UIInfoManage *singleton();
     
-    void setShowPwd(Button *button, TextField *textFied);
+    void setShowPwd(Button *button, EditBox *textFied);
     bool mIsShowPwd;
+    string mPhoneNum;
 private:
     
     static UIInfoManage *mUIInfoManage;
