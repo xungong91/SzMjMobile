@@ -26,7 +26,7 @@
             <PreSize X="1.0000" Y="0.1302" />
             <FileData Type="Normal" Path="income/shouyi12.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ListView_1" ActionTag="-79033708" Tag="28" IconVisible="False" TopMargin="461.0000" BottomMargin="159.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+          <AbstractNodeData Name="ListView_1" ActionTag="-79033708" Tag="28" IconVisible="False" TopMargin="461.0000" BottomMargin="159.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
             <Size X="1080.0000" Y="1300.0000" />
             <Children>
               <AbstractNodeData Name="Panel_main" ActionTag="1112576807" Tag="114" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1080" Scale9Height="1431" ctype="PanelObjectData">
@@ -173,6 +173,33 @@
             <FirstColor A="255" R="150" G="150" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Image_weifabu" ActionTag="-769426461" Tag="68" VisibleForFrame="False" IconVisible="False" LeftMargin="167.0000" RightMargin="167.0000" TopMargin="631.5000" BottomMargin="631.5000" TouchEnable="True" Scale9Width="746" Scale9Height="657" ctype="ImageViewObjectData">
+            <Size X="746.0000" Y="657.0000" />
+            <Children>
+              <AbstractNodeData Name="Button_zhidaole" ActionTag="1694143566" Tag="69" IconVisible="False" TopMargin="525.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="716" Scale9Height="110" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="746.0000" Y="132.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position Y="66.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition Y="0.1005" />
+                <PreSize X="1.0000" Y="0.2009" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="income/btn_zhidaole2.png" Plist="" />
+                <NormalFileData Type="Normal" Path="income/btn_zhidaole1.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="540.0000" Y="960.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5000" Y="0.5000" />
+            <PreSize X="0.6907" Y="0.3422" />
+            <FileData Type="Normal" Path="income/bg_modelShouyi.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="Button_faburenwu" ActionTag="-208048187" Tag="177" IconVisible="False" RightMargin="534.0000" TopMargin="1758.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="516" Scale9Height="140" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="546.0000" Y="162.0000" />

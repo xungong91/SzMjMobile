@@ -42,6 +42,7 @@ bool UIMediaSelectLayer::init()
     addPanelTouch(static_cast<Layout*>(CocosHelper::getNodeByName(mLayout, "Button_cencel")), [this]()
                   {
                       this->getParent()->removeChild(this);
+//                      UIMainLayer::gUIMainLayer->onKeyReturn();
                   });
     
     addPanelTouch(static_cast<Layout*>(CocosHelper::getNodeByName(mLayout, "Button_ok")), [this]()

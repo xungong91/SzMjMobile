@@ -33,6 +33,36 @@ bool UIIncomeModelLayer::init()
          }
      });
     
+    Widget *Image_weifabu = CocosHelper::getWidgetByName(mLayout, "Image_weifabu");
+    
+    CocosHelper::getWidgetByName(mLayout, "Button_qiangdan")->addTouchEventListener
+    ([](Ref *sender, Widget::TouchEventType type)
+     {
+         if ( type == Widget::TouchEventType::ENDED)
+         {
+             UIMainLayer::gUIMainLayer->intoGrabLayer();
+         }
+     });
+    
+    CocosHelper::getWidgetByName(mLayout, "Button_faburenwu")->addTouchEventListener
+    ([Image_weifabu](Ref *sender, Widget::TouchEventType type)
+     {
+         if ( type == Widget::TouchEventType::ENDED)
+         {
+             Image_weifabu->setVisible(true);
+         }
+     });
+    
+    CocosHelper::getWidgetByName(mLayout, "Button_zhidaole")->addTouchEventListener
+    ([Image_weifabu](Ref *sender, Widget::TouchEventType type)
+     {
+         if ( type == Widget::TouchEventType::ENDED)
+         {
+             Image_weifabu->setVisible(false);
+         }
+     });
+
+    
     setTask();
     runTaskAction();
     return true;
