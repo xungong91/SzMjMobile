@@ -387,6 +387,7 @@ void UIMainLayer::onKeyReleased(EventKeyboard::KeyCode keycode, cocos2d::Event *
         if (UIMediaSelectLayer::gUIMediaSelectLayer)
         {
             this->removeChild(UIMediaSelectLayer::gUIMediaSelectLayer);
+            return;
         }
         
         if (!mChildLayer)
