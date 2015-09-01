@@ -31,10 +31,18 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="CCS_manageEdit.csd" />
-          <FilePathData Path="CCS_incomeModel.csd" />
+          <FilePathData Path="CCS_chat.csd" />
+          <FilePathData Path="CCS_publish_taskInfo.csd" />
+          <FilePathData Path="CCS_publish_taskSet.csd" />
+          <FilePathData Path="CCS_task_info.csd" />
+          <FilePathData Path="CCS_task_list.csd" />
+          <FilePathData Path="CCS_model_add.csd" />
+          <FilePathData Path="CCS_model_info.csd" />
+          <FilePathData Path="CCS_chat_info.csd" />
+          <FilePathData Path="CCS_publish.csd" />
+          <FilePathData Path="CCS_model.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="CCS_manageEdit.csd" />
+        <ActiveDocument Path="CCS_model.csd" />
       </Value>
     </Item>
   </Properties>
