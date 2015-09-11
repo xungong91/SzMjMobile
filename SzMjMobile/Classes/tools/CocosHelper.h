@@ -62,7 +62,7 @@ public:
     static void setWanCoins(const int &coins, bool isAdd, const int beishu, cocos2d::ui::TextAtlas *textAtlas);
     
 private:
-    Size mMaxSize;
+    Size mMaxSize;          //设计尺寸
     Size mCurrentSize;
     float mGameScale;
     void setGameScale();
